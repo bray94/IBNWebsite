@@ -3,40 +3,126 @@
 <html>
 	<head>
 		<title> IBN Homes</title>
-		<link href="IBN.css" type="text/css" rel="stylesheet" /
+		<link href="IBN.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
 
 	</head>
 
+	<body onload="imageSize();">
+			<div class = "topbar" >
+				<div class="linkswrapper">
+					<div class="name"><a href="#" onclick="pageScroll('0'); return false;">IBN</a></div>
+					<div class="toplink"><a href="#" onclick="pageScroll('1'); return false;">Shared Profits</a></div>
+					<div class="toplink"><a href="#" onclick="pageScroll('2'); return false;">Audits</a></div>
+					<div class="toplink"><a href="#" onclick="pageScroll('3'); return false;">FAQ</a></div>
+					<div class="toplink"><a href="#" onclick="pageScroll('4'); return false;">Support</a></div>
+					<div class="myibn"><a href="#" onclick="myIbn();">My IBN</a></div>
+					<div id="slider"></div>
+				</div>
+			</div>
+
+			<div id="wrapper">
+				<div id="sign-in-wrapper">
+					<div id="sign-in">
+						<div id="header">Log In</div>
+						<hr style="position: absolute; width: 300px; margin: 100px auto 0px 50px;">
+						<form class="pure-form pure-form-stacked" style="position: absolute; width: 300px; margin: 125px auto 0px 50px;">
+    						<fieldset>
+						        <input id="email" type="email" placeholder="Email" style="width: 300px;">
+						        <input id="password" type="password" placeholder="Password" style="width: 300px;">
+						    </fieldset>
+						</form>
+
+						<a href="" id="forgot">Forgot username/password?</a>
+
+						<a href="" id="login-button">Log In</a>
+						
+
+					</div>
+				</div>
+				<!-- INDEX -->
+				<div id="index" style="background-image: url('Images/solar-panels.jpg'); background-size: 100% 100%;">
+				
+					
+					<div id="index-text">
+						<div id="header">Inspired by Nature.<br>Naturally Efficient.</div>
+
+						<div id="login-bar">
+							<div id="login-wrapper">
+								<a href="" id="login-signup-link">Learn More</a>
+								<a href="" id="login-signup-link">Sign Up</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- SHARED PROFITS -->
+				<div id="shared-profits" style="background-image: url('Images/new-york.jpg'); background-size: 100% 100%;">
+					<div id="shared-profits-text">
+						<div id="header">What if you could get paid for reducing your carbon footprint?</div>
+						<p>
+							Joining our shared profits program allows you to get paid for going solar. How? By joining the shared profits program you can take advantage of tax incentives, energy refund checks, consumer convenience, and no risk. You allow us to make solar available to you, and in return you make a little extra cash. All of this with no upfront cost to you.
+						</p>
+
+						<!-- Energy refund. Tax breaks. No out of pocket cost. Consumer convenience. 
+						Joining our shared profits program allows you to take the next step in eliminating our reliance on fossil fuels. We install solar panels on your roof and cut you a percentage of the money we recieve from selling the energy back to the electric company. All of this with no upfront cost to you. You allow us to make solar available to everyone, and in return you earn a little extra cash. All you have to give us is your promise to do your part in protecting our planet. -->
+
+						<div id="button-wrapper"><a href="" id="button">Join the Program</a></div>
+					</div>
+				</div>
 
 
-	<body>
 
-	<div class = "topbar" >
-		<div class="name">IBN</div>
-	</div>
+				<!-- AUDITS -->
+				<div id="audits" style="background-image: url('Images/thermal-house.jpg'); background-size: 110% 100%;">
+					<div id="audits-text">
+						<div id="header">Your house isn't perfect.</div>
+						<p> 
+							Owning and maintaining a house requires a ton of work, and sometimes when it comes to our energy bills it seems like a ton of money. It's hard to tell what is worth spending money on now to save money on your energy bill later. That's where we come in. Energy audits usually require someone coming to your home and spending hours taking measurements and determining where your energy is being wasted. IBN uses innovation to save you both time and money. Let's bring energy audits in to the 21st century.
+						</p>
+						<div id="button-wrapper"><a href="" id="button">Save Money</a></div>
+					</div>
+				</div>
 
-	<div class = "main-column">
+				<!-- FAQ -->
+				<div id="faq" style="background-image: url('Images/america.jpg'); background-size: 100% 100%;">
+					<div id="faq-text">
+						<div id="header">The energy market is confusing.</div>
+						<p> Is my house in the right location for solar panels? What is photovoltaic efficiency? Am I elegible for a tax credit? It's difficult to know all the answers. Let us get you up to speed. We have researched all of the questions others have asked us along our journey, as well as the topics we were confused with ourselves. There is a lot to know when it comes to making your house sustainable. From what really is using most of your energy to permits required to install solar panels on your roof. We have tried to answer all of these and more as simply as we can, without all of the unnecessary jargon. Let us help clear the fog between you and your brighter future.
+						</p>
+						<div id="button-wrapper"><a href="" id="button">Questions</a></div>
+					</div>
+				</div>
 
-		<div class="linkswrapper">
-			<div class="toplinkactive"><a href="index.html">Home</a></div>
-			<div class="toplink"><a href="tab2.html">FAQ</a></div>
-			<div class="toplink"><a href="tab3.html">Products</a></div>
-			<div class="toplink"><a href="tab4.html">Audits</a></div>
-			<div class="toplink"><a href="tab5.html">Career</a></div>
+				<!-- SUPPORT -->
+				<div id="support" style="background-image: url('Images/tree.jpg'); background-size: 100% 100%;">
+					<div id="support-text">
+						<div id="header">Unfortunately things don't always work perfect.</div>
+						<p> Having trouble with your equipment? Can't login to your account? We know how frustrating it can be when something just doesn't seem to work the way it's suppose to, and we will do everything in our power to fix it. Our customers are the most important part of our business. Without you, we can't do our part to help give solar to everyone who wants it. We will get in touch with you as quickly as possible and rescue you from being lost at sea.
+						</p>
+						<div id="button-wrapper"><a href="" id="button">Support</a></div>
+					</div>
+				</div>
+				</div>
 
-		</div>
+
+			</div>
+
+
+			<div class="bottombar">
+				<div class="bottombar-wrapper">
+					<div class="bottomlink">Inspired by Nature &copy; 2015</div>
+					<a href="" class="bottomlink vertical-seperator">Legal</a>
+					<a href="" class="bottomlink vertical-seperator">Careers</a>
+					<a href="" class="bottomlink vertical-seperator">Contact</a>
+				</div>
+			</div>
+
+
+		<script type="text/javascript" src = "IBN.js"></script>
+		<script type="text/javascript" src = "jquery.js"></script>
 		
-		<div class = "text-column-1">
-			<p>
-				This is a test paragraph. This is a test paragraph. This is a test paragraph. This is a test paragraph. This is a test paragraph. This is a test paragraph. This is a test paragraph. This is a test paragraph. This is a test paragraph. This is a test paragraph. This is a test paragraph. This is a test paragraph. This is a test paragraph. This is a test paragraph. This is a test paragraph. This is a test paragraph. This is a test paragraph. This is a test paragraph. This is a test paragraph. This is a test paragraph. This is a test paragraph. This is a test paragraph. This is a test paragraph. This is a test paragraph.
-			</p>
-		</div>
-	</div>
-
-
-		
-
-
 	</body>
 
 
