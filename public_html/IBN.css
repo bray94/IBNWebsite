@@ -397,12 +397,12 @@ a#login-signup-link:hover{
 }
 #thank-you{
 	display: none;
-	width: 250px;
-	margin: 300px auto;
+	float: left;
+	text-align: center;
+	width: 53%;
+	margin-top: 300px;
 	font-size: 50px;
 	color: white;
-	padding: 30px;
-	background: rgba(0, 0, 0, .8);
 }
 
 /* -----------Audits------------ */

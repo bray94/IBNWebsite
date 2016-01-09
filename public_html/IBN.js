@@ -4,6 +4,10 @@ var sections = ["index", "shared-profits", "audits", "faq", "support"];
 var windowHeight = window.innerHeight;
 var windowWidth = window.innerWidth;
 
+window.addEventListener("resize", function(){
+	imageSize();
+}, false);
+
 function imageSize(){
 	var index = document.getElementById("index");
 	var shared = document.getElementById("shared-profits");
@@ -87,8 +91,8 @@ function closeSurvey(){
 }
 
 function submitSurvey(){
-	surveyFlag = false;
-	$("#survey").fadeOut(500, function(){$("#thank-you").fadeIn(500);});
+	$("#column2").fadeOut(500);
+	$("#column3").fadeOut(500, function(){$("#thank-you").fadeIn(500);});
 }
 
 
