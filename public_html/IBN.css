@@ -329,6 +329,81 @@ a#login-signup-link:hover{
 	font-size: 20px;
 	padding: 10px 20px;
 }
+#survey-wrapper{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index: 2;
+	left: 0px;
+}
+#survey{
+	position: relative;
+	margin: 50px auto;
+	height: 90%;
+	width: 80%;
+	min-width: 960px;
+	background: rgba(0, 0, 0, .8);
+
+}
+#survey > #column2,  #survey > #column3{
+	float: left;
+	width: 27%;
+	height: 100%;
+
+}
+#survey > #column1{
+	float: left;
+	width: 45%;
+	height: 100%;
+	border-right: solid white 1px;
+}
+#column2 > #form, #column3 > #form{
+	width: 90%;
+	margin: 0px auto;
+	color: white;
+	line-height: 1.3em;
+}
+#survey-input{
+	width: 100%;
+}
+#survey > #column1 > p, #survey > #column1 > ul{
+	color: white;
+	line-height: 1.4em;
+	text-align: left;
+	width: 85%;
+}
+#survey > #column1 > p{
+	font-size: 18px;
+}
+#form > #survey-button-wrapper{
+	position: relative;
+	width: 100px;
+	height: 50px;
+	margin: 50px auto auto auto;
+}
+#form > #survey-button-wrapper > #submit-survey-button{
+	background-color: white;
+	opacity: .9;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	float: left;
+	width: 100px;
+	display: inline-block;
+	font-size: 20px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+#thank-you{
+	display: none;
+	width: 250px;
+	margin: 300px auto;
+	font-size: 50px;
+	color: white;
+	padding: 30px;
+	background: rgba(0, 0, 0, .8);
+}
 
 /* -----------Audits------------ */
 #audits-text{

@@ -28,6 +28,9 @@ function pageScroll(link) {
 	if (signInFlag){
 		closeMyIbn(link);
 	}
+	else if(surveyFlag){
+		closeSurvey();
+	}
 
 	var windowHeight = window.innerHeight;
 	var windowWidth = window.innerWidth;
@@ -69,14 +72,24 @@ function closeMyIbn(){
 	$("#sign-in-wrapper").fadeOut(50, function(){$(currentSection).fadeIn(500);});
 }
 
-$(document).ready(function() {
-    $('#password').keydown(function(event) {
-        if (event.keyCode == 13) {
-            this.form.submit();
-            return false;
-         }
-    });
-});
+
+var surveyFlag = false;
+function survey(){
+	surveyFlag = true;
+
+	$("#shared-profits-text").fadeOut(900, function(){$("#survey-wrapper").fadeIn(900);});
+}
+
+function closeSurvey(){
+	surveyFlag = false;
+
+	$("#survey-wrapper").fadeOut(50, function(){$("#shared-profits-text").fadeIn(500);});
+}
+
+function submitSurvey(){
+	surveyFlag = false;
+	$("#survey").fadeOut(500, function(){$("#thank-you").fadeIn(500);});
+}
 
 
 
