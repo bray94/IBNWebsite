@@ -1,9 +1,13 @@
 @font-face{
 	font-family: "Helvetica Neue Ultra Light";
-	src:url("HelveticaNeue-UltraLight.otf");
+	src:url("Font/HelveticaNeue-UltraLight.otf");
+}
+@font-face{
+	font-family: "Helvetica Neue Light";
+	src:url("Font/HelveticaNeue-Light.otf");
 }
 html, body{
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
+	font-family: "Helvetica Neue Light";
 	font-weight: 100;
 	padding: 0px;
 	margin: 0px;
