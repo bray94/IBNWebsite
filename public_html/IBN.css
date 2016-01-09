@@ -7,8 +7,8 @@
 	src:url("Font/HelveticaNeue-Light.otf");
 }
 html, body{
-	font-family: "Helvetica Neue Ultra Light";
-	font-weight: 700;
+	font-family: "Helvetica Neue Light";
+	font-weight: 200;
 	padding: 0px;
 	margin: 0px;
 }
