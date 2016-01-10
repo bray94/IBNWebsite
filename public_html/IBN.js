@@ -36,41 +36,6 @@ function sectionSize(){
 
 };
 
-
-
-var current = 0;
-
-function pageScroll(link) {
-	if (signInFlag){
-		closeMyIbn(link);
-	}
-	else if(surveyFlag){
-		closeSurvey();
-	}
-
-	var windowHeight = window.innerHeight;
-	var windowWidth = window.innerWidth;
-	var currentY = window.pageYOffset;
-
-	var wrapper = parseInt($('#wrapper').css('left'));
-	var slider = parseInt($('#slider').css('margin-left'));
-
-	var distance = (link - current) * windowWidth;
-	var sliderDistance = (link - current) * 160;
-	var time = Math.abs(link - current)  * 1000;
-	current = link;
-
-	$("#wrapper").animate({
-		left: wrapper - distance + 'px'
-	}, time);
-
-	$("#slider").animate({
-		marginLeft: slider + sliderDistance + 'px'
-	}, time);	
-
-
-}
-
 var signInFlag = false;
 
 function myIbn(){
