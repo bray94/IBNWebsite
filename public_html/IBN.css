@@ -199,38 +199,38 @@ a#login-button:hover{
 }
 #index{
 	position: absolute;
-	width: 20%;
+	width: 100%;
 	height: 100%;
 	top: 0px;
 	left: 0px;
 }
 #shared-profits{
 	position: absolute;
-	width: 20%;
+	width: 100%;
 	height: 100%;
 	top: 0px;
-	left: 20%;
+	left: 0px;
 }
 #audits{
 	position: absolute;
-	width: 20%;
+	width: 100%;
 	height: 100%;
 	top: 0px;
-	left: 40%;
+	left: 0px;
 }
 #faq{
 	position: absolute;
-	width: 20%;
+	width: 100%;
 	height: 100%;
 	top: 0px;
-	left: 60%;
+	left: 0px;
 }
 #support{
 	position: absolute;
-	width: 20%;
+	width: 100%;
 	height: 100%;
 	top: 0px;
-	left: 80%;
+	left: 0px;
 }
 
 

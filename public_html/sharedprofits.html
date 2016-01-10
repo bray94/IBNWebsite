@@ -1,0 +1,234 @@
+<!-- sharedprofits.html -->
+
+<html>
+	<head>
+		<title> IBN Homes</title>
+		<link href="IBN.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+
+	</head>
+
+	<body onload="sectionSize();">
+		<div class = "topbar" >
+			<div class="linkswrapper">
+				<div class="name"><a href="index.html">IBN</a></div>
+				<div class="toplink"><a href="sharedprofits.html">Shared Profits</a></div>
+				<div class="toplink"><a href="audits.html">Audits</a></div>
+				<div class="toplink"><a href="faq.html">FAQ</a></div>
+				<div class="toplink"><a href="support.html">Support</a></div>
+				<div class="myibn"><a href="#" onclick="myIbn();">My IBN</a></div>
+			</div>
+		</div>
+		<div id="shared-profits" style="background-image: url('Images/new-york.jpg'); background-size: 100% 100%;">
+			<div id="shared-profits-text">
+				<div id="header">What if you could get paid for reducing your carbon footprint?</div>
+				<p>
+					Joining our Shared Profits Program&trade; allows you to get paid for going solar. How? By joining the shared profits program you can take advantage of tax incentives, energy refund checks, and other financial benefits. Simply give us your consent to allow IBN to use your roof and/or backyard to collect solar power. That's it. All of this with no cost or risk to you.
+				</p>
+
+				<div id="button-wrapper"><a href="#" id="button" onclick="survey();">Interested? Learn More</a></div>
+			</div>
+			<div id="survey-wrapper">
+				<div id="survey">
+					<div id="column1">
+						<p>
+							The Shared Profits Program in a Nutshell:
+						</p>
+						<ul>
+							<li>We pay for the solar panel and installation, so there is no out-of-pocket cost for you to become a member.</li> 
+							<li>Members are guaranteed a yearly Energy Refund Check up to 50% of the solar net profit (~$300-$800). </li>
+							<li>Energy Refund Check yearly amount is dependent on cost of electricity, size of installation, and geographic location. </li>
+							<li>Solar panel buy-out option for members of over 5 consecutive years, which allows homeowners to get 100% of the solar net profit minus a small maintenance fee.</li>
+							<li>Members get a cash signing bonus and/or State Tax Rebate for enrollment in the program.</li>
+							<li>Members receive reduced prices, up to 50% off, for home energy audits and other IBN sponsored products/services.</li>
+							<li>Emergency Solar energy will be available during times of power outage.</li>
+							<li>Does not affect relationship with utility company or utility bill.</li>
+							<li>By indicating that you're interested in the Shared Profits Program on the survey to the right you are <span style="font-weight: bold; text-decoration: underline;">NOT required</span> to enroll in the program.</li>
+						</ul>
+						<p>
+							Requirements for Shared Profits Program:
+						</p>
+						<ul>
+							<li>Must be an homeowner</li>
+							<li>Must have roof or yard space available for solar panel</li>
+							<li>Sign 6-year contract for membership</li>
+							<li>No credit scrore required</li>
+						</ul>
+						<p>
+							<span style="font-style: italic;">"It is important that taxpayers like you, homeowners and renters alike, show interest in this program by filling out the survey in order to raise the capital to jumpstart this new program. We thank you for your time and encourage you to share this website with friends, family, and colleagues so we can ensure Solar investment opportunities for everyone."</span> - Eric Seabron CEO
+						</p>
+					</div>
+					<div id="column2">
+						<img src="Images/down-arrow.png" id="down-arrow">
+						<form class="pure-form pure-form-stacked" id ="form">
+							<br>
+							<fieldset class="pure-group" style="color: black;">
+				        		<input id="survey-input" type="text" placeholder="First Name">
+				        		<input id="survey-input" type="text" placeholder="Last Name">
+				        		<input id="survey-input" type="email" placeholder="Email">
+				        		<input id="survey-input" type="text" placeholder="Zip Code">
+				    		</fieldset>
+
+				    		<label>1. Are you a homeowner?</label>
+						    <label for="option-one" class="pure-radio">
+						        <input id="option-one" type="radio" name="homewowner" value="option1">
+						        Yes
+						    </label>
+
+						    <label for="option-two" class="pure-radio">
+						        <input id="option-two" type="radio" name="homewowner" value="option2">
+						        No
+						    </label>
+						    <br>
+						    <label>2. How would you describe your home architecture?</label>
+						    <label for="option-one" class="pure-radio">
+						        <input id="option-one" type="radio" name="homeArchitecture" value="option1">
+						        Single family home
+						    </label>
+
+						    <label for="option-two" class="pure-radio">
+						        <input id="option-two" type="radio" name="homeArchitecture" value="option2">
+						        Duplex
+						    </label>
+						    <label for="option-three" class="pure-radio">
+						        <input id="option-three" type="radio" name="homeArchitecture" value="option3">
+						        Condo
+						    </label>
+						    <label for="option-four" class="pure-radio">
+						        <input id="option-four" type="radio" name="homeArchitecture" value="option4">
+						        Townhouse/rowhome
+						    </label>
+						    <label for="option-five" class="pure-radio">
+						        <input id="option-five" type="radio" name="homeArchitecture" value="option5">
+						        Other
+						    </label>
+						    <br>
+						    <label>3. Are you satisfied with your current energy provider?</label>
+						    <label for="option-one" class="pure-radio">
+						        <input id="option-one" type="radio" name="energySatisfaction" value="option1">
+						        Very Satisfied
+						    </label>
+
+						    <label for="option-two" class="pure-radio">
+						        <input id="option-two" type="radio" name="energySatisfaction" value="option2">
+						        Satisfied
+						    </label>
+						    <label for="option-three" class="pure-radio">
+						        <input id="option-three" type="radio" name="energySatisfaction" value="option3">
+						        Content
+						    </label>
+						    <label for="option-four" class="pure-radio">
+						        <input id="option-four" type="radio" name="energySatisfaction" value="option4">
+						        Disatisfied
+						    </label>
+						    <label for="option-five" class="pure-radio">
+						        <input id="option-five" type="radio" name="energySatisfaction" value="option5">
+						        Very Disatisfied
+						    </label>
+						    <br>
+						    <label>4. Would you be interested in joining the Shared Profits Program and would like to learn more about it?</label>
+						    <label for="option-one" class="pure-radio">
+						        <input id="option-one" type="radio" name="interest" value="option1">
+						        Yes
+						    </label>
+
+						    <label for="option-two" class="pure-radio">
+						        <input id="option-two" type="radio" name="interest" value="option2">
+						        No
+						    </label>
+
+						    <br>
+							<label>5. What is your income bracket?</label>
+						    <label for="option-one" class="pure-radio">
+						        <input id="option-one" type="radio" name="income" value="option1">
+						        Less than $50,000
+						    </label>
+
+						    <label for="option-two" class="pure-radio">
+						        <input id="option-two" type="radio" name="income" value="option2">
+						        $50,000 - $75,000
+						    </label>
+						    <label for="option-three" class="pure-radio">
+						        <input id="option-three" type="radio" name="income" value="option3">
+						        $75,000 - $100,000
+						    </label>
+						    <label for="option-four" class="pure-radio">
+						        <input id="option-four" type="radio" name="income" value="option4">
+						        $100,000 - $150,000
+						    </label>
+						    <label for="option-five" class="pure-radio">
+						        <input id="option-five" type="radio" name="income" value="option5">
+						        More than $150,000
+						    </label>
+						    <br>
+						    <label>6. What aspect of the Shared Profits Program do you like the most?</label>
+						    <label for="option-one" class="pure-checkbox">
+						        <input id="option-one" type="checkbox" name="favroritePart" value="option1">
+						        Energy Refund Check
+						    </label>
+
+						    <label for="option-two" class="pure-checkbox">
+						        <input id="option-two" type="checkbox" name="favroritePart" value="option2">
+						        No out-of-pocket cost to become a member
+						    </label>
+						    <label for="option-three" class="pure-checkbox">
+						        <input id="option-three" type="checkbox" name="favroritePart" value="option3">
+						        Discounts on other products and services (i.e. Home Energy Audit)
+						    </label>
+						    <label for="option-four" class="pure-checkbox">
+						        <input id="option-four" type="checkbox" name="favroritePart" value="option4">
+						        Tax breaks/rebates
+						    </label>
+						    <br>
+						    <label>7. What part of the Shared Profits Program do you have the most concern about?</label>
+						    <label for="option-one" class="pure-checkbox">
+						        <input id="option-one" type="checkbox" name="concernedPart" value="option1">
+						        5-year contractual agreement
+						    </label>
+
+						    <label for="option-two" class="pure-checkbox">
+						        <input id="option-two" type="checkbox" name="concernedPart" value="option2">
+						        Space availability for solar panel
+						    </label>
+						    <label for="option-three" class="pure-checkbox">
+						        <input id="option-three" type="checkbox" name="concernedPart" value="option3">
+						        Maintenance fee in buy-out program
+						    </label>
+						    <br>
+						    <label>8. Do you have any personal experience with residential Solar Panels?</label>
+						    <label for="option-one" class="pure-radio">
+						        <input id="option-one" type="radio" name="solarPanels" value="option1">
+						        I have solar panels on my home
+						    </label>
+
+						    <label for="option-two" class="pure-radio">
+						        <input id="option-two" type="radio" name="solarPanels" value="option2">
+						        I know someone with solar panels on their home
+						    </label>
+						    <label for="option-three" class="pure-radio">
+						        <input id="option-three" type="radio" name="solarPanels" value="option3">
+						        I have inquired about putting solar panels on my home
+						    </label>
+						    <label for="option-four" class="pure-radio">
+						        <input id="option-four" type="radio" name="solarPanels" value="option4">
+						        I have little/no experience with Solar panels but would like to learn more
+						    </label>
+						    <label for="option-five" class="pure-radio">
+						        <input id="option-five" type="radio" name="solarPanels" value="option5">
+						        I have no interest in learning about solar panels
+						    </label>
+						    <br>
+						   	
+						    <div id="survey-button-wrapper"><a href="#" id="submit-survey-button" onclick="submitSurvey();">Submit</a></div>
+						</form>
+
+					</div>
+					<div id="thank-you">Submitted! To aid us in providing solar to everyone, we ask you share this website and survey with as many people as you can. Thanks again for your help.</div>
+				</div>
+				
+			</div>
+		</div>
+
+	</body>
+</html>
