@@ -21,8 +21,8 @@ function sectionSize(){
 	document.body.height = windowHeight + 'px';
 	document.body.width = windowWidth + 'px';
 
-	document.getElementById("wrapper").style.width = "100%";
-	document.getElementById("wrapper").style.height = "100%";
+	document.getElementById("screen").style.width = "100%";
+	document.getElementById("screen").style.height = "100%";
 
 	document.getElementById("wrapper").style.width = "500%";
 	document.getElementById("wrapper").style.left = -1 * current * windowWidth + 'px';

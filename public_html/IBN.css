@@ -13,7 +13,7 @@ html, body{
 	margin: 0px;
 }
 body{
-	overflow: hidden;
+	overflow-x: hidden;
 	height: 100%;
 	width: 500%;
 	left: 0px;
@@ -196,7 +196,6 @@ a#login-button:hover{
 	left: 0px;
 	width: 500%;
 	height: 100%;
-	overflow: hidden;
 }
 #index{
 	position: absolute;
