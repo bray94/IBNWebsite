@@ -347,6 +347,12 @@ a#login-signup-link:hover{
 	background: rgba(0, 0, 0, .8);
 
 }
+#down-arrow{
+	width: 100px;
+	position: absolute;
+	bottom: 5px;
+	margin-left: 94px;
+}
 #survey > #column2{
 	float: left;
 	height: 100%;
@@ -359,6 +365,7 @@ a#login-signup-link:hover{
 	width: 69%;
 	height: 100%;
 	border-right: solid white 1px;
+	overflow: auto;
 }
 #column2 > #form{
 	width: 90%;
@@ -366,7 +373,6 @@ a#login-signup-link:hover{
 	color: white;
 	line-height: 1.3em;
 	height: auto;
-	overflow-y: auto; 
 }
 #survey-input{
 	width: 100%;
@@ -384,7 +390,7 @@ a#login-signup-link:hover{
 	position: relative;
 	width: 100px;
 	height: 50px;
-	margin: 50px auto 50px auto;
+	margin: 50px 0px 100px 60px;
 }
 #form > #survey-button-wrapper > #submit-survey-button{
 	background-color: white;

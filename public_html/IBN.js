@@ -94,6 +94,20 @@ function submitSurvey(){
 	$("#column2").fadeOut(500, function(){$("#thank-you").fadeIn(500);});
 }
 
+$("#column2").scroll(function(){
+    if ($("#column2").scrollTop() == $("#form").height()-$("#survey").height()){
+        alert("We're at the bottom of the page!!");
+    }
+});
+
+jQuery(function($) {
+    $('#column2').bind('scroll', function() {
+        if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
+            alert('end reached');
+        }
+    })
+});
+
 
 
 
