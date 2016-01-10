@@ -108,9 +108,6 @@ window.mobilecheck = function() {
   return check;
 }
 
-document.ontouchmove = function(event){
-    event.preventDefault();
-}
 
 
 
