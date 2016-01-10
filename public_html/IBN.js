@@ -91,8 +91,7 @@ function closeSurvey(){
 }
 
 function submitSurvey(){
-	$("#column2").fadeOut(500);
-	$("#column3").fadeOut(500, function(){$("#thank-you").fadeIn(500);});
+	$("#column2").fadeOut(500, function(){$("#thank-you").fadeIn(500);});
 }
 
 
