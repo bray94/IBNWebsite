@@ -21,7 +21,7 @@ if (!$db_selected) {
 }
 
 
-$firstName = mysql_real_escape_string($_POST['firstName']);
+$firstName = $_POST['firstName'];
 $lastName = mysql_real_escape_string($_POST['lastName']);
 $email = mysql_real_escape_string($_POST['email']);
 $zipCode = mysql_real_escape_string($_POST['zipCode']);
@@ -35,6 +35,8 @@ $concernedPart = mysql_real_escape_string($_POST['concernedPart']);
 $solarPanels = mysql_real_escape_string($_POST['solarPanels']);
 $heard = mysql_real_escape_string($_POST['heard']);
 $questions = mysql_real_escape_string($_POST['questions']);
+
+$firstName = mysql_real_escape_string($firstName);
 
 
 
