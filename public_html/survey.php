@@ -27,7 +27,7 @@ $email = mysql_real_escape_string($_POST['email']);
 $zipCode = mysql_real_escape_string($_POST['zipCode']);
 $homeowner = mysql_real_escape_string($_POST['homeowner']);
 $homeArchitecture = mysql_real_escape_string($_POST['homeArchitecture']);
-$energySatistfaction = mysql_real_escape_string($_POST['energySatistfaction']);
+$energySatisfaction = mysql_real_escape_string($_POST['energySatisfaction']);
 $interest = mysql_real_escape_string($_POST['interest']);
 $income = mysql_real_escape_string($_POST['income']);
 $favoritePart = mysql_real_escape_string($_POST['favoritePart']);
@@ -40,7 +40,7 @@ $firstName = mysql_real_escape_string($firstName);
 
 
 
-$sql = "INSERT INTO SurveyResults (firstName, lastName, email, zipCode, homeowner, homeArchitecture, energySatistfaction, interest, income, favoritePart, concernedPart, solarPanels, heard, questions) VALUES ('$firstName', '$lastName', '$email', '$zipCode', '$homeowner', '$homeArchitecture', '$energySatistfaction', '$interest', '$income', '$favoritePart', '$concernedPart', '$solarPanels', '$heard', '$questions')";
+$sql = "INSERT INTO SurveyResults (firstName, lastName, email, zipCode, homeowner, homeArchitecture, energySatisfaction, interest, income, favoritePart, concernedPart, solarPanels, heard, questions) VALUES ('$firstName', '$lastName', '$email', '$zipCode', '$homeowner', '$homeArchitecture', '$energySatistfaction', '$interest', '$income', '$favoritePart', '$concernedPart', '$solarPanels', '$heard', '$questions')";
 
 
 if (!mysql_query($sql)) {
