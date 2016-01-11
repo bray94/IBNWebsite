@@ -216,13 +216,10 @@ a.navlink:link, a.navlink:visited{
 #survey-input{
 	width: 100%;
 }
-#form > #survey-button-wrapper{
+#form > #submit-survey-button{
 	position: relative;
-	width: 140px;
-	margin: 50px 0px 100px -50px;
 	left: 50%;
-}
-#form > #survey-button-wrapper > #submit-survey-button{
+	margin: 20px auto 50px -70px;
 	background-color: white;
 	opacity: .9;
 	color: black;
@@ -266,26 +263,7 @@ a.navlink:link, a.navlink:visited{
 #survey-text > .header{
 	font-size: 30px;
 }
-#quote{
-	margin: 100px 25px;
-	position: relative;
-	float: left;
-	width: 400px;
-	min-width: 30%;
-	max-width: 95%;
-	text-align: middle;
-	line-height: 2em;
-
-}
-#survey-text > #button-wrapper{
-	margin: 100px 25px;
-	position: relative;
-	float: left;
-	width: 100%;
-	min-width: 30%;
-	max-width: 95%;
-}
-#survey-text > #button-wrapper > #button{
+#survey-text > #button{
 	background-color: black;
 	opacity: .9;
 	color: white;
@@ -296,8 +274,21 @@ a.navlink:link, a.navlink:visited{
 	width: 150px;
 	font-size: 20px;
 	padding: 10px 20px;
-	margin: auto auto auto -75px;
+	margin: 50px auto 50px -75px;
 	left: 50%;
+	cursor: pointer;
+}
+#quote{
+	margin: 50px auto 100px 25px;
+	position: relative;
+	float: left;
+	width: 400px;
+	min-width: 30%;
+	max-width: 95%;
+	text-align: center;
+	line-height: 2em;
+	font-size: 25px;
+
 }
 
 /* -----------Audits------------ */
