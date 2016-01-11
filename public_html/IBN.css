@@ -105,16 +105,15 @@ p{
 #index-text > #header{
 	font-size: 100px;
 	width: 100%;
-	position: absolute;
+	position: relative;
 	text-align: center;
-	top: 200px;
+	top: 20%;
 	color: white;
 	font-family: "Helvetica Neue Ultra Light";
-	font-weight: bold;
 }
 #nav-bar{
-	position: absolute;
-	top: 500px;
+	position: relative;
+	margin-top: 200px;
 	width: 100%;
 }
 #nav-wrapper{
@@ -164,7 +163,6 @@ a.navlink:link, a.navlink:visited{
 	top: 200px;
 	color: white;
 	font-family: "Helvetica Neue Ultra Light";
-	font-weight: bold;
 	left: 50%;
 	margin-left: -37.5%;
 }
@@ -330,7 +328,6 @@ a.navlink:link, a.navlink:visited{
 	top: 200px;
 	color: white;
 	font-family: "Helvetica Neue Ultra Light";
-	font-weight: bold;
 	left: 50%;
 	margin-left: -37.5%;
 }
@@ -369,7 +366,6 @@ a.navlink:link, a.navlink:visited{
 	top: 200px;
 	color: white;
 	font-family: "Helvetica Neue Ultra Light";
-	font-weight: bold;
 	left: 50%;
 	margin-left: -37.5%;
 }
@@ -409,7 +405,6 @@ a.navlink:link, a.navlink:visited{
 	top: 200px;
 	color: white;
 	font-family: "Helvetica Neue Ultra Light";
-	font-weight: bold;
 	left: 50%;
 	margin-left: -37.5%;
 }
