@@ -37,7 +37,7 @@ $sql = "INSERT INTO Survey Results (firstName, lastName, email, zipCode, homeown
 
 
 
-if (!mysql_query($sqltest)) {
+if (!mysql_query($sql)) {
 	die('Error: ' . mysql_error());
 }
 
