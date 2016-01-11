@@ -59,10 +59,11 @@ function sectionSize(){
 	var windowWidth = window.innerWidth;
 
 	if(windowHeight > windowWidth){
-		$(".currentHeader").css({"width": "100%" , "height" : "20%"});
+		$(".currentHeader").css({"width": "100%" , "height" : "40%"});
 	}
-	
-
+	else{
+		$(".currentHeader").css({"width": "100%" , "height" : "100%"});
+	}
 }
 
 var signInFlag = false;
