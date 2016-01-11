@@ -21,30 +21,27 @@ if (!$db_selected) {
 }
 
 
-$firstName = $_POST['firstName'];
-$lastName = $_POST['lastName'];
-$email = $_POST['email'];
-$zipCode = $_POST['zipCode'];
-$homeowner = $_POST['homeowner'];
-$homeArchitecture = $_POST['homeArchitecture'];
-$energySatistfaction = $_POST['energySatistfaction'];
-$interest = $_POST['interest'];
-$income = $_POST['income'];
-$favoritePart = $_POST['favoritePart'];
-$concernedPart = $_POST['concernedPart'];
-$solarPanels = $_POST['solarPanels'];
-$heard = $_POST['heard'];
-$questions = $_POST['questions'];
+$firstName = mysql_real_escape_string($_POST['firstName'];
+$lastName = mysql_real_escape_string($_POST['lastName'];
+$email = mysql_real_escape_string($_POST['email'];
+$zipCode = mysql_real_escape_string($_POST['zipCode'];
+$homeowner = mysql_real_escape_string($_POST['homeowner'];
+$homeArchitecture = mysql_real_escape_string($_POST['homeArchitecture'];
+$energySatistfaction = mysql_real_escape_string($_POST['energySatistfaction'];
+$interest = mysql_real_escape_string($_POST['interest'];
+$income = mysql_real_escape_string($_POST['income'];
+$favoritePart = mysql_real_escape_string($_POST['favoritePart'];
+$concernedPart = mysql_real_escape_string($_POST['concernedPart'];
+$solarPanels = mysql_real_escape_string($_POST['solarPanels'];
+$heard = mysql_real_escape_string($_POST['heard'];
+$questions = mysql_real_escape_string($_POST['questions'];
 
-$brayden = 'Brayden';
-$brayden = mysql_real_escape_string($brayden);
+
 
 $sql = "INSERT INTO SurveyResults (firstName, lastName, email, zipCode, homeowner, homeArchitecture, energySatistfaction, interest, income, favoritePart, concernedPart, solarPanels, heard, questions) VALUES ('$firstName', '$lastName', '$email', '$zipCode', '$homeowner', '$homeArchitecture', '$energySatistfaction', '$interest', '$income', '$favoritePart', '$concernedPart', '$solarPanels', '$heard', '$questions')";
 
-echo '$brayden';
-$sqltest = "INSERT INTO SurveyResults (firstName) VALUES ('$brayden')";
 
-if (!mysql_query($sqltest)) {
+if (!mysql_query($sql)) {
 	die('Error: ' . mysql_error());
 }
 
