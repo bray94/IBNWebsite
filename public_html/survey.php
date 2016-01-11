@@ -18,10 +18,6 @@ $db_selected = mysql_select_db(DB_NAME, $link);
 
 if (!$db_selected) {
 	die(DB_NAME . ' not useable: ' . mysql_error());
-}
-
-echo "You are connected";
-
 $firstName = $_POST['firstName'];
 $lastName = $_POST['lastName'];
 $email = $_POST['email'];
@@ -37,14 +33,16 @@ $solarPanels = $_POST['solarPanels'];
 $heard = $_POST['heard'];
 $questions = $_POST['questions'];
 
-// $sql = "INSERT INTO Survey Results (firstName, lastName, email, zipCode, homeowner, homeArchitecture, energySatistfaction, interest, income, favoritePart, concernedPart, solarPanels, heard, questions) VALUES ('$firstName', '$lastName', '$email', '$zipCode', '$homeowner', '$homeArchitecture', '$energySatistfaction', '$interest', '$income', '$favoritePart', '$concernedPart', '$solarPanels', '$heard', '$questions')";
+$sql = "INSERT INTO Survey Results (firstName, lastName, email, zipCode, homeowner, homeArchitecture, energySatistfaction, interest, income, favoritePart, concernedPart, solarPanels, heard, questions) VALUES ('$firstName', '$lastName', '$email', '$zipCode', '$homeowner', '$homeArchitecture', '$energySatistfaction', '$interest', '$income', '$favoritePart', '$concernedPart', '$solarPanels', '$heard', '$questions')";
 
-$sqltest = "INSERT INTO SurveyResults (firstName) VALUES ('Brayden')";
+
 
 if (!mysql_query($sqltest)) {
 	die('Error: ' . mysql_error());
 }
 
 mysql_close($link);
-echo "closed";
+echo "<script>
+             window.history.go(-1);
+     </script>";
 ?>
