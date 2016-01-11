@@ -79,6 +79,12 @@ p{
 	left: 50%;
 }
 
+#construction{
+	font-size: 60px;
+	width: 60%;
+	margin: 200px 20%;
+}
+
 
 /* -----------Index------------ */
 
@@ -378,8 +384,9 @@ a.navlink:link, a.navlink:visited{
 }
 #faq-page{
 	position: relative;
-	height: 1000px;
+	height: auto;
 	left: 0px;
+	overflow: auto;
 }
 
 /* -----------Support------------ */
@@ -417,8 +424,9 @@ a.navlink:link, a.navlink:visited{
 }
 #support-page{
 	position: relative;
-	height: 1000px;
+	height: auto;
 	left: 0px;
+	overflow: auto;
 }
 
 /*---------- Sign in ----------*/
