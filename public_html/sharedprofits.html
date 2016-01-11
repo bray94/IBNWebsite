@@ -9,57 +9,30 @@
 
 	</head>
 
-	<body onload="sectionSize();">
-		<div class = "topbar" >
+	<body onload="init();">
+		<div id = "topbar" >
 			<div class="linkswrapper">
-				<div class="name"><a href="index.html">IBN</a></div>
-				<div class="toplink"><a href="sharedprofits.html" class="toplink">Shared Profits</a></div>
-				<div class="toplink"><a href="audits.html">Audits</a></div>
-				<div class="toplink"><a href="faq.html">FAQ</a></div>
-				<div class="toplink"><a href="support.html">Support</a></div>
-				<div class="myibn"><a href="#" onclick="myIbn();">My IBN</a></div>
+				<a href="index.html" class ="toplink">IBN</a>
+				<a href="sharedprofits.html"class="toplink">Shared Profits</a>
+				<a href="audits.html" class="toplink">Audits</a>
+				<a href="faq.html" class="toplink">FAQ</a>
+				<a href="support.html" class="toplink">Support</a>
+				<a href="myibn.html" class="toplink">My IBN</a>
 			</div>
-		</div>
+		</div>		
 		<div id="shared-profits-header">
-			<div id="shared-profits-text">
+			<div id="shared-profits-header-text">
 				<div id="header">What if you could get paid for reducing your carbon footprint?</div>
-				<p>
+				<!-- <p>
 					Joining our Shared Profits Program&trade; allows you to get paid for going solar. How? By joining the shared profits program you can take advantage of tax incentives, energy refund checks, and other financial benefits. Simply give us your consent to allow IBN to use your roof and/or backyard to collect solar power. That's it. All of this with no cost or risk to you.
 				</p>
 
-				<div id="button-wrapper"><a href="#" id="button" onclick="survey();">Interested? Learn More</a></div>
+				<div id="button-wrapper"><a href="#" id="button" onclick="survey();">Interested? Learn More</a></div> -->
 			</div>
 			<div id="survey-wrapper">
 				<div id="survey">
-					<div id="column1">
-						<p>
-							The Shared Profits Program in a Nutshell:
-						</p>
-						<ul>
-							<li>We pay for the solar panel and installation, so there is no out-of-pocket cost for you to become a member.</li> 
-							<li>Members are guaranteed a yearly Energy Refund Check up to 50% of the solar net profit (~$300-$800). </li>
-							<li>Energy Refund Check yearly amount is dependent on cost of electricity, size of installation, and geographic location. </li>
-							<li>Solar panel buy-out option for members of over 5 consecutive years, which allows homeowners to get 100% of the solar net profit minus a small maintenance fee.</li>
-							<li>Members get a cash signing bonus and/or State Tax Rebate for enrollment in the program.</li>
-							<li>Members receive reduced prices, up to 50% off, for home energy audits and other IBN sponsored products/services.</li>
-							<li>Emergency Solar energy will be available during times of power outage.</li>
-							<li>Does not affect relationship with utility company or utility bill.</li>
-							<li>By indicating that you're interested in the Shared Profits Program on the survey to the right you are <span style="font-weight: bold; text-decoration: underline;">NOT required</span> to enroll in the program.</li>
-						</ul>
-						<p>
-							Requirements for Shared Profits Program:
-						</p>
-						<ul>
-							<li>Must be an homeowner</li>
-							<li>Must have roof or yard space available for solar panel</li>
-							<li>Sign 6-year contract for membership</li>
-							<li>No credit scrore required</li>
-						</ul>
-						<p>
-							<span style="font-style: italic;">"It is important that taxpayers like you, homeowners and renters alike, show interest in this program by filling out the survey in order to raise the capital to jumpstart this new program. We thank you for your time and encourage you to share this website with friends, family, and colleagues so we can ensure Solar investment opportunities for everyone."</span> - Eric Seabron CEO
-						</p>
-					</div>
-					<div id="column2">
+					<img src="Images/white-close.png" id="close" onclick="closeSurvey(); return false;">
+					<div id="questions">
 						<img src="Images/down-arrow.png" id="down-arrow">
 						<form class="pure-form pure-form-stacked" id ="form">
 							<br>
@@ -184,7 +157,7 @@
 						    <label>7. What part of the Shared Profits Program do you have the most concern about?</label>
 						    <label for="option-one" class="pure-checkbox">
 						        <input id="option-one" type="checkbox" name="concernedPart" value="option1">
-						        5-year contractual agreement
+						        6-year contractual agreement
 						    </label>
 
 						    <label for="option-two" class="pure-checkbox">
@@ -220,17 +193,58 @@
 						    </label>
 						    <br>
 						   	
-						    <div id="survey-button-wrapper"><a href="#" id="submit-survey-button" onclick="submitSurvey();">Submit</a></div>
+						    <div id="survey-button-wrapper"><div id="submit-survey-button" onclick="submitSurvey();">Submit</div></div>
 						</form>
 
 					</div>
 					<div id="thank-you">Submitted! To aid us in providing solar to everyone, we ask you share this website and survey with as many people as you can. Thanks again for your help.</div>
 				</div>
 			</div>
+			<img src="Images/down-arrow.png" id="header-arrow">
 		</div>
 		<div id="shared-profits-page">
-			
+			<div id="survey-text">
+				<div class="header">
+					The Shared Profits Program in a Nutshell:
+				</div>
+				<ul>
+					<li>We pay for the solar panel and installation, so there is no out-of-pocket cost for you to become a member.</li> 
+					<li>Members are guaranteed a yearly Energy Refund Check up to 50% of the solar net profit (~$300-$800). </li>
+					<li>Energy Refund Check yearly amount is dependent on cost of electricity, size of installation, and geographic location. </li>
+					<li>Solar panel buy-out option for members of over 5 consecutive years, which allows homeowners to get 100% of the solar net profit minus a small maintenance fee.</li>
+					<li>Members get a cash signing bonus and/or State Tax Rebate for enrollment in the program.</li>
+					<li>Members receive reduced prices, up to 50% off, for home energy audits and other IBN sponsored products/services.</li>
+					<li>Emergency Solar energy will be available during times of power outage.</li>
+					<li>Does not affect relationship with utility company or utility bill.</li>
+					<li>By indicating that you're interested in the Shared Profits Program on the survey to the right you are <span style="font-weight: bold; text-decoration: underline;">NOT required</span> to enroll in the program.</li>
+				</ul>
+				<div class="header">
+					Requirements for Shared Profits Program:
+				</div>
+				<ul>
+					<li>Must be an homeowner</li>
+					<li>Must have roof or yard space available for solar panel</li>
+					<li>Sign 6-year contract for membership</li>
+					<li>No credit scrore required</li>
+				</ul>
+
+				<div id="button-wrapper"><a href="#" id="button" onclick="survey(); return false;">Interested? Take our survey.</a></div>
+			</div>
+			<div id="quote">
+				<span style="font-style: italic;">"It is important that taxpayers like you, homeowners and renters alike, show interest in this program by filling out the survey in order to raise the capital to jumpstart this new program. We thank you for your time and encourage you to share this website with friends, family, and colleagues so we can ensure Solar investment opportunities for everyone."</span> - Eric Seabron CEO
+			</div> 
+			<div class="bottombar">
+				<div class="bottombar-wrapper">
+					<div class="bottomlink">Inspired by Nature &copy; 2016</div>
+					<a href="" class="bottomlink vertical-seperator">Legal</a>
+					<a href="" class="bottomlink vertical-seperator">Careers</a>
+					<a href="" class="bottomlink vertical-seperator">Contact</a>
+				</div>
+			</div>
 		</div>
+
+		<script type="text/javascript" src = "IBN.js"></script>
+		<script type="text/javascript" src = "jquery.js"></script>
 
 	</body>
 </html>

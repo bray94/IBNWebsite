@@ -7,27 +7,40 @@
 
 	</head>
 
-	<body onload="sectionSize();">
-		<div class = "topbar" >
+	<body onload="init();">
+		<div id = "topbar" >
 			<div class="linkswrapper">
-				<div class="name"><a href="index.html">IBN</a></div>
-				<div class="toplink"><a href="sharedprofits.html">Shared Profits</a></div>
-				<div class="toplink"><a href="audits.html">Audits</a></div>
-				<div class="toplink"><a href="faq.html">FAQ</a></div>
-				<div class="toplink"><a href="support.html">Support</a></div>
-				<div class="myibn"><a href="#" onclick="myIbn();">My IBN</a></div>
+				<a href="index.html" class ="toplink">IBN</a>
+				<a href="sharedprofits.html"class="toplink">Shared Profits</a>
+				<a href="audits.html" class="toplink">Audits</a>
+				<a href="faq.html" class="toplink">FAQ</a>
+				<a href="support.html" class="toplink">Support</a>
+				<a href="myibn.html" class="toplink">My IBN</a>
 			</div>
-		</div>
+		</div>		
 		<div id="support-header">
-			<div id="support-text">
+			<div id="support-header-text">
 				<div id="header">Unfortunately things don't always work perfect.</div>
-				<p> Having trouble with your equipment? Can't login to your account? We know how frustrating it can be when something just doesn't seem to work the way it's suppose to, and we will do everything in our power to fix it. Our customers are the most important part of our business. Without you, we can't do our part to help give solar to everyone who wants it. We will get in touch with you as quickly as possible and rescue you from being lost at sea.
-				</p>
-				<div id="button-wrapper"><a href="" id="button">Support</a></div>
+				<!-- <p> Having trouble with your equipment? Can't login to your account? We know how frustrating it can be when something just doesn't seem to work the way it's suppose to, and we will do everything in our power to fix it. Our customers are the most important part of our business. Without you, we can't do our part to help give solar to everyone who wants it. We will get in touch with you as quickly as possible and rescue you from being lost at sea.
+				</p> -->
 			</div>
+			<img src="Images/down-arrow.png" id="header-arrow">
 		</div>
 		<div id="support-page">
 			
+
+			<div class="bottombar">
+				<div class="bottombar-wrapper">
+					<div class="bottomlink">Inspired by Nature &copy; 2016</div>
+					<a href="" class="bottomlink vertical-seperator">Legal</a>
+					<a href="" class="bottomlink vertical-seperator">Careers</a>
+					<a href="" class="bottomlink vertical-seperator">Contact</a>
+				</div>
+			</div>
 		</div>
+
+
+		<script type="text/javascript" src = "IBN.js"></script>
+		<script type="text/javascript" src = "jquery.js"></script>
 	</body>
 </html>

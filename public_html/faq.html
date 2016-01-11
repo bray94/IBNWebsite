@@ -7,27 +7,39 @@
 
 	</head>
 
-	<body onload="sectionSize();">
-		<div class = "topbar" >
+	<body onload="init();">
+		<div id = "topbar" >
 			<div class="linkswrapper">
-				<div class="name"><a href="index.html">IBN</a></div>
-				<div class="toplink"><a href="sharedprofits.html">Shared Profits</a></div>
-				<div class="toplink"><a href="audits.html">Audits</a></div>
-				<div class="toplink"><a href="faq.html">FAQ</a></div>
-				<div class="toplink"><a href="support.html">Support</a></div>
-				<div class="myibn"><a href="#" onclick="myIbn();">My IBN</a></div>
+				<a href="index.html" class ="toplink">IBN</a>
+				<a href="sharedprofits.html"class="toplink">Shared Profits</a>
+				<a href="audits.html" class="toplink">Audits</a>
+				<a href="faq.html" class="toplink">FAQ</a>
+				<a href="support.html" class="toplink">Support</a>
+				<a href="myibn.html" class="toplink">My IBN</a>
 			</div>
-		</div>
+		</div>		
 		<div id="faq-header">
-			<div id="faq-text">
+			<div id="faq-header-text">
 				<div id="header">The energy market is confusing.</div>
-				<p> Is my house in the right location for solar panels? What is photovoltaic efficiency? Am I elegible for a tax credit? It's difficult to know all the answers. Let us get you up to speed. We have researched all of the questions others have asked us along our journey, as well as the topics we were confused with ourselves. There is a lot to know when it comes to making your house sustainable. From what really is using most of your energy to permits required to install solar panels on your roof. We have tried to answer all of these and more as simply as we can, without all of the unnecessary jargon. Let us help clear the fog between you and your brighter future.
-				</p>
-				<div id="button-wrapper"><a href="" id="button">Questions</a></div>
+				<!-- <p> Is my house in the right location for solar panels? What is photovoltaic efficiency? Am I elegible for a tax credit? It's difficult to know all the answers. Let us get you up to speed. We have researched all of the questions others have asked us along our journey, as well as the topics we were confused with ourselves. There is a lot to know when it comes to making your house sustainable. From what really is using most of your energy to permits required to install solar panels on your roof. We have tried to answer all of these and more as simply as we can, without all of the unnecessary jargon. Let us help clear the fog between you and your brighter future.
+				</p> -->
 			</div>
+			<img src="Images/down-arrow.png" id="header-arrow">
 		</div>
 		<div id="faq-page">
 			
+
+			<div class="bottombar">
+				<div class="bottombar-wrapper">
+					<div class="bottomlink">Inspired by Nature &copy; 2016</div>
+					<a href="" class="bottomlink vertical-seperator">Legal</a>
+					<a href="" class="bottomlink vertical-seperator">Careers</a>
+					<a href="" class="bottomlink vertical-seperator">Contact</a>
+				</div>
+			</div>
 		</div>
+
+		<script type="text/javascript" src = "IBN.js"></script>
+		<script type="text/javascript" src = "jquery.js"></script>
 	</body>
 </html>
