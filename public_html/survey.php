@@ -36,7 +36,7 @@ $solarPanels = $_POST['solarPanels'];
 $heard = $_POST['heard'];
 $questions = $_POST['questions'];
 
-$brayden = "Brayden";
+$brayden = mysql_real_escape_string("Brayden");
 
 $sql = "INSERT INTO SurveyResults (firstName, lastName, email, zipCode, homeowner, homeArchitecture, energySatistfaction, interest, income, favoritePart, concernedPart, solarPanels, heard, questions) VALUES ('$firstName', '$lastName', '$email', '$zipCode', '$homeowner', '$homeArchitecture', '$energySatistfaction', '$interest', '$income', '$favoritePart', '$concernedPart', '$solarPanels', '$heard', '$questions')";
 
