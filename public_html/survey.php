@@ -42,7 +42,7 @@ $brayden = mysql_real_escape_string($brayden);
 $sql = "INSERT INTO SurveyResults (firstName, lastName, email, zipCode, homeowner, homeArchitecture, energySatistfaction, interest, income, favoritePart, concernedPart, solarPanels, heard, questions) VALUES ('$firstName', '$lastName', '$email', '$zipCode', '$homeowner', '$homeArchitecture', '$energySatistfaction', '$interest', '$income', '$favoritePart', '$concernedPart', '$solarPanels', '$heard', '$questions')";
 
 echo '$brayden';
-$sqltest = "INSERT INTO SurveyResults (firstName) VALUES ('&s')" ;
+$sqltest = "INSERT INTO SurveyResults (firstName) VALUES ('$brayden')";
 
 if (!mysql_query($sqltest)) {
 	die('Error: ' . mysql_error());
