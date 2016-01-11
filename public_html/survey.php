@@ -39,6 +39,8 @@ $questions = $_POST['questions'];
 
 $sql = "INSERT INTO Survey Results (firstName, lastName, email, zipCode, homeowner, homeArchitecture, energySatistfaction, interest, income, favoritePart, concernedPart, solarPanels, heard, questions) VALUES ('$firstName', '$lastName', '$email', '$zipCode', '$homeowner', '$homeArchitecture', '$energySatistfaction', '$interest', '$income', '$favoritePart', '$concernedPart', '$solarPanels', '$heard', '$questions')";
 
+$sqltest = "INSERT INTO Survey Results (firstName) VALUES ('Brayden')";
+
 if (!mysql_query($sql)) {
 	die('Error: ' . mysql_error());
 }
