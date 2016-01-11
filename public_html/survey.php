@@ -9,6 +9,8 @@ define('DB_HOST', 'localhost');
 
 $link = mysql_connect(DB_HOST, DB_USER, DB_PASSWORD);
 
+echo "You are connected";
+
 if (!$link) {
 	die('Could not connect: ' , mysql_error());
 }
