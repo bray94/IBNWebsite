@@ -69,11 +69,13 @@ function sectionSize(){
 		$(".currentHeader").css({"width": "100%" , "height" : "40%"});
 		$("#index").css("background-size", "200% 100%");
 		$("#myibn").css("background-size", "200% 100%");
+		$("a.navlink:link, a.navlink:visited").css("font-size", "60px");
 	}
 	else{
 		$(".currentHeader").css({"width": "100%" , "height" : "100%"});
 		$("#index").css("background-size", "100% 100%");
 		$("#myibn").css("background-size", "100% 100%");
+		$("a.navlink:link, a.navlink:visited").css("font-size", "18px");
 	}
 }
 
