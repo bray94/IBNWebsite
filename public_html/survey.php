@@ -9,36 +9,35 @@ define('DB_HOST', 'localhost');
 
 $link = mysql_connect(DB_HOST, DB_USER, DB_PASSWORD);
 
-echo "You are connected";
 
 if (!$link) {
-	die('Could not connect: ' , mysql_error());
+	die('Could not connect: ' . mysql_error());
 }
 
 $db_selected = mysql_select_db(DB_NAME, $link);
 
 if (!$db_selected) {
-	die(DB_NAME , ' not useable: ' , mysql_error());
+	die(DB_NAME . ' not useable: ' . mysql_error());
 }
 
 echo "You are connected";
 
-// $firstName = $_POST['firstName'];
-// $lastName = $_POST['lastName'];
-// $email = $_POST['email'];
-// $zipCode = $_POST['zipCode'];
-// $homeowner = $_POST['homeowner'];
-// $homeArchitecture = $_POST['homeArchitecture'];
-// $energySatistfaction = $_POST['energySatistfaction'];
-// $interest = $_POST['interest'];
-// $income = $_POST['income'];
-// $favoritePart = $_POST['favoritePart'];
-// $concernedPart = $_POST['concernedPart'];
-// $solarPanels = $_POST['solarPanels'];
-// $heard = $_POST['heard'];
-// $questions = $_POST['questions'];
+$firstName = $_POST['firstName'];
+$lastName = $_POST['lastName'];
+$email = $_POST['email'];
+$zipCode = $_POST['zipCode'];
+$homeowner = $_POST['homeowner'];
+$homeArchitecture = $_POST['homeArchitecture'];
+$energySatistfaction = $_POST['energySatistfaction'];
+$interest = $_POST['interest'];
+$income = $_POST['income'];
+$favoritePart = $_POST['favoritePart'];
+$concernedPart = $_POST['concernedPart'];
+$solarPanels = $_POST['solarPanels'];
+$heard = $_POST['heard'];
+$questions = $_POST['questions'];
 
-// $sql = "INSERT INTO Survey Results (firstName, lastName, email, zipCode, homeowner, homeArchitecture, energySatistfaction, interest, income, favoritePart, concernedPart, solarPanels, heard, questions) VALUES ('$firstName', '$lastName', '$email', '$zipCode', '$homeowner', '$homeArchitecture', '$energySatistfaction', '$interest', '$income', '$favoritePart', '$concernedPart', '$solarPanels', '$heard', '$questions')";
+$sql = "INSERT INTO Survey Results (firstName, lastName, email, zipCode, homeowner, homeArchitecture, energySatistfaction, interest, income, favoritePart, concernedPart, solarPanels, heard, questions) VALUES ('$firstName', '$lastName', '$email', '$zipCode', '$homeowner', '$homeArchitecture', '$energySatistfaction', '$interest', '$income', '$favoritePart', '$concernedPart', '$solarPanels', '$heard', '$questions')";
 
-// mysql_close($link);
+mysql_close($link);
 ?>
