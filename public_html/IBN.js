@@ -8,19 +8,21 @@ var sections = ["index", "shared-profits", "audits", "faq", "support"];
 var windowHeight = window.innerHeight;
 var windowWidth = window.innerWidth;
 
-window.addEventListener("resize", function(){
-	sectionSize();
-}, false);
+
 
 function init(){
 	topBar();
 	questions();
 	sectionSize();
 
+	window.addEventListener("resize", function(){
+	sectionSize();
+	}, false);
+
 	// For mobile
 	window.addEventListener(orientationEvent, function(){
 		sectionSize();
-	});
+	}, false);
 }
 
 function topBar(){
