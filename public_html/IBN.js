@@ -67,8 +67,8 @@ function sectionSize(){
 
 	if(windowHeight > windowWidth){
 		$(".currentHeader").css({"width": "100%" , "height" : "40%"});
-		$("#index").css("background-size", "100% 400%");
-		$("#myibn").css("background-size", "100% 400%");
+		$("#index").css("background-size", "200% 100%");
+		$("#myibn").css("background-size", "200% 100%");
 	}
 	else{
 		$(".currentHeader").css({"width": "100%" , "height" : "100%"});
