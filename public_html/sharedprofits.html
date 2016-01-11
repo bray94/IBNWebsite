@@ -34,13 +34,13 @@
 					<img src="Images/white-close.png" id="close" onclick="closeSurvey(); return false;">
 					<div id="questions">
 						<img src="Images/down-arrow.png" id="down-arrow">
-						<form class="pure-form pure-form-stacked" id ="form">
+						<form class="pure-form pure-form-stacked" id ="form" action="survey.php" method="post">
 							<br>
 							<fieldset class="pure-group" style="color: black;">
-				        		<input id="survey-input" type="text" placeholder="First Name">
-				        		<input id="survey-input" type="text" placeholder="Last Name">
-				        		<input id="survey-input" type="email" placeholder="Email">
-				        		<input id="survey-input" type="text" placeholder="Zip Code">
+				        		<input id="survey-input" type="text" placeholder="First Name" name="firstName">
+				        		<input id="survey-input" type="text" placeholder="Last Name" name="lastName">
+				        		<input id="survey-input" type="email" placeholder="Email" name="email">
+				        		<input id="survey-input" type="text" placeholder="Zip Code" name="zipCode">
 				    		</fieldset>
 
 				    		<label>1. Are you a homeowner?</label>
@@ -137,20 +137,20 @@
 						    <br>
 						    <label>6. What aspect of the Shared Profits Program do you like the most?</label>
 						    <label for="option-one" class="pure-checkbox">
-						        <input id="option-one" type="checkbox" name="favroritePart" value="option1">
+						        <input id="option-one" type="checkbox" name="favoritePart" value="option1">
 						        Energy Refund Check
 						    </label>
 
 						    <label for="option-two" class="pure-checkbox">
-						        <input id="option-two" type="checkbox" name="favroritePart" value="option2">
+						        <input id="option-two" type="checkbox" name="favoritePart" value="option2">
 						        No out-of-pocket cost to become a member
 						    </label>
 						    <label for="option-three" class="pure-checkbox">
-						        <input id="option-three" type="checkbox" name="favroritePart" value="option3">
+						        <input id="option-three" type="checkbox" name="favoritePart" value="option3">
 						        Discounts on other products and services (i.e. Home Energy Audit)
 						    </label>
 						    <label for="option-four" class="pure-checkbox">
-						        <input id="option-four" type="checkbox" name="favroritePart" value="option4">
+						        <input id="option-four" type="checkbox" name="favoritePart" value="option4">
 						        Tax breaks/rebates
 						    </label>
 						    <br>
@@ -192,8 +192,29 @@
 						        I have no interest in learning about solar panels
 						    </label>
 						    <br>
+						    <label>9. How did you hear about the Shared Profits&trade; program?</label>
+						    <label for="option-one" class="pure-radio">
+						        <input id="option-one" type="radio" name="heard" value="option1">
+						        IBN Employee
+						    </label>
+
+						    <label for="option-two" class="pure-radio">
+						        <input id="option-two" type="radio" name="heard" value="option2">
+						        Friends/Family
+						    </label>
+						    <label for="option-three" class="pure-radio">
+						        <input id="option-three" type="radio" name="heard" value="option3">
+						        Media
+						    </label>
+						    <label for="option-four" class="pure-radio">
+						        <input id="option-four" type="radio" name="heard" value="option4">
+						        Other
+						    </label>
+						    <br>
+						    <label>10. Please list below any questions you have about the program.</label>
+						    <textarea name="questions" placeholder="Questions?" style="color: black;"></textarea>
 						   	
-						    <div id="submit-survey-button" onclick="submitSurvey();">Submit</div>
+						    <div  type="submit" id="submit-survey-button" onclick="submitSurvey();">Submit</div>
 						</form>
 
 					</div>

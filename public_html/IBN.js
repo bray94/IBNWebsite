@@ -112,6 +112,7 @@ function closeSurvey(){
 }
 
 function submitSurvey(){
+	document.getElementById("form").submit();
 	$("#questions").fadeOut(500, function(){$("#thank-you").fadeIn(500);});
 }
 
