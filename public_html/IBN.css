@@ -12,6 +12,7 @@ html, body{
 	padding: 0px;
 	margin: 0px;
 	left: 0px;
+	right: 0px;
 
 }
 #topbar{
@@ -251,7 +252,6 @@ a.navlink:link, a.navlink:visited{
 #survey-text{
 	margin: 50px 25px;
 	position: relative;
-	width: 800px;
 	min-height: 60%;
 	max-width: 95%;
 	float: left;
@@ -283,7 +283,6 @@ a.navlink:link, a.navlink:visited{
 	margin: 50px auto 100px 25px;
 	position: relative;
 	float: left;
-	width: 400px;
 	min-width: 30%;
 	max-width: 95%;
 	text-align: center;
