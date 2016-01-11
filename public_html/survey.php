@@ -20,7 +20,6 @@ if (!$db_selected) {
 	die(DB_NAME . ' not useable: ' . mysql_error());
 }
 
-echo "You are connected";
 
 $firstName = $_POST['firstName'];
 $lastName = $_POST['lastName'];
@@ -41,12 +40,12 @@ $brayden = "Brayden";
 
 $sql = "INSERT INTO SurveyResults (firstName, lastName, email, zipCode, homeowner, homeArchitecture, energySatistfaction, interest, income, favoritePart, concernedPart, solarPanels, heard, questions) VALUES ('$firstName', '$lastName', '$email', '$zipCode', '$homeowner', '$homeArchitecture', '$energySatistfaction', '$interest', '$income', '$favoritePart', '$concernedPart', '$solarPanels', '$heard', '$questions')";
 
+echo '$brayden';
 $sqltest = "INSERT INTO SurveyResults (firstName) VALUES ('$brayden')";
 
 if (!mysql_query($sqltest)) {
 	die('Error: ' . mysql_error());
 }
 
-mysql_close($link);
-echo "closed";
+mysql_close($link);\
 ?>
