@@ -21,20 +21,20 @@ if (!$db_selected) {
 }
 
 
-$firstName = mysql_real_escape_string($_POST['firstName'];
-$lastName = mysql_real_escape_string($_POST['lastName'];
-$email = mysql_real_escape_string($_POST['email'];
-$zipCode = mysql_real_escape_string($_POST['zipCode'];
-$homeowner = mysql_real_escape_string($_POST['homeowner'];
-$homeArchitecture = mysql_real_escape_string($_POST['homeArchitecture'];
-$energySatistfaction = mysql_real_escape_string($_POST['energySatistfaction'];
-$interest = mysql_real_escape_string($_POST['interest'];
-$income = mysql_real_escape_string($_POST['income'];
-$favoritePart = mysql_real_escape_string($_POST['favoritePart'];
-$concernedPart = mysql_real_escape_string($_POST['concernedPart'];
-$solarPanels = mysql_real_escape_string($_POST['solarPanels'];
-$heard = mysql_real_escape_string($_POST['heard'];
-$questions = mysql_real_escape_string($_POST['questions'];
+$firstName = mysql_real_escape_string($_POST['firstName']);
+$lastName = mysql_real_escape_string($_POST['lastName']);
+$email = mysql_real_escape_string($_POST['email']);
+$zipCode = mysql_real_escape_string($_POST['zipCode']);
+$homeowner = mysql_real_escape_string($_POST['homeowner']);
+$homeArchitecture = mysql_real_escape_string($_POST['homeArchitecture']);
+$energySatistfaction = mysql_real_escape_string($_POST['energySatistfaction']);
+$interest = mysql_real_escape_string($_POST['interest']);
+$income = mysql_real_escape_string($_POST['income']);
+$favoritePart = mysql_real_escape_string($_POST['favoritePart']);
+$concernedPart = mysql_real_escape_string($_POST['concernedPart']);
+$solarPanels = mysql_real_escape_string($_POST['solarPanels']);
+$heard = mysql_real_escape_string($_POST['heard']);
+$questions = mysql_real_escape_string($_POST['questions']);
 
 
 
