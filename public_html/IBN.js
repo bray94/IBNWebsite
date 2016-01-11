@@ -16,9 +16,11 @@ function init(){
 	topBar();
 	questions();
 	sectionSize();
-	
+
 	// For mobile
-	window.onorientationchange = sectionSize();
+	window.addEventListener(orientationEvent, function(){
+		sectionSize();
+	});
 }
 
 function topBar(){
