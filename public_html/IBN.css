@@ -250,7 +250,7 @@ a.navlink:link, a.navlink:visited{
 	left: 0px;
 }
 #survey-text{
-	margin: 50px 25px;
+	margin: 50px 2.5%;
 	position: relative;
 	min-height: 60%;
 	max-width: 95%;
@@ -326,8 +326,22 @@ a.navlink:link, a.navlink:visited{
 }
 #audits-page{
 	position: relative;
-	height: 1000px;
 	left: 0px;
+	overflow: auto;
+}
+#audits-page > .h1{
+	width: 100%;
+	text-align: center;
+	margin: 50px 0px 50px;
+	position: relative;
+	font-size: 50px;
+}
+#audits-page > p{
+	text-align: center;
+	margin: 50px 20% 100px;
+	position: relative;
+	width: 60%;
+	font-size: 18px;
 }
 /* -----------FAQ------------ */
 
