@@ -9,12 +9,13 @@ var windowHeight = window.innerHeight;
 var windowWidth = window.innerWidth;
 
 window.addEventListener("resize", function(){
-	
+	sectionSize();
 }, false);
 
 function init(){
 	topBar();
 	questions();
+	sectionSize();
 }
 
 function topBar(){
@@ -54,20 +55,12 @@ function questions(){
 }
 
 function sectionSize(){
-	var index = document.getElementById("index-header");
-	var shared = document.getElementById("shared-profits-header");
-	var audits = document.getElementById("audits-header");
-	var faq = document.getElementById("faq-header");
-	var support = document.getElementById("support-header");
-
 	var windowHeight = window.innerHeight;
 	var windowWidth = window.innerWidth;
 
-	document.body.height = windowHeight + 'px';
-	document.body.width = windowWidth + 'px';
-
-	index.style.width = shared.style.width = audits.style.width = faq.style.width = support.style.width = "100%";
-	index.style.height = shared.style.height = audits.style.height = faq.style.height = support.style.height = "100%";
+	if(windowHeight > windowWidth){
+		$("#currentHeader").css({"width": "100%" , "height" : "20%"});
+	}
 	
 
 }
