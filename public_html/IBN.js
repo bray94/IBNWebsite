@@ -16,6 +16,9 @@ function init(){
 	topBar();
 	questions();
 	sectionSize();
+	
+	// For mobile
+	window.onorientationchange = sectionSize();
 }
 
 function topBar(){
@@ -65,6 +68,8 @@ function sectionSize(){
 		$(".currentHeader").css({"width": "100%" , "height" : "100%"});
 	}
 }
+
+
 
 var signInFlag = false;
 
