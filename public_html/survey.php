@@ -38,15 +38,16 @@ $favoritePart = "";
 $concernedPart = "";
 
 foreach ($_POST['favoritePart'] as $favorite) {
-	$favoritePart .= mysql_real_escape_string(favorite); // Checkbox
+	$favoritePart .= $favorite; // Checkbox
 }
 
 foreach ($_POST['concernedPart'] as $concerned) {
-	$concernedPart .= mysql_real_escape_string($concerned); // Checkbox
+	$concernedPart .= $concerned; // Checkbox
 }	
 
 
-
+$favoritePart = mysql_real_escape_string("");
+$concernedPart = mysql_real_escape_string("");
 
 
 $sql = "INSERT INTO SurveyResults (firstName, lastName, email, zipCode, homeowner, homeArchitecture, energySatisfaction, interest, income, favoritePart, concernedPart, solarPanels, heard, questions) VALUES ('$firstName', '$lastName', '$email', '$zipCode', '$homeowner', '$homeArchitecture', '$energySatisfaction', '$interest', '$income', '$favoritePart', '$concernedPart', '$solarPanels', '$heard', '$questions')";
