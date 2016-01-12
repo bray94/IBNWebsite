@@ -34,17 +34,11 @@ $solarPanels = mysql_real_escape_string($_POST['solarPanels']);
 $heard = mysql_real_escape_string($_POST['heard']);
 $questions = mysql_real_escape_string($_POST['questions']);
 
-$favoritePart = '';
-$concernedPart = '';
+$favoritePart = $_POST['favoritePart'];
+$concernedPart = $_POST['concernedPart'];
 
-foreach ($_POST['favoritePart'] as $favorite) {
-	$favoritePart .= $favorite; // Checkbox
-}
-
-foreach ($_POST['concernedPart'] as $concerned) {
-	$concernedPart .= $concerned; // Checkbox
-}	
-
+$favoritePart = implode("", $favoritePart);
+$concernedPart = implode("", $concernedPart);
 
 $favoritePart = mysql_real_escape_string($favoritePart);
 $concernedPart = mysql_real_escape_string($concernedPart);
