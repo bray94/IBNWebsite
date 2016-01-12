@@ -30,15 +30,26 @@ $homeArchitecture = mysql_real_escape_string($_POST['homeArchitecture']);
 $energySatisfaction = mysql_real_escape_string($_POST['energySatisfaction']);
 $interest = mysql_real_escape_string($_POST['interest']);
 $income = mysql_real_escape_string($_POST['income']);
-$favoritePart = mysql_real_escape_string($_POST['favoritePart']);
-$concernedPart = mysql_real_escape_string($_POST['concernedPart']);
 $solarPanels = mysql_real_escape_string($_POST['solarPanels']);
 $heard = mysql_real_escape_string($_POST['heard']);
 $questions = mysql_real_escape_string($_POST['questions']);
 
+$favoritePart = "";
+$concernedPart = "";
+
+foreach ($_POST['favoritePart'] as $favorite) {
+	$favoritePart .= mysql_real_escape_string(favorite); // Checkbox
+}
+
+foreach ($_POST['concernedPart'] as $concerned) {
+	$concernedPart .= mysql_real_escape_string($concerned); // Checkbox
+}	
 
 
-$sql = "INSERT INTO SurveyResults (firstName, lastName, email, zipCode, homeowner, homeArchitecture, energySatisfaction, interest, income, favoritePart, concernedPart, solarPanels, heard, questions) VALUES ('$firstName', '$lastName', '$email', '$zipCode', '$homeowner', '$homeArchitecture', '$energySatistfaction', '$interest', '$income', '$favoritePart', '$concernedPart', '$solarPanels', '$heard', '$questions')";
+
+
+
+$sql = "INSERT INTO SurveyResults (firstName, lastName, email, zipCode, homeowner, homeArchitecture, energySatisfaction, interest, income, favoritePart, concernedPart, solarPanels, heard, questions) VALUES ('$firstName', '$lastName', '$email', '$zipCode', '$homeowner', '$homeArchitecture', '$energySatisfaction', '$interest', '$income', '$favoritePart', '$concernedPart', '$solarPanels', '$heard', '$questions')";
 
 
 if (!mysql_query($sql)) {
