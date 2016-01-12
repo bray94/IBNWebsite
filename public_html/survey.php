@@ -46,8 +46,8 @@ foreach ($_POST['concernedPart'] as $concerned) {
 }	
 
 
-$favoritePart = mysql_real_escape_string("");
-$concernedPart = mysql_real_escape_string("");
+$favoritePart = mysql_real_escape_string($favoritePart);
+$concernedPart = mysql_real_escape_string($concernedPart);
 
 
 $sql = "INSERT INTO SurveyResults (firstName, lastName, email, zipCode, homeowner, homeArchitecture, energySatisfaction, interest, income, favoritePart, concernedPart, solarPanels, heard, questions) VALUES ('$firstName', '$lastName', '$email', '$zipCode', '$homeowner', '$homeArchitecture', '$energySatisfaction', '$interest', '$income', '$favoritePart', '$concernedPart', '$solarPanels', '$heard', '$questions')";
