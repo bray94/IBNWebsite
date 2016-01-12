@@ -37,12 +37,17 @@ $questions = mysql_real_escape_string($_POST['questions']);
 $favoritePart = $_POST['favoritePart'];
 $concernedPart = $_POST['concernedPart'];
 
-$favoritePart = implode("", $favoritePart);
-$concernedPart = implode("", $concernedPart);
+$favoritePart = implode("" , $favoritePart);
+$concernedPart = implode("" , $concernedPart);
+
+echo $favoritePart;
+echo $concernedPart;
 
 $favoritePart = mysql_real_escape_string($favoritePart);
 $concernedPart = mysql_real_escape_string($concernedPart);
 
+echo $favoritePart;
+echo $concernedPart;
 
 $sql = "INSERT INTO SurveyResults (firstName, lastName, email, zipCode, homeowner, homeArchitecture, energySatisfaction, interest, income, favoritePart, concernedPart, solarPanels, heard, questions) VALUES ('$firstName', '$lastName', '$email', '$zipCode', '$homeowner', '$homeArchitecture', '$energySatisfaction', '$interest', '$income', '$favoritePart', '$concernedPart', '$solarPanels', '$heard', '$questions')";
 
@@ -52,7 +57,7 @@ if (!mysql_query($sql)) {
 }
 
 mysql_close($link);
-echo "<script>
-             window.history.go(-1);
-     </script>";
+// echo "<script>
+//              window.history.go(-1);
+//      </script>";
 ?>
