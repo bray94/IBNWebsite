@@ -34,8 +34,8 @@ $solarPanels = mysql_real_escape_string($_POST['solarPanels']);
 $heard = mysql_real_escape_string($_POST['heard']);
 $questions = mysql_real_escape_string($_POST['questions']);
 
-$favoritePart = "";
-$concernedPart = "";
+$favoritePart = '';
+$concernedPart = '';
 
 foreach ($_POST['favoritePart'] as $favorite) {
 	$favoritePart .= $favorite; // Checkbox
