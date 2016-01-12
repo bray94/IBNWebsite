@@ -52,7 +52,7 @@ if (!mysql_query($sql)) {
 }
 
 mysql_close($link);
-// echo "<script>
-//              window.history.go(-1);
-//      </script>";
+echo "<script>
+             window.history.go(-1);
+     </script>";
 ?>
