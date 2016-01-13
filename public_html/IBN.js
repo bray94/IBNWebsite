@@ -151,7 +151,7 @@ function infoBlockFade(){
 
   	});
 
-  	$("body").addEventListener('touchstart', function(event){
+  	document.addEventListener('touchstart', function(event){
 
 		var blocks = ["#solar-text", "#market-text", "#finance-text", "#audits-faq-text"];
 
