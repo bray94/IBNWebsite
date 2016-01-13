@@ -367,12 +367,12 @@ a.navlink:link, a.navlink:visited{
 	left: 0px;
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, .4);
+	background: rgba(0, 0, 0, .6);
 	color: white;
 }
 #faq-header-text > #header{
 	position: relative;
-	font-size: 85px;
+	font-size: 80px;
 	width: 75%;
 	position: absolute;
 	text-align: center;
@@ -384,10 +384,73 @@ a.navlink:link, a.navlink:visited{
 }
 #faq-page{
 	position: relative;
-	height: auto;
+	height: 1000px;
 	left: 0px;
 	overflow: auto;
 }
+#faq-page > #header{
+	height: 40%;
+	width: 100%;
+}
+.info-block{
+	margin: 0px .25%;
+	min-width: 24.5%; 
+	max-width: 100%;
+	float: left;
+	cursor: pointer;
+	font-size: 2.5vw;
+
+}
+.blurBox{
+	width: 100%;
+	height: 100%;
+}
+#solar.info-block{
+	background-image: url("Images/solar-panels.jpg");
+	background-size: 200% 100%;
+}
+#solar-text{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .7);
+	color: white;
+	text-align: center;
+
+}
+#market.info-block{
+	background-image: url("Images/lightbulb.jpg");
+	background-size: 200% 100%;
+}
+#market-text{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .7);
+	color: white;
+	text-align: center;
+}
+#finance.info-block{
+	background-image: url("Images/finance.jpg");
+	background-size: 200% 100%;
+}
+#finance-text{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .7);
+	color: white;
+	text-align: center;
+}
+#audits-faq.info-block{
+	background-image: url("Images/stove.jpg");
+	background-size: 200% 100%;
+}
+#audits-faq-text{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .7);
+	color: white;
+	text-align: center;
+}
+
 
 /* -----------Support------------ */
 

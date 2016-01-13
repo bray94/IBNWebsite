@@ -14,9 +14,11 @@ function init(){
 	topBar();
 	questions();
 	sectionSize();
+	infoBlock();
 
 	window.addEventListener("resize", function(){
-	sectionSize();
+		sectionSize();
+		infoBlock();
 	}, false);
 
 	// For mobile
@@ -79,6 +81,43 @@ function sectionSize(){
 	}
 }
 
+function infoBlock(){
+	var width = $(".info-block").css("width");
+	$(".info-block").css('height', width);
+
+	infoBlockFade();
+
+}
+	
+
+function infoBlockFade(){
+	
+
+	$(".info-block").on('click', '*', function() {
+
+		var blocks = ["#solar-text", "#market-text", "#finance-text", "#audits-faq-text"];
+
+		for (var i = blocks.length - 1; i >= 0; i--) {
+			$(blocks[i]).animate("background", "rgba(0,0,0,.7)");
+			$(blocks[i].substring(0, blocks[i].length-5)).css("-webkit-filter", "blur(3px)");
+			$(blocks[i].substring(0, blocks[i].length-5)).css("filter", "blur(3px)");
+		};
+
+		var id = (event.target.id + "");
+
+		if("-inner" == id.substring(id.length-6)){
+			id=id.substring(0, id.length-6);
+		}
+
+		$("#"+id).animate("background", "rgba(0,0,0,.8)");
+
+		id = id.substring(0, id.length-5);
+		$("#"+id).css("-webkit-filter", "blur(0px)");
+		$("#"+id).css("filter", "blur(0px)");
+	});
+	
+
+}
 
 
 var signInFlag = false;
