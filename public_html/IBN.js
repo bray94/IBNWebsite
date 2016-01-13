@@ -1,8 +1,5 @@
 //IBN.js
 
-$ = jQuery;
-
-
 
 var sections = ["index", "shared-profits", "audits", "faq", "support"];
 var windowHeight = window.innerHeight;
@@ -85,20 +82,25 @@ function infoBlock(){
 	var width = $(".info-block").css("width");
 	$(".info-block").css('height', width);
 
+	var texts = ["#solar-text-inner", "#market-text-inner", "#finance-text-inner", "#audits-faq-text-inner"];
+
+	for (var i = texts.length - 1; i >= 0; i--) {
+		$(texts[i]).css("height", "20%");
+	};
+
+	last = null;
 	infoBlockFade();
 
 }
-	
 
 function infoBlockFade(){
-	
 
 	$(".info-block").on('click', '*', function() {
 
 		var blocks = ["#solar-text", "#market-text", "#finance-text", "#audits-faq-text"];
 
 		for (var i = blocks.length - 1; i >= 0; i--) {
-			$(blocks[i]).animate("background", "rgba(0,0,0,.7)");
+			$(blocks[i]).css("background", "rgba(0,0,0,.7)");
 			$(blocks[i].substring(0, blocks[i].length-5)).css("-webkit-filter", "blur(3px)");
 			$(blocks[i].substring(0, blocks[i].length-5)).css("filter", "blur(3px)");
 		};
@@ -109,43 +111,43 @@ function infoBlockFade(){
 			id=id.substring(0, id.length-6);
 		}
 
-		$("#"+id).animate("background", "rgba(0,0,0,.8)");
+		$("#"+id).css("background", "rgba(0,0,0,.8)");
 
 		id = id.substring(0, id.length-5);
 		$("#"+id).css("-webkit-filter", "blur(0px)");
 		$("#"+id).css("filter", "blur(0px)");
+
+		var boxWidth = windowWidth * .95 + 'px';
+		if(last != null){
+			$(last).fadeOut('slow', function(){
+				$("#"+id + "-textbox").fadeIn('slow');
+			});
+		}
+		else{
+			$("#"+id + "-textbox").fadeIn('slow');
+		}
+		last = "#"+id + "-textbox";
 	});
 
 	$("body").click(function(event){
 
 		var blocks = ["#solar-text", "#market-text", "#finance-text", "#audits-faq-text"];
-		
+
     	if(event.target.className !== "info-block"){
     		for (var i = blocks.length - 1; i >= 0; i--) {
-				$(blocks[i]).animate("background", "rgba(0,0,0,.7)");
+				$(blocks[i]).css("background", "rgba(0,0,0,.7)");
 				$(blocks[i].substring(0, blocks[i].length-5)).css("-webkit-filter", "blur(0px)");
 				$(blocks[i].substring(0, blocks[i].length-5)).css("filter", "blur(0px)");
 			};
+			$(last).fadeOut('slow');
     	}
+
+
   	});
+
 	
 }
 
-
-var signInFlag = false;
-
-function myIbn(){
-	signInFlag = true;
-
-	$("#sign-in-wrapper").fadeIn(900);
-}
-
-function closeMyIbn(){
-	signInFlag = false;
-	var currentSection = '#' + sections[current] + '-text';
-
-	$("#sign-in-wrapper").fadeOut(50);
-}
 
 
 var surveyFlag = false;
