@@ -151,24 +151,24 @@ function infoBlockFade(){
 
   	});
 
-  	document.addEventListener('touchstart', function(event){
+  // 	document.addEventListener('touchstart', function(event){
 
-		var blocks = ["#solar-text", "#market-text", "#finance-text", "#audits-faq-text"];
+		// var blocks = ["#solar-text", "#market-text", "#finance-text", "#audits-faq-text"];
 
-    	if(event.target.className !== "info-block"){
-    		for (var i = blocks.length - 1; i >= 0; i--) {
-				$(blocks[i]).css("background", "rgba(0,0,0,.7)");
-				$(blocks[i].substring(0, blocks[i].length-5)).css("-webkit-filter", "blur(0px)");
-				$(blocks[i].substring(0, blocks[i].length-5)).css("filter", "blur(0px)");
-			};
-			$(last).fadeOut('slow', function(){
-				$("#textbox-container").animate({height: "0px"});
-			});
-			last = null;
-    	}
+  //   	if(event.target.className !== "info-block"){
+  //   		for (var i = blocks.length - 1; i >= 0; i--) {
+		// 		$(blocks[i]).css("background", "rgba(0,0,0,.7)");
+		// 		$(blocks[i].substring(0, blocks[i].length-5)).css("-webkit-filter", "blur(0px)");
+		// 		$(blocks[i].substring(0, blocks[i].length-5)).css("filter", "blur(0px)");
+		// 	};
+		// 	$(last).fadeOut('slow', function(){
+		// 		$("#textbox-container").animate({height: "0px"});
+		// 	});
+		// 	last = null;
+  //   	}
 
 
-  	}, false);
+  // 	}, false);
 
 	
 }
