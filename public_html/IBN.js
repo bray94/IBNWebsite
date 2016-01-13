@@ -117,14 +117,17 @@ function infoBlockFade(){
 		$("#"+id).css("-webkit-filter", "blur(0px)");
 		$("#"+id).css("filter", "blur(0px)");
 
-		var boxWidth = windowWidth * .95 + 'px';
+		if(last == "#"+id + "-textbox") {return;};
+
 		if(last != null){
 			$(last).fadeOut('slow', function(){
 				$("#"+id + "-textbox").fadeIn('slow');
 			});
 		}
 		else{
-			$("#"+id + "-textbox").fadeIn('slow');
+			$("#textbox-container").animate({height: "500px"}, function(){
+				$("#"+id + "-textbox").fadeIn('slow');
+			});
 		}
 		last = "#"+id + "-textbox";
 	});
@@ -139,7 +142,10 @@ function infoBlockFade(){
 				$(blocks[i].substring(0, blocks[i].length-5)).css("-webkit-filter", "blur(0px)");
 				$(blocks[i].substring(0, blocks[i].length-5)).css("filter", "blur(0px)");
 			};
-			$(last).fadeOut('slow');
+			$(last).fadeOut('slow', function(){
+				$("#textbox-container").animate({height: "0px"});
+			});
+			last = null;
     	}
 
 

@@ -402,6 +402,7 @@ a.navlink:link, a.navlink:visited{
 	float: left;
 	cursor: pointer;
 	font-size: 2.5vw;
+	margin-bottom: 30px;
 }
 .blurBox{
 	width: 100%;
@@ -418,17 +419,6 @@ a.navlink:link, a.navlink:visited{
 	color: white;
 	text-align: center;
 }
-#solar-textbox{
-	position: relative;
-	float: left;
-	display: none;
-	left: 0px;
-	width: 99.5%;
-	margin: 1% .25%;
-	height: 500px;
-	background: rgba(0, 0, 0, .7);
-	z-index: -3;
-}
 #market.info-block{
 	background-image: url("Images/lightbulb.jpg");
 	background-size: 200% 100%;
@@ -439,17 +429,6 @@ a.navlink:link, a.navlink:visited{
 	background: rgba(0, 0, 0, .7);
 	color: white;
 	text-align: center;
-}
-#market-textbox{
-	position: relative;
-	float: left;
-	display: none;
-	left: 0px;
-	width: 99.5%;
-	margin: 1% .25%;
-	height: 500px;
-	background: rgba(0, 0, 0, .7);
-	z-index: -3;
 }
 #finance.info-block{
 	background-image: url("Images/finance.jpg");
@@ -462,17 +441,6 @@ a.navlink:link, a.navlink:visited{
 	color: white;
 	text-align: center;
 }
-#finance-textbox{
-	position: relative;
-	float: left;
-	display: none;
-	left: 0px;
-	width: 99.5%;
-	margin: 1% .25%;
-	height: 500px;
-	background: rgba(0, 0, 0, .7);
-	z-index: -3;
-}
 #audits-faq.info-block{
 	background-image: url("Images/stove.jpg");
 	background-size: 200% 100%;
@@ -484,17 +452,57 @@ a.navlink:link, a.navlink:visited{
 	color: white;
 	text-align: center;
 }
-
+#textbox-container{
+	position: relative;
+	overflow: hidden;
+	height: 0px;
+	width: 100%;
+	background-color: black;
+	cursor: normal;
+}
+#solar-textbox{
+	position: relative;
+	float: left;
+	display: none;
+	left: 0px;
+	width: 98%;
+	margin: 2.5% 1%;
+	height: 85%;
+	background: rgba(255, 255, 255, .7);
+	cursor: normal;
+}
+#market-textbox{
+	position: relative;
+	float: left;
+	display: none;
+	left: 0px;
+	width: 98%;
+	margin: 2.5% 1%;
+	height: 85%;
+	background: rgba(255, 255, 255, .7);
+	cursor: normal;
+}
+#finance-textbox{
+	position: relative;
+	float: left;
+	display: none;
+	left: 0px;
+	width: 98%;
+	margin: 2.5% 1%;
+	height: 85%;
+	background: rgba(255, 255, 255, .7);
+	cursor: normal;
+}
 #audits-faq-textbox{
 	position: relative;
 	float: left;
 	display: none;
 	left: 0px;
-	width: 99.5%;
-	margin: 1% .25%;
-	height: 500px;
-	background: rgba(0, 0, 0, .7);
-	z-index: -3;
+	width: 98%;
+	margin: 2.5% 1%;
+	height: 85%;
+	background: rgba(255, 255, 255, .7);
+	cursor: normal;
 }
 
 
@@ -536,6 +544,11 @@ a.navlink:link, a.navlink:visited{
 	height: auto;
 	left: 0px;
 	overflow: auto;
+}
+#contact-keegan{
+	text-align: center;
+	padding: 200px 0px;
+	font-size: 30px;
 }
 
 /*---------- Sign in ----------*/
