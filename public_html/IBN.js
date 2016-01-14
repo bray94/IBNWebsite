@@ -95,7 +95,7 @@ function infoBlock(){
 
 function infoBlockFade(){
 
-	$(".info-block").on('click', '*', function() {
+	$(".info-block").on('click tap', '*', function() {
 
 		var blocks = ["#solar-text", "#market-text", "#finance-text", "#audits-faq-text"];
 

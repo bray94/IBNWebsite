@@ -386,14 +386,21 @@ a.navlink:link, a.navlink:visited{
 #faq-page{
 	position: relative;
 	left: 0px;
-	height: 1300px;
+	height: 1700px;
 }
-#faq-page > #header{
-	width: 80%;
-	height: 20%;
-	margin: 5% 10%;
-	font-size: 1.3vw;
-	line-height: 2em;
+#faq-page > .h1{
+	width: 100%;
+	text-align: center;
+	margin: 50px 0px 50px;
+	position: relative;
+	font-size: 3vw;
+}
+#faq-page > p{
+	text-align: center;
+	margin: 50px 20% 50px;
+	position: relative;
+	width: 60%;
+	font-size: 1.2vw;
 }
 .info-block{
 	margin: 0px .25%;
@@ -459,16 +466,18 @@ a.navlink:link, a.navlink:visited{
 	width: 100%;
 	background-color: black;
 	cursor: normal;
+	color: white;
+	font-size: 1.5vw;
 }
 #solar-textbox{
 	position: relative;
 	float: left;
 	display: none;
 	left: 0px;
-	width: 98%;
-	margin: 2.5% 1%;
+	width: 90%;
+	margin: 2.5% 5%;
 	height: 85%;
-	background: rgba(255, 255, 255, .7);
+	background: rgba(255, 255, 255, 0);
 	cursor: normal;
 }
 #market-textbox{
@@ -476,10 +485,10 @@ a.navlink:link, a.navlink:visited{
 	float: left;
 	display: none;
 	left: 0px;
-	width: 98%;
-	margin: 2.5% 1%;
+	width: 90%;
+	margin: 2.5% 5%;
 	height: 85%;
-	background: rgba(255, 255, 255, .7);
+	background: rgba(255, 255, 255, 0);
 	cursor: normal;
 }
 #finance-textbox{
@@ -487,10 +496,10 @@ a.navlink:link, a.navlink:visited{
 	float: left;
 	display: none;
 	left: 0px;
-	width: 98%;
-	margin: 2.5% 1%;
+	width: 90%;
+	margin: 2.5% 5%;
 	height: 85%;
-	background: rgba(255, 255, 255, .7);
+	background: rgba(255, 255, 255, 0);
 	cursor: normal;
 }
 #audits-faq-textbox{
@@ -498,10 +507,10 @@ a.navlink:link, a.navlink:visited{
 	float: left;
 	display: none;
 	left: 0px;
-	width: 98%;
-	margin: 2.5% 1%;
+	width: 90%;
+	margin: 2.5% 5%;
 	height: 85%;
-	background: rgba(255, 255, 255, .7);
+	background: rgba(255, 255, 255, 0);
 	cursor: normal;
 }
 
