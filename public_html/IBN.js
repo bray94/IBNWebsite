@@ -95,7 +95,7 @@ function infoBlock(){
 
 function infoBlockFade(){
 
-	$(".info-block").on('click tap', '*', function() {
+	$(".info-block").on('tap click', '*', function() {
 
 		var blocks = ["#solar-text", "#market-text", "#finance-text", "#audits-faq-text"];
 
@@ -149,9 +149,6 @@ function infoBlockFade(){
     	}
 
 
-  	});
-  	$("body").on("tap", function(){
-  		alert("Hello");
   	});
 
   // 	document.addEventListener('touchstart', function(event){
