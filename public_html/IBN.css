@@ -386,7 +386,7 @@ a.navlink:link, a.navlink:visited{
 #faq-page{
 	position: relative;
 	left: 0px;
-	height: 1700px;
+	height: auto;
 }
 #faq-page > .h1{
 	width: 100%;
