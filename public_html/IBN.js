@@ -150,6 +150,9 @@ function infoBlockFade(){
 
 
   	});
+  	$("body").on("tap", function(){
+  		alert("Hello");
+  	});
 
   // 	document.addEventListener('touchstart', function(event){
 
