@@ -117,20 +117,20 @@ function infoBlockFade(){
 		$("#"+id).css("-webkit-filter", "blur(0px)");
 		$("#"+id).css("filter", "blur(0px)");
 
-		// if(last == "#"+id + "-textbox") {
-		// 	var blocks = ["#solar-text", "#market-text", "#finance-text", "#audits-faq-text"];
+		if(last == "#"+id + "-textbox") {
+			// var blocks = ["#solar-text", "#market-text", "#finance-text", "#audits-faq-text"];
 
-  		// 	for (var i = blocks.length - 1; i >= 0; i--) {
-		// 		$(blocks[i]).css("background", "rgba(0,0,0,.7)");
-		// 		$(blocks[i].substring(0, blocks[i].length-5)).css("-webkit-filter", "blur(0px)");
-		// 		$(blocks[i].substring(0, blocks[i].length-5)).css("filter", "blur(0px)");
-		// 	};
-		// 	$(last).fadeOut('slow', function(){
-		// 		$("#textbox-container").animate({height: "0px"});
-		// 		last = null;
-  		//   });
-		// 	return;
-		// };
+  	// 		for (var i = blocks.length - 1; i >= 0; i--) {
+			// 	$(blocks[i]).css("background", "rgba(0,0,0,.7)");
+			// 	$(blocks[i].substring(0, blocks[i].length-5)).css("-webkit-filter", "blur(0px)");
+			// 	$(blocks[i].substring(0, blocks[i].length-5)).css("filter", "blur(0px)");
+			// };
+			// $(last).fadeOut('slow', function(){
+			// 	$("#textbox-container").animate({height: "0px"});
+			// 	last = null;
+  	// 	  });
+			return;
+		};
 
 		if(last != null){
 			$(last).fadeOut('slow', function(){
