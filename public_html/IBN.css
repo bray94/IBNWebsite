@@ -23,10 +23,12 @@ html, body{
 	z-index: 10;
 	overflow-x: auto; 
 	background-color: rgba(0,0,0,0);
+	height: 50px;
 }
 .linkswrapper{
 	margin:0px auto;
 	width: 840px;
+	height: 50px;
 	overflow: auto;
 }
 a.toplink:link, a.toplink:visited{
@@ -37,9 +39,14 @@ a.toplink:link, a.toplink:visited{
 	z-index: 10;
 	height: 35px;
 	text-decoration: none;
-	line-height: 35px;
+	line-height: 60px;
 	display: inline-block;
 	font-size: 18px;
+}
+
+#logo{
+	margin-top: -15px;
+	height: 70px;
 }
 .bottombar{
 	position: absolute;
