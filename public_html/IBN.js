@@ -69,14 +69,12 @@ function sectionSize(){
 		$("#index").css("background-size", "200% 100%");
 		$("#myibn-page").css("background-size", "200% 100%");
 		$("a.navlink:link, a.navlink:visited").css({"font-size": "60px", "width" : "700px"});
-		$("#front-logo").css("margin-top", "100px");
 	}
 	else{
 		$(".currentHeader").css({"width": "100%" , "height" : "100%"});
 		$("#index").css("background-size", "100% 100%");
 		$("#myibn-page").css("background-size", "100% 100%");
 		$("a.navlink:link, a.navlink:visited").css({"font-size": "18px", "width": "140px"});
-		$("#front-logo").css("margin-top", "-150px");
 	}
 }
 
