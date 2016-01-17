@@ -137,6 +137,7 @@ p{
 	position: relative;
 	margin-top: 300px;
 	width: 100%;
+	z-index: 3;
 }
 #nav-wrapper{
 	margin:0px auto;
