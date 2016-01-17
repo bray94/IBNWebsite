@@ -21,7 +21,6 @@ html, body{
 	top: 0px;
 	width: 100%;
 	z-index: 10;
-	overflow-x: auto; 
 	background-color: rgba(0,0,0,0);
 	height: 50px;
 }
@@ -29,7 +28,6 @@ html, body{
 	margin:0px auto;
 	width: 840px;
 	height: 50px;
-	overflow: auto;
 }
 a.toplink:link, a.toplink:visited{
 	width:140px;
