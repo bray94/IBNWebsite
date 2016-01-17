@@ -1,6 +1,11 @@
 <FilesMatch "\.(ttf|otf|eot|woff)$">
 	<IfModule mod_headers.c>
 		Header set Access-Control-Allow-Origin "*"
-		
+
 	</IfModule>
 </FilesMatch>
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)\.html$ /$1 [L,R=301] 
