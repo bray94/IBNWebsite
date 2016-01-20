@@ -502,7 +502,7 @@ a.info-links:hover{
 	left: 0px;
 	width: 90%;
 	margin: 0px 5% 0px;
-	height: 100%;
+	height: auto;
 	background: rgba(255, 255, 255, 0);
 	cursor: normal;
 }
@@ -514,7 +514,7 @@ a.info-links:hover{
 	left: 0px;
 	width: 90%;
 	margin: 0px 5% 0px;
-	height: 100%;
+	height: auto;
 	background: rgba(255, 255, 255, 0);
 	cursor: normal;
 }
@@ -526,7 +526,7 @@ a.info-links:hover{
 	left: 0px;
 	width: 90%;
 	margin: 0px 5% 0px;
-	height: 100%;
+	height: auto;
 	background: rgba(255, 255, 255, 0);
 	cursor: normal;
 }
@@ -538,7 +538,7 @@ a.info-links:hover{
 	left: 0px;
 	width: 90%;
 	margin: 0px 5% 0px;
-	height: 100%;
+	height: auto;
 	background: rgba(255, 255, 255, 0);
 	cursor: normal;
 }

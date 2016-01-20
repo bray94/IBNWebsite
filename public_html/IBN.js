@@ -133,12 +133,17 @@ function infoBlockFade(){
 		};
 
 		if(last != null){
+			var heightOfBox = $("#"+id + "-textbox").css("height");
+			
 			$(last).fadeOut('slow', function(){
-				$("#"+id + "-textbox").fadeIn('slow');
+				$("#textbox-container").animate({height: heightOfBox}, function(){
+					$("#"+id + "-textbox").fadeIn('slow');
+				});
 			});
 		}
 		else{
-			$("#textbox-container").animate({height: "1500px"}, function(){
+			var heightOfBox = $("#"+id + "-textbox").css("height");
+			$("#textbox-container").animate({height: heightOfBox}, function(){
 				$("#"+id + "-textbox").fadeIn('slow');
 			});
 		}
