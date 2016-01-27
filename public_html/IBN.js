@@ -214,7 +214,9 @@ function submitSurvey(){
 	$("#questions").fadeOut(500, function(){$("#thank-you").fadeIn(500);});
 }
 
-
+function submitQuestion(){
+	document.getElementById("faq-question").submit();
+}
 
 
 

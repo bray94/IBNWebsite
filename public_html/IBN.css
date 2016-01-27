@@ -539,11 +539,24 @@ a.info-links:hover{
 	background: rgba(255, 255, 255, 0);
 	cursor: normal;
 }
+#submitQuestion{
+	position: relative;
+	margin: 20px 40% -70px;
+	background-color: black;
+	opacity: .9;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	width: 20%;
+	font-size: 20px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
 
 
-/* -----------Support------------ */
+/* -----------About------------ */
 
-#support-header{
+#about-header{
 	background-image: url("Images/tree.jpg");
 	background-size: 100% 100%;
 	position: relative;
@@ -552,7 +565,7 @@ a.info-links:hover{
 	top: 0px;
 	left: 0px;
 }
-#support-header-text{
+#about-header-text{
 	position: absolute;
 	text-align: center;
 	top: 0px;
@@ -562,7 +575,7 @@ a.info-links:hover{
 	background: rgba(0, 0, 0, .4);
 	color: white;
 }
-#support-header-text > #header{
+#about-header-text > #header{
 	position: relative;
 	font-size: 85px;
 	width: 75%;
@@ -574,16 +587,55 @@ a.info-links:hover{
 	left: 50%;
 	margin-left: -37.5%;
 }
-#support-page{
+#about-page{
 	position: relative;
 	height: auto;
 	left: 0px;
 	overflow: auto;
 }
-#contact-keegan{
+#about-page > p{
+	text-align: center;
+	color: rgb(50,50,50);
+	margin: 20px 20% 50px;
+	position: relative;
+	width: 60%;
+	font-size: 15px;
+}
+#about-cell-wrapper{
+	position: relative;
+	left: 50%;
+	margin: 0px 0px 0px -277px;
+	height: 810px;
+	width: 554px;
+}
+.about-cell{
+	position: absolute;
+	height: 400px;
+	width: 267px;
+}
+.about-cell-text{
+	position: absolute;
+	bottom: 0px;
+	background:rgba(0,0,0,.8);
+	color: white;
+	font-size: 16px;
+	width: 100%;
+	height: 70px;
+}
+.about-cell-text > .name{
+	font-size: 23px;
+	margin-left: 5px;
+}
+.about-cell-text > .title{
+	margin-left: 5px;
+	font-style: italic;
+}
+#contact-brayden{
 	text-align: center;
 	padding: 200px 0px;
-	font-size: 30px;
+	font-size: 22px;
+	width: 60%;
+	margin: 0px 20% 100px; 
 }
 
 /*---------- Sign in ----------*/
