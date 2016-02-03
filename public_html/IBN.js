@@ -38,7 +38,7 @@ function topBar(){
 				$("#header-arrow").css("display", "inline");
 			}
 			else{
-				$("#topbar").css({"background-color":"rgba(0,0,0,.2)", "border-bottom":"black solid 1px"});
+				$("#topbar").css({"background-color":"rgba(0,0,0,0)", "border-bottom":"black solid 0px"});
 				$("#header-arrow").css("display", "none");
 			}
 		    
@@ -66,6 +66,7 @@ function sectionSize(){
 
 	if(windowHeight > windowWidth){
 		$(".currentHeader").css({"width": "100%" , "height" : "40%"});
+		$(".currentPage").css({"width": "100%" , "top" : "40%"});
 		$("#index").css("background-size", "200% 100%");
 		$("#myibn-page").css("background-size", "200% 100%");
 		$("a.navlink:link, a.navlink:visited").css({"font-size": "60px", "width" : "700px"});
