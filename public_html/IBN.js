@@ -30,15 +30,15 @@ function topBar(){
 
 			var windowHeight = window.innerHeight;
 			if($(window).scrollTop() >= windowHeight){
-				$("#topbar").css("background-color", "rgba(0,0,0,.6)");
+				$("#topbar").css({"background-color": "rgba(0,0,0,.6)", "border-bottom":"black solid 1px"});
 
 			}
 			else if($(window).scrollTop() <= 0){
-				$("#topbar").css("background-color", "rgba(0,0,0,0)");
+				$("#topbar").css({"background-color":"rgba(0,0,0,0)", "border-bottom":"black solid 0px"});
 				$("#header-arrow").css("display", "inline");
 			}
 			else{
-				$("#topbar").css("background-color", "rgba(0,0,0,.2)");
+				$("#topbar").css({"background-color":"rgba(0,0,0,.2)", "border-bottom":"black solid 1px"});
 				$("#header-arrow").css("display", "none");
 			}
 		    

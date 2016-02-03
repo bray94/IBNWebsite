@@ -22,31 +22,41 @@ html, body{
 	width: 100%;
 	z-index: 10;
 	background-color: rgba(0,0,0,0);
+	border-bottom: black solid 0px;
 	height: 50px;
 }
 .linkswrapper{
-	margin:0px auto;
-	width: 840px;
+	position: absolute;
+	right: 40px;
+	width: 600px;
 	height: 50px;
 }
 a.toplink:link, a.toplink:visited{
-	width:140px;
+	width:120px;
 	float: left;
 	text-align: center;
 	color: white;
 	z-index: 10;
-	height: 35px;
+	height: 45px;
 	text-decoration: none;
 	line-height: 50px;
 	display: inline-block;
-	font-size: 18px;
+	font-size: 14px;
 }
 a.toplink:hover{
-	opacity: .6;
+	border-bottom: white solid 5px;
+}
+a.toplink.active{
+	border-bottom: white solid 5px;
+}
+#logo-topbar{
+	position: absolute;
+	left: 100px;
+	border-bottom: white solid 0px;
 }
 #logo{
-	margin-top: 10px;
-	height: 30px;
+	margin-top: 5px;
+	height: 40px;
 }
 .bottombar{
 	position: absolute;
@@ -106,6 +116,8 @@ p{
 	height: 100%;
 	top: 0px;
 	left: 0px;
+	/*-webkit-filter: blur(4px);*/
+	/*filter: blur(4px);*/
 }
 #index-text{
 	position: absolute;
@@ -478,7 +490,7 @@ a.info-links:hover{
 	overflow: hidden;
 	height: 0px;
 	width: 100%;
-	background-color: rgb(40,40,40);
+	background-color: #385365;
 	cursor: normal;
 	color: white;
 	font-size: 1.5vw;
