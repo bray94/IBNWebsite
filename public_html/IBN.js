@@ -64,16 +64,22 @@ function sectionSize(){
 	var windowHeight = window.innerHeight;
 	var windowWidth = window.innerWidth;
 
+	var height = windowHeight + "px";
+	var width = windowWidth = "px";
+
+	var mobileHeight = .4 * window.innerHeight + "px";
+	var mobileWidth = .4 * window.innerWidth + "px";
+
 	if(windowHeight > windowWidth){
-		$(".currentHeader").css({"width": "100%" , "height" : "40%"});
-		$(".currentPage").css({"width": "100%" , "top" : "40%"});
+		$(".currentHeader").css({"width": width , "height" : mobileHeight});
+		$(".currentPage").css({"width": width , "top" : mobileHeight});
 		$("#index").css("background-size", "200% 100%");
 		$("#myibn-page").css("background-size", "200% 100%");
 		$("a.navlink:link, a.navlink:visited").css({"font-size": "60px", "width" : "700px"});
 	}
 	else{
-		$(".currentHeader").css({"width": "100%" , "height" : "100%"});
-		$(".currentPage").css({"width": "100%" , "top" : "100%"});
+		$(".currentHeader").css({"width": width , "height" : height});
+		$(".currentPage").css({"width": width , "top" : height});
 		$("#index").css("background-size", "100% 100%");
 		$("#myibn-page").css("background-size", "100% 100%");
 		$("a.navlink:link, a.navlink:visited").css({"font-size": "18px", "width": "140px"});
