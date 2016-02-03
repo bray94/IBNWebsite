@@ -73,6 +73,7 @@ function sectionSize(){
 	}
 	else{
 		$(".currentHeader").css({"width": "100%" , "height" : "100%"});
+		$(".currentPage").css({"width": "100%" , "top" : "100%"});
 		$("#index").css("background-size", "100% 100%");
 		$("#myibn-page").css("background-size", "100% 100%");
 		$("a.navlink:link, a.navlink:visited").css({"font-size": "18px", "width": "140px"});
