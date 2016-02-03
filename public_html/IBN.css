@@ -168,12 +168,11 @@ a.navlink:link, a.navlink:visited{
 #shared-profits-header{
 	background-image: url('Images/new-york.jpg');
 	background-size: 100% 100%;
-	position: fixed;
+	position: relative;
 	width: 100%;
 	height: 100%;
 	top: 0px;
 	left: 0px;
-	z-index: -1;
 }
 #shared-profits-header-text{
 	position: absolute;
@@ -271,13 +270,11 @@ a.navlink:link, a.navlink:visited{
 	color: white;
 }
 #shared-profits-page{
-	background-color: white;
 	width: 100%;
 	overflow: auto;
 	position: relative;
 	min-height: 900px;
 	left: 0px;
-	top: 100%;
 }
 #survey-text{
 	margin: 50px 2.5%;
@@ -326,12 +323,11 @@ a.navlink:link, a.navlink:visited{
 #audits-header{
 	background-image: url("Images/thermal-house.jpg");
 	background-size: 100% 100%;
-	position: fixed;
+	position: relative;
 	width: 100%;
 	height: 100%;
 	top: 0px;
 	left: 0px;
-	z-index: -1;
 }
 #audits-header-text{
 	position: absolute;
@@ -356,9 +352,7 @@ a.navlink:link, a.navlink:visited{
 	margin-left: -37.5%;
 }
 #audits-page{
-	background-color: white;
 	position: relative;
-	top: 100%;
 	left: 0px;
 	overflow: auto;
 }
@@ -381,12 +375,11 @@ a.navlink:link, a.navlink:visited{
 #faq-header{
 	background-image: url("Images/america.jpg");
 	background-size: 100% 100%;
-	position: fixed;
+	position: relative;
 	width: 100%;
 	height: 100%;
 	top: 0px;
 	left: 0px;
-	z-index: -1;
 }
 #faq-header-text{
 	position: absolute;
@@ -411,9 +404,8 @@ a.navlink:link, a.navlink:visited{
 	margin-left: -37.5%;
 }
 #faq-page{
-	background-color: white;
 	position: relative;
-	top: 100%;
+	left: 0px;
 	height: auto;
 }
 #faq-page > .h1{
@@ -584,7 +576,6 @@ a.info-links:hover{
 	height: 100%;
 	top: 0px;
 	left: 0px;
-	z-index: -1;
 }
 #about-header-text{
 	position: absolute;
@@ -609,9 +600,7 @@ a.info-links:hover{
 	margin-left: -37.5%;
 }
 #about-page{
-	background-color: white;
 	position: relative;
-	top: 100%;
 	height: auto;
 	left: 0px;
 	overflow: auto;

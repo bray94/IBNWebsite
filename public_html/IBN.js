@@ -38,7 +38,7 @@ function topBar(){
 				$("#header-arrow").css("display", "inline");
 			}
 			else{
-				$("#topbar").css({"background-color":"rgba(0,0,0,0)", "border-bottom":"black solid 0px"});
+				$("#topbar").css({"background-color":"rgba(0,0,0,.2)", "border-bottom":"black solid 1px"});
 				$("#header-arrow").css("display", "none");
 			}
 		    
@@ -64,22 +64,14 @@ function sectionSize(){
 	var windowHeight = window.innerHeight;
 	var windowWidth = window.innerWidth;
 
-	var height = windowHeight + "px";
-	var width = windowWidth = "px";
-
-	var mobileHeight = .4 * window.innerHeight + "px";
-	var mobileWidth = .4 * window.innerWidth + "px";
-
 	if(windowHeight > windowWidth){
-		$(".currentHeader").css({"width": width , "height" : mobileHeight});
-		$(".currentPage").css({"width": width , "top" : mobileHeight});
+		$(".currentHeader").css({"width": "100%" , "height" : "40%"});
 		$("#index").css("background-size", "200% 100%");
 		$("#myibn-page").css("background-size", "200% 100%");
 		$("a.navlink:link, a.navlink:visited").css({"font-size": "60px", "width" : "700px"});
 	}
 	else{
-		$(".currentHeader").css({"width": width , "height" : height});
-		$(".currentPage").css({"width": width , "top" : height});
+		$(".currentHeader").css({"width": "100%" , "height" : "100%"});
 		$("#index").css("background-size", "100% 100%");
 		$("#myibn-page").css("background-size", "100% 100%");
 		$("a.navlink:link, a.navlink:visited").css({"font-size": "18px", "width": "140px"});
