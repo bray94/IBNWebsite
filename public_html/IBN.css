@@ -90,8 +90,7 @@ p{
 	padding: 0px 20px;
 }
 #header-arrow{
-	position: relative; 
-	top: 85%; 
+	position: relative;
 	margin-left: -50px; 
 	width: 100px; 
 	left: 50%;
@@ -168,7 +167,7 @@ a.navlink:link, a.navlink:visited{
 #shared-profits-header{
 	background-image: url('Images/new-york.jpg');
 	background-size: 100% 100%;
-	position: relative;
+	position: fixed;
 	width: 100%;
 	height: 100%;
 	top: 0px;
@@ -272,7 +271,9 @@ a.navlink:link, a.navlink:visited{
 #shared-profits-page{
 	width: 100%;
 	overflow: auto;
-	position: relative;
+	position: absolute;
+	background: rgba(255,255,255,1);
+	top: 100%;
 	min-height: 900px;
 	left: 0px;
 }
@@ -323,7 +324,7 @@ a.navlink:link, a.navlink:visited{
 #audits-header{
 	background-image: url("Images/thermal-house.jpg");
 	background-size: 100% 100%;
-	position: relative;
+	position: fixed;
 	width: 100%;
 	height: 100%;
 	top: 0px;
@@ -352,7 +353,9 @@ a.navlink:link, a.navlink:visited{
 	margin-left: -37.5%;
 }
 #audits-page{
-	position: relative;
+	position: absolute;
+	background: rgba(255,255,255,1);
+	top: 100%;
 	left: 0px;
 	overflow: auto;
 }
@@ -375,7 +378,7 @@ a.navlink:link, a.navlink:visited{
 #faq-header{
 	background-image: url("Images/america.jpg");
 	background-size: 100% 100%;
-	position: relative;
+	position: fixed;
 	width: 100%;
 	height: 100%;
 	top: 0px;
@@ -404,7 +407,9 @@ a.navlink:link, a.navlink:visited{
 	margin-left: -37.5%;
 }
 #faq-page{
-	position: relative;
+	position: absolute;
+	background: rgba(255,255,255,1);
+	top: 100%;
 	left: 0px;
 	height: auto;
 }
@@ -423,8 +428,8 @@ a.navlink:link, a.navlink:visited{
 	font-size: 1.2vw;
 }
 .info-block{
-	margin: 0px .25%;
-	min-width: 24.5%; 
+	margin: 0px 0%;
+	min-width: 25%; 
 	max-width: 100%;
 	float: left;
 	cursor: pointer;
@@ -490,7 +495,7 @@ a.info-links:hover{
 	overflow: hidden;
 	height: 0px;
 	width: 100%;
-	background-color: #385365;
+	background-color: #182128;
 	cursor: normal;
 	color: white;
 	font-size: 1.5vw;
@@ -551,6 +556,17 @@ a.info-links:hover{
 	background: rgba(255, 255, 255, 0);
 	cursor: normal;
 }
+#question-box-wrapper{
+	position: relative;
+	width: 100%;
+	margin: 50px 0px 100px;
+
+}
+#question-box{
+	position: relative;
+	width: 80%;
+	margin: 0px 10% 0px;
+}
 #submitQuestion{
 	position: relative;
 	margin: 20px 40% -70px;
@@ -571,7 +587,7 @@ a.info-links:hover{
 #about-header{
 	background-image: url("Images/tree.jpg");
 	background-size: 100% 100%;
-	position: relative;
+	position: fixed;
 	width: 100%;
 	height: 100%;
 	top: 0px;
@@ -600,14 +616,16 @@ a.info-links:hover{
 	margin-left: -37.5%;
 }
 #about-page{
-	position: relative;
+	position: absolute;
+	top: 100%;
+	background: rgba(255,255,255,1);
 	height: auto;
 	left: 0px;
 	overflow: auto;
 }
 #about-page > p{
 	text-align: center;
-	color: rgb(50,50,50);
+	color: rgb(30,30,30);
 	margin: 20px 20% 50px;
 	position: relative;
 	width: 60%;
@@ -615,15 +633,15 @@ a.info-links:hover{
 }
 #about-cell-wrapper{
 	position: relative;
-	left: 50%;
-	margin: 0px 0px 0px -277px;
-	height: 810px;
-	width: 554px;
+	width:80%;
+	margin: 0px 10% 0px;
 }
 .about-cell{
-	position: absolute;
+	display: inline-block;
+	position: relative;
 	height: 400px;
 	width: 267px;
+	margin: 0px;
 }
 .about-cell-text{
 	position: absolute;
@@ -644,10 +662,9 @@ a.info-links:hover{
 }
 #contact-brayden{
 	text-align: center;
-	padding: 200px 0px;
 	font-size: 22px;
 	width: 60%;
-	margin: 0px 20% 100px; 
+	margin: 100px 20% 200px; 
 }
 
 /*---------- Sign in ----------*/

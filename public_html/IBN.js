@@ -12,6 +12,7 @@ function init(){
 	questions();
 	sectionSize();
 	infoBlock();
+	arrow();
 
 	window.addEventListener("resize", function(){
 		sectionSize();
@@ -24,21 +25,37 @@ function init(){
 	}, false);
 }
 
+function arrow(){
+
+	var arrowTopStart = windowHeight * .85 + 'px';
+	var arrowTopEnd = windowHeight * .83 + 'px';
+	$("#header-arrow").css("top", arrowTopStart);
+	$(document).ready(function($){
+		$("#header-arrow").animate( {top: arrowTopEnd}, 'slow', function(){
+			$("#header-arrow").animate( {top: arrowTopStart}, 'slow', function(){
+				arrow();
+			});
+		});
+	});
+}
+
 function topBar(){
 	$(document).ready(function($){
 		$(window).scroll(function () {
 
 			var windowHeight = window.innerHeight;
-			if($(window).scrollTop() >= windowHeight){
+			if($(window).scrollTop() >= windowHeight-50){
 				$("#topbar").css({"background-color": "rgba(0,0,0,.6)", "border-bottom":"black solid 1px"});
 
 			}
 			else if($(window).scrollTop() <= 0){
 				$("#topbar").css({"background-color":"rgba(0,0,0,0)", "border-bottom":"black solid 0px"});
-				$("#header-arrow").css("display", "inline");
+				$("#header-arrow").css("display", "initial");
+				//arrow();
 			}
 			else{
-				$("#topbar").css({"background-color":"rgba(0,0,0,.2)", "border-bottom":"black solid 1px"});
+				$("#topbar").css({"background-color":"rgba(0,0,0,0)", "border-bottom":"black solid 0px"});
+				//$("#topbar").stop();
 				$("#header-arrow").css("display", "none");
 			}
 		    
@@ -66,6 +83,7 @@ function sectionSize(){
 
 	if(windowHeight > windowWidth){
 		$(".currentHeader").css({"width": "100%" , "height" : "40%"});
+		$(".currentPage").css("top", "40%");
 		$("#index").css("background-size", "200% 100%");
 		$("#myibn-page").css("background-size", "200% 100%");
 		$("#myibn-login-page").css("background-size", "200% 100%");
@@ -73,6 +91,7 @@ function sectionSize(){
 	}
 	else{
 		$(".currentHeader").css({"width": "100%" , "height" : "100%"});
+		$(".currentPage").css("top", "100%");
 		$("#index").css("background-size", "100% 100%");
 		$("#myibn-page").css("background-size", "100% 100%");
 		$("#myibn-login-page").css("background-size", "100% 100%");
