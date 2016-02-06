@@ -92,6 +92,7 @@ p{
 #header-arrow{
 	position: relative;
 	margin-left: -50px; 
+	top: 85%;
 	width: 100px; 
 	left: 50%;
 }
