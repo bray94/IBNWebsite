@@ -134,71 +134,71 @@ function infoBlock(){
 }
 
 function infoBlockFade(){
+	$(document).ready(function($){
+		$(".info-block").on('click', '*', function() {
 
-	$(".info-block").on('click', '*', function() {
+			var blocks = ["#solar-text", "#market-text", "#finance-text", "#audits-faq-text"];
 
-		var blocks = ["#solar-text", "#market-text", "#finance-text", "#audits-faq-text"];
+			for (var i = blocks.length - 1; i >= 0; i--) {
+				$(blocks[i]).css("background", "rgba(0,0,0,.7)");
+				//$(blocks[i].substring(0, blocks[i].length-5)).css("-webkit-filter", "blur(3px)");
+				//$(blocks[i].substring(0, blocks[i].length-5)).css("filter", "blur(3px)");
+			};
 
-		for (var i = blocks.length - 1; i >= 0; i--) {
-			$(blocks[i]).css("background", "rgba(0,0,0,.7)");
-			//$(blocks[i].substring(0, blocks[i].length-5)).css("-webkit-filter", "blur(3px)");
-			//$(blocks[i].substring(0, blocks[i].length-5)).css("filter", "blur(3px)");
-		};
+			var id = (event.target.id + "");
 
-		var id = (event.target.id + "");
+			if("-inner" == id.substring(id.length-6)){
+				id=id.substring(0, id.length-6);
+			}
 
-		if("-inner" == id.substring(id.length-6)){
-			id=id.substring(0, id.length-6);
-		}
+			$("#"+id).css("background", "rgba(0,0,0,.9)");
 
-		$("#"+id).css("background", "rgba(0,0,0,.8)");
+			id = id.substring(0, id.length-5);
+			//$("#"+id).css("-webkit-filter", "blur(0px)");
+			//$("#"+id).css("filter", "blur(0px)");
 
-		id = id.substring(0, id.length-5);
-		//$("#"+id).css("-webkit-filter", "blur(0px)");
-		//$("#"+id).css("filter", "blur(0px)");
+			if(last == "#"+id + "-textbox") {
+				return;
+			};
 
-		if(last == "#"+id + "-textbox") {
-			return;
-		};
-
-		if(last != null){
-			var heightOfBox = $("#"+id + "-textbox").css("height");
-			
-			$(last).fadeOut('slow', function(){
+			if(last != null){
+				var heightOfBox = $("#"+id + "-textbox").css("height");
+				
+				$(last).fadeOut('slow', function(){
+					$("#textbox-container").animate({height: heightOfBox}, function(){
+						$("#"+id + "-textbox").fadeIn('slow');
+					});
+				});
+			}
+			else{
+				var heightOfBox = $("#"+id + "-textbox").css("height");
 				$("#textbox-container").animate({height: heightOfBox}, function(){
 					$("#"+id + "-textbox").fadeIn('slow');
 				});
-			});
-		}
-		else{
-			var heightOfBox = $("#"+id + "-textbox").css("height");
-			$("#textbox-container").animate({height: heightOfBox}, function(){
-				$("#"+id + "-textbox").fadeIn('slow');
-			});
-		}
-		last = "#"+id + "-textbox";
+			}
+			last = "#"+id + "-textbox";
+		});
+
+		$("body").click(function(event){
+
+			var blocks = ["#solar-text", "#market-text", "#finance-text", "#audits-faq-text"];
+
+	    	if(event.target.className !== "info-block"){
+	    		for (var i = blocks.length - 1; i >= 0; i--) {
+					$(blocks[i]).css("background", "rgba(0,0,0,.7)");
+					//$(blocks[i].substring(0, blocks[i].length-5)).css("-webkit-filter", "blur(0px)");
+					//$(blocks[i].substring(0, blocks[i].length-5)).css("filter", "blur(0px)");
+				};
+				$(last).fadeOut('slow', function(){
+					$("#textbox-container").animate({height: "0px"});
+				});
+				last = null;
+	    	}
+
+
+	  	});
+
 	});
-
-	$("body").click(function(event){
-
-		var blocks = ["#solar-text", "#market-text", "#finance-text", "#audits-faq-text"];
-
-    	if(event.target.className !== "info-block"){
-    		for (var i = blocks.length - 1; i >= 0; i--) {
-				$(blocks[i]).css("background", "rgba(0,0,0,.7)");
-				$(blocks[i].substring(0, blocks[i].length-5)).css("-webkit-filter", "blur(0px)");
-				$(blocks[i].substring(0, blocks[i].length-5)).css("filter", "blur(0px)");
-			};
-			$(last).fadeOut('slow', function(){
-				$("#textbox-container").animate({height: "0px"});
-			});
-			last = null;
-    	}
-
-
-  	});
-
-	
 }
 
 function closeTextbox(){
@@ -209,8 +209,8 @@ function closeTextbox(){
     	if(event.target.className !== "info-block"){
     		for (var i = blocks.length - 1; i >= 0; i--) {
 				$(blocks[i]).css("background", "rgba(0,0,0,.7)");
-				$(blocks[i].substring(0, blocks[i].length-5)).css("-webkit-filter", "blur(0px)");
-				$(blocks[i].substring(0, blocks[i].length-5)).css("filter", "blur(0px)");
+				//$(blocks[i].substring(0, blocks[i].length-5)).css("-webkit-filter", "blur(0px)");
+				//$(blocks[i].substring(0, blocks[i].length-5)).css("filter", "blur(0px)");
 			};
 			$(last).fadeOut('slow', function(){
 				$("#textbox-container").animate({height: "0px"});
