@@ -6,23 +6,24 @@ var windowHeight = window.innerHeight;
 var windowWidth = window.innerWidth;
 
 
-
 function init(){
-	topBar();
-	questions();
-	sectionSize();
-	infoBlock();
-	arrow();
-
-	// window.addEventListener("resize", function(){
-	// 	sectionSize();
-	// 	infoBlock();
-	// }, false);
-
-	// For mobile
-	window.addEventListener(orientationEvent, function(){
+	//$(document).ready(function($){
+		topBar();
+		questions();
 		sectionSize();
-	}, false);
+		infoBlock();
+		arrow();
+
+		// window.addEventListener("resize", function(){
+		// 	sectionSize();
+		// 	infoBlock();
+		// }, false);
+
+		// For mobile
+		window.addEventListener(orientationEvent, function(){
+			sectionSize();
+		}, false);
+	//})
 }
 
 function arrow(){
@@ -58,13 +59,17 @@ function topBar(){
 			else if($(window).scrollTop() <= 0){
 				$("#topbar").css({"background-color":"rgba(0,0,0,0)", "border-bottom":"black solid 0px"});
 				$("#header-arrow").css("display", "initial");
-				$(".currentHeader").css("top", "0px")
+				$(".currentHeader").css("opacity", "0px")
 			}
 			else{
 				$("#topbar").css({"background-color":"rgba(0,0,0,0)", "border-bottom":"black solid 0px"});
 				$("#header-arrow").css("display", "none");
 				var opacity = (windowHeight-100 - $(window).scrollTop())/(windowHeight-100);
 				$(".headerText").css("opacity", opacity);
+				var background = "rgba(0,0,0," + (($(window).scrollTop())/(windowHeight + 1500) + .4) + ")";
+				var faqBackground = "rgba(0,0,0," + (($(window).scrollTop())/(windowHeight + 1500) + .6) + ")";
+				$("#faq-header-text").css("background", faqBackground);
+				$(".currentHeader").css("background", background);
 			}
 		    
 		});
@@ -86,29 +91,31 @@ function questions(){
 }
 
 function sectionSize(){
-	var windowHeight = window.innerHeight;
-	var windowWidth = window.innerWidth;
+	$(document).ready(function($){
+		var windowHeight = window.innerHeight;
+		var windowWidth = window.innerWidth;
 
-	var width = windowWidth + 'px';
-	var height = windowHeight + 'px';
-	var mobileHeight = windowHeight * .4 + 'px';
+		var width = windowWidth + 'px';
+		var height = windowHeight + 'px';
+		var mobileHeight = windowHeight * .4 + 'px';
 
-	if(windowHeight > windowWidth){
-		$(".currentHeader").css({"width": width , "height" : mobileHeight});
-		$(".currentPage").css("top", "40%");
-		$("#index").css("background-size", "200% 100%");
-		$("#myibn-page").css("background-size", "200% 100%");
-		$("#myibn-login-page").css("background-size", "200% 100%");
-		$("a.navlink:link, a.navlink:visited").css({"font-size": "60px", "width" : "700px"});
-	}
-	else{
-		$(".currentHeader").css({"width": width , "height" : height});
-		$(".currentPage").css("top", "100%");
-		$("#index").css("background-size", "100% 100%");
-		$("#myibn-page").css("background-size", "100% 100%");
-		$("#myibn-login-page").css("background-size", "100% 100%");
-		$("a.navlink:link, a.navlink:visited").css({"font-size": "18px", "width": "140px"});
-	}
+		if(windowHeight > windowWidth){
+			$(".currentHeader").css({"width": width , "height" : mobileHeight});
+			$(".currentPage").css("top", "40%");
+			$("#index").css("background-size", "200% 100%");
+			$("#myibn-page").css("background-size", "200% 100%");
+			$("#myibn-login-page").css("background-size", "200% 100%");
+			$("a.navlink:link, a.navlink:visited").css({"font-size": "60px", "width" : "700px"});
+		}
+		else{
+			$(".currentHeader").css({"width": width , "height" : height});
+			$(".currentPage").css("top", "100%");
+			$("#index").css("background-size", "100% 100%");
+			$("#myibn-page").css("background-size", "100% 100%");
+			$("#myibn-login-page").css("background-size", "100% 100%");
+			$("a.navlink:link, a.navlink:visited").css({"font-size": "18px", "width": "140px"});
+		}
+	});
 }
 
 function infoBlock(){
