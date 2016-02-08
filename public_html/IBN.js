@@ -8,7 +8,7 @@ var windowWidth = window.innerWidth;
 
 function init(){
 	//$(document).ready(function($){
-		topBar();
+		pageScroll();
 		questions();
 		sectionSize();
 		infoBlock();
@@ -45,7 +45,7 @@ function parallax(){
 	$(".currentHeader").css("top", headerTop);
 }
 
-function topBar(){
+function pageScroll(){
 	$(document).ready(function($){
 		$(window).scroll(function () {
 
@@ -53,7 +53,7 @@ function topBar(){
 
 			var windowHeight = window.innerHeight;
 			if($(window).scrollTop() >= windowHeight-50){
-				$("#topbar").css({"background-color": "rgba(0,0,0,.6)", "border-bottom":"black solid 1px"});
+				$("#topbar").css({"background-color": "rgba(24,33,40,.9)", "border-bottom":"black solid 1px"});
 
 			}
 			else if($(window).scrollTop() <= 0){
@@ -141,8 +141,8 @@ function infoBlockFade(){
 
 		for (var i = blocks.length - 1; i >= 0; i--) {
 			$(blocks[i]).css("background", "rgba(0,0,0,.7)");
-			$(blocks[i].substring(0, blocks[i].length-5)).css("-webkit-filter", "blur(3px)");
-			$(blocks[i].substring(0, blocks[i].length-5)).css("filter", "blur(3px)");
+			//$(blocks[i].substring(0, blocks[i].length-5)).css("-webkit-filter", "blur(3px)");
+			//$(blocks[i].substring(0, blocks[i].length-5)).css("filter", "blur(3px)");
 		};
 
 		var id = (event.target.id + "");
@@ -154,8 +154,8 @@ function infoBlockFade(){
 		$("#"+id).css("background", "rgba(0,0,0,.8)");
 
 		id = id.substring(0, id.length-5);
-		$("#"+id).css("-webkit-filter", "blur(0px)");
-		$("#"+id).css("filter", "blur(0px)");
+		//$("#"+id).css("-webkit-filter", "blur(0px)");
+		//$("#"+id).css("filter", "blur(0px)");
 
 		if(last == "#"+id + "-textbox") {
 			return;
