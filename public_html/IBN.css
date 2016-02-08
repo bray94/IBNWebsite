@@ -199,15 +199,16 @@ a.navlink:link, a.navlink:visited{
 }
 #survey-wrapper{
 	position: fixed;
+	background: rgba(0, 0, 0, .3);
 	width: 100%;
 	height: 100%;
 	display: none;
-	z-index: 2;
+	z-index: 3;
 	left: 0px;
 }
 #survey{
 	position: relative;
-	margin: 50px auto auto -200px;
+	margin: 100px auto auto -200px;
 	height: 80%;
 	width: 400px;
 	left: 50%;
