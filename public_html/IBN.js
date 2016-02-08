@@ -38,10 +38,17 @@ function arrow(){
 		});
 	});
 }
+function parallax(){
+	var top = $(window).scrollTop()
+    var headerTop = -1 * top * .05 + 'px';
+	$(".currentHeader").css("top", headerTop);
+}
 
 function topBar(){
 	$(document).ready(function($){
 		$(window).scroll(function () {
+
+			//parallax();
 
 			var windowHeight = window.innerHeight;
 			if($(window).scrollTop() >= windowHeight-50){
@@ -51,12 +58,13 @@ function topBar(){
 			else if($(window).scrollTop() <= 0){
 				$("#topbar").css({"background-color":"rgba(0,0,0,0)", "border-bottom":"black solid 0px"});
 				$("#header-arrow").css("display", "initial");
-				//arrow();
+				$(".currentHeader").css("top", "0px")
 			}
 			else{
 				$("#topbar").css({"background-color":"rgba(0,0,0,0)", "border-bottom":"black solid 0px"});
-				//$("#topbar").stop();
 				$("#header-arrow").css("display", "none");
+				var opacity = (windowHeight-100 - $(window).scrollTop())/(windowHeight-100);
+				$(".headerText").css("opacity", opacity);
 			}
 		    
 		});
@@ -139,17 +147,6 @@ function infoBlockFade(){
 		$("#"+id).css("filter", "blur(0px)");
 
 		if(last == "#"+id + "-textbox") {
-			// var blocks = ["#solar-text", "#market-text", "#finance-text", "#audits-faq-text"];
-
-  	// 		for (var i = blocks.length - 1; i >= 0; i--) {
-			// 	$(blocks[i]).css("background", "rgba(0,0,0,.7)");
-			// 	$(blocks[i].substring(0, blocks[i].length-5)).css("-webkit-filter", "blur(0px)");
-			// 	$(blocks[i].substring(0, blocks[i].length-5)).css("filter", "blur(0px)");
-			// };
-			// $(last).fadeOut('slow', function(){
-			// 	$("#textbox-container").animate({height: "0px"});
-			// 	last = null;
-  	// 	  });
 			return;
 		};
 
