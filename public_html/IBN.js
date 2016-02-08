@@ -89,8 +89,12 @@ function sectionSize(){
 	var windowHeight = window.innerHeight;
 	var windowWidth = window.innerWidth;
 
+	var width = windowWidth + 'px';
+	var height = windowHeight + 'px';
+	var mobileHeight = windowHeight * .4 + 'px';
+
 	if(windowHeight > windowWidth){
-		$(".currentHeader").css({"width": "100%" , "height" : "40%"});
+		$(".currentHeader").css({"width": width , "height" : mobileHeight});
 		$(".currentPage").css("top", "40%");
 		$("#index").css("background-size", "200% 100%");
 		$("#myibn-page").css("background-size", "200% 100%");
@@ -98,7 +102,7 @@ function sectionSize(){
 		$("a.navlink:link, a.navlink:visited").css({"font-size": "60px", "width" : "700px"});
 	}
 	else{
-		$(".currentHeader").css({"width": "100%" , "height" : "100%"});
+		$(".currentHeader").css({"width": width , "height" : height});
 		$(".currentPage").css("top", "100%");
 		$("#index").css("background-size", "100% 100%");
 		$("#myibn-page").css("background-size", "100% 100%");
