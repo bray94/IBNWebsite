@@ -14,10 +14,10 @@ function init(){
 	infoBlock();
 	arrow();
 
-	window.addEventListener("resize", function(){
-		sectionSize();
-		infoBlock();
-	}, false);
+	// window.addEventListener("resize", function(){
+	// 	sectionSize();
+	// 	infoBlock();
+	// }, false);
 
 	// For mobile
 	window.addEventListener(orientationEvent, function(){
