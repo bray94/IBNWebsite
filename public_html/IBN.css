@@ -117,13 +117,21 @@ p{
 	position: relative;
 	font-size: 40px;
 }
+.blue-background{	
+	background-color: rgba(24,33,40,1);
+	color: rgb(225, 225, 225);
+}
+.red-background{	
+	background-color: rgba(54,0,0,1);
+	color: rgb(225, 225, 225);
+}
 
 
 /* -----------Index------------ */
 
 
 #index{
-	background-image: url('Images/lake.jpg'); 
+	background-image: url('Images/trees.jpeg'); 
 	background-size: 100% 100%;
 	background-position: center;
 	/*background-color: rgba(24,33,40,1);*/
@@ -183,7 +191,7 @@ a.navlink:hover{
 /* -----------Shared Profits------------ */
 
 #shared-profits-header{
-	background-image: url('Images/new-york.jpg');
+	background-image: url('Images/snowy.jpg');
 	background-size: 100% 100%;
 	position: fixed;
 	width: 100%;
@@ -300,7 +308,7 @@ a.navlink:hover{
 	margin: 0px auto 70px;
 }
 #shared-profits-button-wrapper > #button{
-	background-color: black;
+	background-color: rgb(54, 0, 0);
 	opacity: .9;
 	color: white;
 	text-decoration: none;
@@ -319,10 +327,6 @@ a.navlink:hover{
 	width: 100%; 
 	position: relative;
 	overflow: auto;
-}
-.blue-background{	
-	background-color: rgba(24,33,40,1);
-	color: rgb(225, 225, 225);
 }
 #table-wrapper{
 	margin: 50px auto 50px;
@@ -370,7 +374,7 @@ p#quote{
 /* -----------Audits------------ */
 
 #audits-header{
-	background-image: url("Images/thermal-house.jpg");
+	background-image: url("Images/ocean.jpeg");
 	background-size: 100% 100%;
 	position: fixed;
 	width: 100%;
@@ -417,7 +421,7 @@ p#quote{
 /* -----------FAQ------------ */
 
 #faq-header{
-	background-image: url("Images/america.jpg");
+	background-image: url("Images/red-hills.jpg");
 	background-size: 100% 100%;
 	position: fixed;
 	width: 100%;
@@ -611,7 +615,7 @@ a.info-links:hover{
 #submitQuestion{
 	position: relative;
 	margin: 20px 40% -70px;
-	background-color: black;
+	background-color: rgb(54,0,0);
 	opacity: .9;
 	color: white;
 	text-decoration: none;
@@ -626,7 +630,7 @@ a.info-links:hover{
 /* -----------About------------ */
 
 #about-header{
-	background-image: url("Images/tree.jpg");
+	background-image: url("Images/mountain.jpg");
 	background-size: 100% 100%;
 	position: fixed;
 	width: 100%;
@@ -710,7 +714,7 @@ a.info-links:hover{
 
 /*---------- Sign in ----------*/
 #myibn-login-page{
-	background-image: url('Images/nature.jpg'); 
+	background-image: url('Images/wheat.jpg'); 
 	background-size: 100% 100%;
 	background-position: center;
 	position: absolute;
@@ -771,7 +775,7 @@ a#login-button:hover{
 
 /*------------- My IBN ----------------*/
 #myibn-page{
-	background-image: url('Images/nature.jpg'); 
+	background-image: url('Images/wheat.jpg'); 
 	background-size: 100% 100%;
 	background-position: center;
 	position: absolute;

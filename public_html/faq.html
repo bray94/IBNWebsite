@@ -42,19 +42,28 @@
 				Is my house in the right location for solar panels? What is photovoltaic efficiency? Am I elegible for a tax credit? We have researched all of the questions others have asked us along our journey, as well as the topics we were confused with ourselves. There is a lot to know when it comes to making your house sustainable. From what really is using most of your energy to permits required to install solar panels on your roof. We have tried to answer all of these and more as simply as we can, without all of the unnecessary jargon.
 			</p>
 			<div class="info-block" id="solar">
-				<div id="solar-text" class="info-block"><div style="position: relative; top: 30%; width: 100%;" id="solar-text-inner" class="info-block" >What is Solar?</div></div>
+				<div id="solar-text" class="info-block">
+					<div style="position: relative; top: 30%; width: 100%;" id="solar-text-inner" class="info-block" >What is Solar?</div>
+					<img src="Images/sun.svg" height="70px" style="position: relative; top: 100px;">
+				</div>
 			</div>
 			<div class="info-block" id="market">
-				<div id="market-text" class="info-block"><div style="position: relative; top: 30%; width: 100%;" id="market-text-inner" class="info-block">The Energy Market</div></div>
-				
+				<div id="market-text" class="info-block">
+					<div style="position: relative; top: 30%; width: 100%;" id="market-text-inner" class="info-block">The Energy Market</div>
+					<img src="Images/cart.svg" height="70px" style="position: relative; top: 100px;">
+				</div>
 			</div>
 			<div class="info-block" id="finance">
-				<div id="finance-text" class="info-block"><div style="position: relative; top: 30%; width: 100%;" id="finance-text-inner" class="info-block">Solar Finance</div></div>
-				
+				<div id="finance-text" class="info-block">
+					<div style="position: relative; top: 30%; width: 100%;" id="finance-text-inner" class="info-block">Solar Finance</div>
+					<img src="Images/money.svg" height="70px" style="position: relative; top: 100px;">
+				</div>
 			</div>
 			<div class="info-block" id="audits-faq">
-				<div id="audits-faq-text" class="info-block"><div style="position: relative; top: 30%; width: 100%;" id="audits-faq-text-inner" class="info-block">Energy Audits</div></div>
-				
+				<div id="audits-faq-text" class="info-block">	
+					<div style="position: relative; top: 30%; width: 100%;" id="audits-faq-text-inner" class="info-block">Energy Audits</div>
+					<img src="Images/home.svg" height="70px" style="position: relative; top: 100px;">
+				</div>
 			</div>
 			<div id="textbox-container">
 				<img src="Images/white-close.png" id="close-textbox-container" onclick="closeTextbox(); return false;">
@@ -187,20 +196,16 @@
 					<br>
 				</div>
 			</div>
-			<div id="question-box-wrapper">
-				<div id="question-box">
-					<p style="vertical-align: top; display: inline-block; width: 46%; font-size: 18px; position: relative; top: 0px;">
-						If you have anymore questions or concerns about anything renewable energy related, please enter the question and your email in the box. One of our experts will get back to you with information and resources to educate you on the topic.
-					</p>
-					<form id="faq-question" class="pure-form pure-form-stacked" action="faqQuestion.php" method="post" style="width: 46%; position: relative; display: inline-block;">
-						<fieldset class="pure-group" style="color: black;">
-				 	   	<input id="survey-input" class="pure-input-1-2" type="text" placeholder="Email" name="email">
-				 	   	<textarea name="question" class="pure-input-1-2" placeholder="Questions?" style="color: black; width: 100%; height: 150px;"></textarea>
-						</fieldset>
-						<div  type="submit" id="submitQuestion" onclick="submitQuestion();">Submit</div>
-					</form>
-				</div>
-			</div>
+			<p style="margin-top: 50px; font-size: 22px;">
+				If you have anymore questions or concerns about anything renewable energy related, please enter the question and your email in the box. One of our experts will get back to you with information and resources to educate you on the topic.
+			</p>
+			<form id="faq-question" class="pure-form pure-form-stacked" action="faqQuestion.php" method="post" style="width: 40%; position: relative; margin: 0px 30% 200px;">
+				<fieldset class="pure-group" style="color: black;">
+				<input id="survey-input" class="pure-input-1-2" type="text" placeholder="Email" name="email">
+				<textarea name="question" class="pure-input-1-2" placeholder="Questions?" style="color: black; width: 100%; height: 150px;"></textarea>
+				</fieldset>
+				<div  type="submit" id="submitQuestion" onclick="submitQuestion();">Submit</div>
+			</form>
 			
 
 			<div class="bottombar">
