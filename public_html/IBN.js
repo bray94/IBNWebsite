@@ -67,9 +67,7 @@ function pageScroll(){
 				$("#header-arrow").css("display", "none");
 				var opacity = (windowHeight-100 - $(window).scrollTop())/(windowHeight-100);
 				$(".headerText").css("opacity", opacity);
-				var background = "rgba(0,0,0," + (($(window).scrollTop())/(windowHeight + 1500) + .4) + ")";
-				var faqBackground = "rgba(0,0,0," + (($(window).scrollTop())/(windowHeight + 1500) + .6) + ")";
-				$("#faq-header-text").css("background", faqBackground);
+				var background = "rgba(0,0,0," + (($(window).scrollTop())/(windowHeight + 500) + 0) + ")";
 				$(".currentHeader").css("background", background);
 			}
 		    
