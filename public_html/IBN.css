@@ -467,7 +467,7 @@ p#quote{
 }
 .info-block{
 	margin: 0px 0%;
-	min-width: 25%; 
+	min-width: 24.99%; 
 	max-width: 100%;
 	float: left;
 	cursor: pointer;
@@ -485,10 +485,7 @@ a.info-links:hover{
 	height: 100%;
 }
 #solar.info-block{
-	/*background-image: url("Images/solar-panels.jpg");
-	background-size: 200% 100%;*/
 	background-color: rgba(24,33,40,1);
-	box-shadow: 0px 0px 0px 2px white;
 }
 #solar-text{
 	width: 100%;
@@ -496,12 +493,10 @@ a.info-links:hover{
 	background: rgba(0, 0, 0, 0);
 	color: white;
 	text-align: center;
+	border: solid white 2px;
 }
 #market.info-block{
-	/*background-image: url("Images/lightbulb.jpg");
-	background-size: 200% 100%;*/
 	background-color: rgba(24,33,40,1);
-	box-shadow: 0px 0px 0px 2px white;
 }
 #market-text{
 	width: 100%;
@@ -509,12 +504,10 @@ a.info-links:hover{
 	background: rgba(0, 0, 0, 0);
 	color: white;
 	text-align: center;
+	border: solid white 2px;
 }
 #finance.info-block{
-	/*background-image: url("Images/finance.jpg");
-	background-size: 200% 100%;*/
 	background-color: rgba(24,33,40,1);
-	box-shadow: 0px 0px 0px 2px white;
 }
 #finance-text{
 	width: 100%;
@@ -522,12 +515,10 @@ a.info-links:hover{
 	background: rgba(0, 0, 0, 0);
 	color: white;
 	text-align: center;
+	border: solid white 2px;
 }
 #audits-faq.info-block{
-	/*background-image: url("Images/stove.jpg");
-	background-size: 200% 100%;*/
 	background-color: rgba(24,33,40,1);
-	box-shadow: 0px 0px 0px 2px white;
 }
 #audits-faq-text{
 	width: 100%;
@@ -535,6 +526,7 @@ a.info-links:hover{
 	background: rgba(0, 0, 0, 0);
 	color: white;
 	text-align: center;
+	border: solid white 2px;
 }
 #textbox-container{
 	position: relative;

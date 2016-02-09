@@ -119,13 +119,20 @@ function sectionSize(){
 }
 
 function infoBlock(){
-	var width = $(".info-block").css("width");
+	var width = windowWidth/4 - 4 + 'px';
+	$(".info-block").css('height', width);
 	$(".info-block").css('height', width);
 
+
 	var texts = ["#solar-text-inner", "#market-text-inner", "#finance-text-inner", "#audits-faq-text-inner"];
+	var texts2 = ["#solar-text", "#market-text", "#finance-text", "#audits-faq-text"];
 
 	for (var i = texts.length - 1; i >= 0; i--) {
 		$(texts[i]).css("height", "20%");
+	};
+
+	for (var i = texts2.length - 1; i >= 0; i--) {
+		$(texts2[i]).css("width", width);
 	};
 
 	last = null;
