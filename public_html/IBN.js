@@ -54,7 +54,8 @@ function pageScroll(){
 
 			var windowHeight = window.innerHeight;
 			if($(window).scrollTop() >= windowHeight-50){
-				$("#topbar").css({"background-color": "rgba(24,33,40,.9)", "border-bottom":"black solid 1px"});
+				//$("#topbar").css({"background-color": "rgba(24,33,40,.9)", "border-bottom":"black solid 1px"});
+				$("#topbar").css({"background-color": "rgba(30,30,30,.9)", "border-bottom":"black solid 1px"});
 
 			}
 			else if($(window).scrollTop() <= 0){
