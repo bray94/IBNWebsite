@@ -410,14 +410,14 @@ p#quote{
 	text-align: center;
 	margin: 50px 0px 50px;
 	position: relative;
-	font-size: 50px;
+	font-size: 60px;
 }
 #audits-page > p{
 	text-align: center;
 	margin: 50px 20% 100px;
 	position: relative;
 	width: 60%;
-	font-size: 18px;
+	font-size: 16px;
 }
 /* -----------FAQ------------ */
 
@@ -676,13 +676,21 @@ a.info-links:hover{
 	left: 0px;
 	overflow: auto;
 }
+
+#about-page > .h1{
+	width: 100%;
+	text-align: center;
+	margin: 50px 0px 50px;
+	position: relative;
+	font-size: 60px;
+}
 #about-page > p{
 	text-align: center;
 	color: rgb(30,30,30);
 	margin: 20px 20% 50px;
 	position: relative;
 	width: 60%;
-	font-size: 15px;
+	font-size: 16px;
 }
 #about-cell-wrapper{
 	position: relative;
