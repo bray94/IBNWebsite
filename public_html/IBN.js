@@ -13,6 +13,7 @@ function init(){
 		sectionSize();
 		infoBlock();
 		arrow();
+		topBar();
 
 		// window.addEventListener("resize", function(){
 		// 	sectionSize();
@@ -42,8 +43,7 @@ function arrow(){
 function parallax(){
 	var top = $(window).scrollTop()
     var headerTop = -1 * top * .05 + 'px';
-	$(".currentHeader").css("top", headerTop);
-	$("#faq-header-text").css("top", headerTop);
+	$(".parallax").css("top", headerTop);
 }
 
 function pageScroll(){
@@ -73,6 +73,10 @@ function pageScroll(){
 		    
 		});
 	});
+}
+
+function topBar(){
+
 }
 
 function questions(){
