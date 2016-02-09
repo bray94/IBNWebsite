@@ -103,18 +103,16 @@ function sectionSize(){
 
 		if(windowHeight > windowWidth){
 			$(".currentHeader").css({"width": width , "height" : mobileHeight});
+			$("header-arrow").css("top", "34%");
 			$(".currentPage").css("top", "40%");
-			$("#index").css("background-size", "200% 100%");
-			$("#myibn-page").css("background-size", "200% 100%");
-			$("#myibn-login-page").css("background-size", "200% 100%");
+			$(".full-pages").css("background-size", "200% 100%");
 			$("a.navlink:link, a.navlink:visited").css({"font-size": "60px", "width" : "700px"});
 		}
 		else{
 			$(".currentHeader").css({"width": width , "height" : height});
+			$("header-arrow").css("top", "85%");
 			$(".currentPage").css("top", "100%");
-			$("#index").css("background-size", "100% 100%");
-			$("#myibn-page").css("background-size", "100% 100%");
-			$("#myibn-login-page").css("background-size", "100% 100%");
+			$(".full-pages").css("background-size", "100% 100%");
 			$("a.navlink:link, a.navlink:visited").css({"font-size": "18px", "width": "140px"});
 		}
 	});
