@@ -116,7 +116,7 @@
 							        Very Disatisfied
 							    </label>
 							    <br>
-							    <label>4. Would you be interested in joining the Shared Profits Program and would like to learn more about it?</label>
+							    <label>4. Would you be interested in learning more about the Shared Profits Program?</label>
 							    <label for="option-one" class="pure-radio">
 							        <input id="option-one" type="radio" name="interest" value="1">
 							        Yes
@@ -243,11 +243,19 @@
 			</div>
 			
 			<div id="shared-profits-page" class="currentPage">
-				<div id="survey-text">
-					<div class="header">
-						The Shared Profits Program in a Nutshell:
+				<div class="h1">Let's Share The Profits</div>
+				<p> 
+					Joining our Shared Profits Program&trade; allows you to get paid for going solar. How? By joining the shared profits program you can take advantage of tax incentives, energy refund checks, and other financial benefits. Simply give us your consent to allow IBN to use your roof and/or backyard to collect solar power. That's it. All of this with no cost or risk to you. While we are working to make this project a reality we ask you take the survey below to help us prove that there is a need for this program.
+				</p>
+				
+				<div id="shared-profits-button-wrapper">
+					<div id="button" onclick="survey(); return false;">Survey</div>
+				</div>
+				<section class="shared-profits-section blue-background">
+					<div class="h2" style="height: auto;">
+						What makes the Shared Profits Program different from other leasing programs?
 					</div>
-					<ul>
+					<!-- <ul>
 						<li>We pay for the solar panel and installation, so there is no out-of-pocket cost for you to become a member.</li> 
 						<li>Members are guaranteed a yearly Energy Refund Check up to 50% of the solar net profit (~$300-$800). </li>
 						<li>The yearly amount of your Energy Refund Check is dependent on cost of electricity, size of installation, and geographic location. </li>
@@ -257,22 +265,49 @@
 						<li>Emergency Solar energy will be available during times of power outage.</li>
 						<li>Does not affect relationship with utility company or utility bill.</li>
 						<li>By indicating that you're interested in the Shared Profits Program on the survey you are <span style="font-weight: bold; text-decoration: underline;">NOT required</span> to enroll in the program.</li>
-					</ul>
-					<div class="header">
-						Requirements for Shared Profits Program:
+					</ul> -->
+					<div id="table-wrapper">
+						<table id="shared-profits-table">
+							<thead>
+								<th><img src="Images/logo.svg" height="60px"></th>
+								<th>Normal PPA/Lease</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>IBN pays you a fixed share of all the profits including SREC profit (2-5% increase per year)</td>
+									<td>You pay company a utility rate set by the company, they keep SREC profit(0-2.9% increase per year)</td>
+								</tr>
+								<tr>
+									<td>Up to $1000 signing bonus for becoming a member (Member's share of tax rebates)</td>
+									<td>$0 initial rebate to sign up(Company keeps all tax rebates)</td>
+								</tr>
+								<tr>
+									<td>Average member makes > $4000 net profit over first 5 years</td>
+									<td>Average customer saves $2400 over first 5 years</td>
+								</tr>
+								<tr>
+									<td>6 yeear contract with optional 5 year extension period</td>
+									<td>20-30 year contract to fix the energy rate</td>
+								</tr>
+								<tr>
+									<td>No credit check</td>
+									<td>Requires credit approval</td>
+								</tr>
+								<tr>
+									<td>No effect on electricity bill means no rebound effect</td>
+									<td>10-20% rebound effect lowers net utility savings("spend more to save more")</td>
+								</tr>
+								<tr>
+									<td>IBN custom technology increases annual solar output (up to 150%); our profits directly correlate to solar output</td>
+									<td>Uses conventional technology, less incentive to use the best technology since a portion of their profits are fixed</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-					<ul>
-						<li>Must be a homeowner</li>
-						<li>Must have roof or yard space available for solar panel</li>
-						<li>Sign 6-year contract for membership</li>
-						<li>No credit scrore required</li>
-					</ul>
-
-					<div id="button" onclick="survey(); return false;">Interested? Take our survey.</div>
-				</div>
-				<div id="quote">
-					<span style="font-style: italic;">"It is important that taxpayers like you, homeowners and renters alike, show interest in this program by filling out the survey in order to raise the capital to jumpstart this new program. We thank you for your time and encourage you to share this website with family, friends, and colleagues so we can ensure solar investment opportunities for everyone."</span> - Eric Seabron, CEO
-				</div> 
+				</section>
+				<p id="quote">
+					<span style="font-style: italic;">"It is important that taxpayers like you, homeowners and renters alike, show interest in this program by filling out the survey in order to raise the capital to jumpstart this new program. We thank you for your time and encourage you to share this website with family, friends, and colleagues so we can ensure solar investment opportunities for everyone."</span> - IBN Team
+				</p> 
 				<div class="bottombar">
 					<div class="bottombar-wrapper">
 						<div class="bottomlink">Inspired by Nature &copy; 2016</div>

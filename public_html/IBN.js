@@ -43,13 +43,14 @@ function parallax(){
 	var top = $(window).scrollTop()
     var headerTop = -1 * top * .05 + 'px';
 	$(".currentHeader").css("top", headerTop);
+	$("#faq-header-text").css("top", headerTop);
 }
 
 function pageScroll(){
 	$(document).ready(function($){
 		$(window).scroll(function () {
 
-			//parallax();
+			parallax();
 
 			var windowHeight = window.innerHeight;
 			if($(window).scrollTop() >= windowHeight-50){
@@ -140,9 +141,7 @@ function infoBlockFade(){
 			var blocks = ["#solar-text", "#market-text", "#finance-text", "#audits-faq-text"];
 
 			for (var i = blocks.length - 1; i >= 0; i--) {
-				$(blocks[i]).css("background", "rgba(0,0,0,.7)");
-				//$(blocks[i].substring(0, blocks[i].length-5)).css("-webkit-filter", "blur(3px)");
-				//$(blocks[i].substring(0, blocks[i].length-5)).css("filter", "blur(3px)");
+				$(blocks[i]).css("background", "rgba(0,0,0,0)");
 			};
 
 			var id = (event.target.id + "");
@@ -151,11 +150,9 @@ function infoBlockFade(){
 				id=id.substring(0, id.length-6);
 			}
 
-			$("#"+id).css("background", "rgba(0,0,0,.9)");
+			$("#"+id).css("background", "rgba(0,0,0,.7)");
 
 			id = id.substring(0, id.length-5);
-			//$("#"+id).css("-webkit-filter", "blur(0px)");
-			//$("#"+id).css("filter", "blur(0px)");
 
 			if(last == "#"+id + "-textbox") {
 				return;
@@ -185,9 +182,7 @@ function infoBlockFade(){
 
 	    	if(event.target.className !== "info-block"){
 	    		for (var i = blocks.length - 1; i >= 0; i--) {
-					$(blocks[i]).css("background", "rgba(0,0,0,.7)");
-					//$(blocks[i].substring(0, blocks[i].length-5)).css("-webkit-filter", "blur(0px)");
-					//$(blocks[i].substring(0, blocks[i].length-5)).css("filter", "blur(0px)");
+					$(blocks[i]).css("background", "rgba(0,0,0,0)");
 				};
 				$(last).fadeOut('slow', function(){
 					$("#textbox-container").animate({height: "0px"});
@@ -208,9 +203,7 @@ function closeTextbox(){
 
     	if(event.target.className !== "info-block"){
     		for (var i = blocks.length - 1; i >= 0; i--) {
-				$(blocks[i]).css("background", "rgba(0,0,0,.7)");
-				//$(blocks[i].substring(0, blocks[i].length-5)).css("-webkit-filter", "blur(0px)");
-				//$(blocks[i].substring(0, blocks[i].length-5)).css("filter", "blur(0px)");
+				$(blocks[i]).css("background", "rgba(0,0,0,0)");
 			};
 			$(last).fadeOut('slow', function(){
 				$("#textbox-container").animate({height: "0px"});
@@ -227,6 +220,11 @@ function closeTextbox(){
 var surveyFlag = false;
 
 function survey(){
+	$("#survey-wrapper").on('click', function() {
+		var id = (event.target.id + "");
+		if(id == "survey-wrapper") closeSurvey();
+	});
+	$("body").css("overflow", "hidden");
 	surveyFlag = true;
 
 	$("#survey-wrapper").fadeIn(900);
@@ -235,7 +233,9 @@ function survey(){
 function closeSurvey(){
 	surveyFlag = false;
 
-	$("#survey-wrapper").fadeOut(50);
+	$("#survey-wrapper").fadeOut(500);
+
+	$("body").css("overflow", "visible");
 }
 
 function submitSurvey(){
