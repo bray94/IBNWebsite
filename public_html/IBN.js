@@ -60,7 +60,6 @@ function pageScroll(){
 			else if($(window).scrollTop() <= 0){
 				$("#topbar").css({"background-color":"rgba(0,0,0,0)", "border-bottom":"black solid 0px"});
 				$("#header-arrow").css("display", "initial");
-				$(".currentHeader").css("opacity", "0px")
 			}
 			else{
 				$("#topbar").css({"background-color":"rgba(0,0,0,0)", "border-bottom":"black solid 0px"});
@@ -68,7 +67,7 @@ function pageScroll(){
 				var opacity = (windowHeight-100 - $(window).scrollTop())/(windowHeight-100);
 				$(".headerText").css("opacity", opacity);
 				var background = "rgba(0,0,0," + (($(window).scrollTop())/(windowHeight + 500) + 0) + ")";
-				$(".currentHeader").css("background", background);
+				$(".parallax").css("background", background);
 			}
 		    
 		});
