@@ -120,9 +120,12 @@ function sectionSize(){
 }
 
 function infoBlock(){
-	var width = windowWidth/4 - 4 + 'px';
+	var width = windowWidth/4 - 2 +'px';
 	$(".info-block").css('height', width);
-	$(".info-block").css('height', width);
+	$(".info-block").css('width', width);
+
+	var iconWidth = windowWidth/16 + 'px';
+	$(".info-block-icon").height(iconWidth);
 
 
 	var texts = ["#solar-text-inner", "#market-text-inner", "#finance-text-inner", "#audits-faq-text-inner"];
@@ -133,8 +136,8 @@ function infoBlock(){
 	};
 
 	for (var i = texts2.length - 1; i >= 0; i--) {
-		$(texts2[i]).css("width", width);
-	};
+	 	$(texts2[i]).css("width", width);
+	 };
 
 	last = null;
 	infoBlockFade();

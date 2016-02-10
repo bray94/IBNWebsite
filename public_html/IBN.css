@@ -467,22 +467,21 @@ p#quote{
 }
 .info-block{
 	margin: 0px 0%;
-	min-width: 24.99%; 
 	max-width: 100%;
 	float: left;
 	cursor: pointer;
 	font-size: 2.5vw;
 	margin-bottom: 30px;
 }
+.info-block-border{
+	border-left: white solid 1px;
+	border-right: white solid 1px;
+}
 a.info-links:link, a.info-links:visited{
 	color: gray;
 }
 a.info-links:hover{
 	color: white;
-}
-.blurBox{
-	width: 100%;
-	height: 100%;
 }
 #solar.info-block{
 	background-color: rgba(24,33,40,1);
@@ -493,7 +492,7 @@ a.info-links:hover{
 	background: rgba(0, 0, 0, 0);
 	color: white;
 	text-align: center;
-	border: solid white 2px;
+	/*border: solid white 2px;*/
 }
 #market.info-block{
 	background-color: rgba(24,33,40,1);
@@ -504,7 +503,7 @@ a.info-links:hover{
 	background: rgba(0, 0, 0, 0);
 	color: white;
 	text-align: center;
-	border: solid white 2px;
+	/*border: solid white 2px;*/
 }
 #finance.info-block{
 	background-color: rgba(24,33,40,1);
@@ -515,7 +514,7 @@ a.info-links:hover{
 	background: rgba(0, 0, 0, 0);
 	color: white;
 	text-align: center;
-	border: solid white 2px;
+	/*border: solid white 2px;*/
 }
 #audits-faq.info-block{
 	background-color: rgba(24,33,40,1);
@@ -526,7 +525,7 @@ a.info-links:hover{
 	background: rgba(0, 0, 0, 0);
 	color: white;
 	text-align: center;
-	border: solid white 2px;
+	/*border: solid white 2px;*/
 }
 #textbox-container{
 	position: relative;
