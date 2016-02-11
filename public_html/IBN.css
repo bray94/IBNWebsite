@@ -21,7 +21,7 @@ html, body{
 	top: 0px;
 	width: 100%;
 	z-index: 10;
-	background-color: rgba(24,33,40,0);
+	background-color: rgba(24,34,44,0);
 	border-bottom: black solid 0px;
 	height: 50px;
 }
@@ -64,7 +64,7 @@ a.toplink.active{
 	width: 100%;
 	height: 40px;
 	font-size: 14px;
-	background-color: rgba(24,33,40,1);
+	background-color: rgba(24,33,44,1);
 }
 .bottombar-wrapper{
 	width: 100%;
@@ -89,6 +89,10 @@ p{
 	text-align: center;
 	padding: 0px 20px;
 	color: rgb(30,30,30);
+	margin: 0px 20% 70px;
+	position: relative;
+	width: 60%;
+	font-size: 18px;
 }
 #header-arrow{
 	position: relative;
@@ -118,7 +122,7 @@ p{
 	font-size: 40px;
 }
 .blue-background{	
-	background-color: rgba(24,33,40,1);
+	background-color: rgba(24,34,44,1);
 	color: rgb(225, 225, 225);
 }
 .red-background{	
@@ -295,13 +299,6 @@ a.navlink:hover{
 	min-height: 900px;
 	left: 0px;
 }
-#shared-profits-page > p{
-	text-align: center;
-	margin: 50px 20% 70px;
-	position: relative;
-	width: 60%;
-	font-size: 16px;
-}
 #shared-profits-button-wrapper{
 	width: 100%;
 	height: 50px;
@@ -411,13 +408,6 @@ p#quote{
 	left: 0px;
 	overflow: auto;
 }
-#audits-page > p{
-	text-align: center;
-	margin: 50px 20% 100px;
-	position: relative;
-	width: 60%;
-	font-size: 16px;
-}
 /* -----------FAQ------------ */
 
 #faq-header{
@@ -458,13 +448,6 @@ p#quote{
 	left: 0px;
 	height: auto;
 }
-#faq-page > p{
-	text-align: center;
-	margin: 0px 20% 70px;
-	position: relative;
-	width: 60%;
-	font-size: 16px;
-}
 .info-block{
 	margin: 0px 0%;
 	max-width: 100%;
@@ -484,7 +467,7 @@ a.info-links:hover{
 	color: white;
 }
 #solar.info-block{
-	background-color: rgba(24,33,40,1);
+	background-color: rgba(24,34,44,1);
 }
 #solar-text{
 	width: 100%;
@@ -495,7 +478,7 @@ a.info-links:hover{
 	/*border: solid white 2px;*/
 }
 #market.info-block{
-	background-color: rgba(24,33,40,1);
+	background-color: rgba(24,34,44,1);
 }
 #market-text{
 	width: 100%;
@@ -506,7 +489,7 @@ a.info-links:hover{
 	/*border: solid white 2px;*/
 }
 #finance.info-block{
-	background-color: rgba(24,33,40,1);
+	background-color: rgba(24,34,44,1);
 }
 #finance-text{
 	width: 100%;
@@ -517,7 +500,7 @@ a.info-links:hover{
 	/*border: solid white 2px;*/
 }
 #audits-faq.info-block{
-	background-color: rgba(24,33,40,1);
+	background-color: rgba(24,34,44,1);
 }
 #audits-faq-text{
 	width: 100%;
@@ -532,7 +515,7 @@ a.info-links:hover{
 	overflow: hidden;
 	height: 0px;
 	width: 100%;
-	background-color: #182128;
+	background-color: rgb(24, 34, 44);
 	cursor: normal;
 	color: white;
 	font-size: 22px;
@@ -659,24 +642,21 @@ a.info-links:hover{
 	left: 0px;
 	overflow: auto;
 }
-#about-page > p{
-	text-align: center;
-	color: rgb(30,30,30);
-	margin: 20px 20% 50px;
+.about-section{
+	margin: 0px 0px 50px;
+	width: 100%; 
 	position: relative;
-	width: 60%;
-	font-size: 16px;
+	overflow: auto;
 }
 #about-cell-wrapper{
 	position: relative;
 	width:80%;
-	margin: 0px 15% 0px;
+	margin: 0px 10% 50px;
 }
 .about-cell{
 	display: inline-block;
 	position: relative;
-	height: 400px;
-	width: 267px;
+	width: 24.3%;
 	margin: 0px;
 }
 .about-cell-text{
@@ -686,7 +666,7 @@ a.info-links:hover{
 	color: white;
 	font-size: 16px;
 	width: 100%;
-	height: 70px;
+	height: 15%;
 }
 .about-cell-text > .name{
 	font-size: 23px;
@@ -698,7 +678,7 @@ a.info-links:hover{
 }
 #contact-brayden{
 	text-align: center;
-	font-size: 22px;
+	font-size: 32px;
 	width: 60%;
 	margin: 100px 20% 200px; 
 }
