@@ -257,6 +257,19 @@ function submitQuestion(){
 	document.getElementById("faq-question").submit();
 }
 
+function techVideoTopBar(){
+	$(document).ready(function($){
+		$(window).scroll(function () {
+			if($(window).scrollTop() <= 0){
+				$("#topbar").css({"background-color":"rgba(0,0,0,0)", "border-bottom":"black solid 0px"});
+			}
+			else{
+				$("#topbar").css({"background-color": "rgba(30,30,30,.9)", "border-bottom":"black solid 1px"});
+			}
+		});
+	});
+}
+
 
 
 
