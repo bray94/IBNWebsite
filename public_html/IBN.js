@@ -15,6 +15,17 @@ function init(){
 		arrow();
 		topBar();
 
+
+		var input = "";
+		//document.write(input);
+		$(document).keydown(function(e) {
+			input += e.keyCode;
+			if(input == "38384040373937396665")
+			{
+			document.write("Keegan is a bitch. ha.");
+			}
+		});
+
 		// window.addEventListener("resize", function(){
 		// 	sectionSize();
 		// 	infoBlock();
@@ -24,6 +35,9 @@ function init(){
 		window.addEventListener(orientationEvent, function(){
 			sectionSize();
 		}, false);
+
+
+		
 	//})
 }
 
@@ -276,6 +290,7 @@ function techVideoTopBar(){
 		});
 	});
 }
+
 
 
 
