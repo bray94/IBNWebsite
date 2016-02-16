@@ -55,9 +55,9 @@ function pageScroll(){
 			var windowHeight = window.innerHeight;
 			if($(window).scrollTop() >= windowHeight - 50){
 				//$("#topbar").css({"background-color": "rgba(24,33,40,.9)", "border-bottom":"black solid 1px"});
-				$("#topbar").css({"background-color": "rgba(225,225,225,.95)", "border-bottom":"black solid 1px"});
-				$(".toplink").css("color", "rgb(30,30,30)");
-				$("#logo").attr("src", "Images/logo-black.svg");
+				$("#topbar").css({"background-color": "rgba(30,30,30,.95)", "border-bottom":"black solid 1px"});
+				//$(".toplink").css("color", "rgb(30,30,30)");
+				//$("#logo").attr("src", "Images/logo-black.svg");
 
 			}
 			else if($(window).scrollTop() <= 0){
