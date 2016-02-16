@@ -22,7 +22,9 @@ function init(){
 			input += e.keyCode;
 			if(input == "38384040373937396665")
 			{
-			document.write("Keegan is a bitch. ha.");
+				$('body').css("cursor","url(Images/cursor.png)");
+				//document.write("hello");
+
 			}
 		});
 
@@ -40,6 +42,8 @@ function init(){
 		
 	//})
 }
+
+window.onload = init;
 
 function arrow(){
 
