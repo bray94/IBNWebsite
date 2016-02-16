@@ -44,10 +44,10 @@ a.toplink:link, a.toplink:visited{
 	font-size: 14px;
 }
 a.toplink:hover{
-	border-bottom: white solid 5px;
+	border-bottom: rgb(134,0,0) solid 5px;
 }
 a.toplink.active{
-	border-bottom: white solid 5px;
+	border-bottom: rgb(134,0,0) solid 5px;
 }
 #logo-topbar{
 	position: absolute;
@@ -92,7 +92,7 @@ p{
 	margin: 0px 20% 70px;
 	position: relative;
 	width: 60%;
-	font-size: 18px;
+	font-size: 20px;
 }
 #header-arrow{
 	position: relative;
@@ -346,6 +346,7 @@ table#shared-profits-table > tbody > tr, table#shared-profits-table > tbody > tr
 	border: 2px solid rgb(225, 225, 225);
 	text-align: center;
 	padding: 10px 40px;
+	font-size: 20px;
 }
 .shared-profits-section > ul{
 	line-height: 2em;

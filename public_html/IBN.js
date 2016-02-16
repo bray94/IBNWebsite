@@ -53,17 +53,23 @@ function pageScroll(){
 			parallax();
 
 			var windowHeight = window.innerHeight;
-			if($(window).scrollTop() >= windowHeight-50){
+			if($(window).scrollTop() >= windowHeight - 50){
 				//$("#topbar").css({"background-color": "rgba(24,33,40,.9)", "border-bottom":"black solid 1px"});
-				$("#topbar").css({"background-color": "rgba(30,30,30,.9)", "border-bottom":"black solid 1px"});
+				$("#topbar").css({"background-color": "rgba(225,225,225,.95)", "border-bottom":"black solid 1px"});
+				$(".toplink").css("color", "rgb(30,30,30)");
+				$("#logo").attr("src", "Images/logo-black.svg");
 
 			}
 			else if($(window).scrollTop() <= 0){
-				$("#topbar").css({"background-color":"rgba(0,0,0,0)", "border-bottom":"black solid 0px"});
+				$("#topbar").css({"background-color":"rgba(0,0,0,0)", "border-bottom":"black solid 0px", "color":"white"});
+				$(".toplink").css("color", "rgb(225,225,225)");
+				$("#logo").attr("src", "Images/logo.svg");
 				$("#header-arrow").css("display", "initial");
 			}
 			else{
 				$("#topbar").css({"background-color":"rgba(0,0,0,0)", "border-bottom":"black solid 0px"});
+				$(".toplink").css("color", "rgb(225,225,225)");
+				$("#logo").attr("src", "Images/logo.svg");
 				$("#header-arrow").css("display", "none");
 				var opacity = (windowHeight-100 - $(window).scrollTop())/(windowHeight-100);
 				$(".headerText").css("opacity", opacity);
