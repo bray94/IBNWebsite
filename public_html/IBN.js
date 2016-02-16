@@ -22,7 +22,7 @@ function init(){
 			input += e.keyCode;
 			if(input == "38384040373937396665")
 			{
-				$('body').css("cursor","url(Images/cursor.png)");
+				$('body').css("cursor","url(Images/cursor3.png), auto");
 				//document.write("hello");
 
 			}
