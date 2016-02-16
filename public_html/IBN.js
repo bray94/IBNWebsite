@@ -62,13 +62,13 @@ function pageScroll(){
 			}
 			else if($(window).scrollTop() <= 0){
 				$("#topbar").css({"background-color":"rgba(0,0,0,0)", "border-bottom":"black solid 0px", "color":"white"});
-				$(".toplink").css("color", "rgb(225,225,225)");
+				$(".toplink").css("color", "rgb(255,255,255)");
 				$("#logo").attr("src", "Images/logo.svg");
 				$("#header-arrow").css("display", "initial");
 			}
 			else{
 				$("#topbar").css({"background-color":"rgba(0,0,0,0)", "border-bottom":"black solid 0px"});
-				$(".toplink").css("color", "rgb(225,225,225)");
+				$(".toplink").css("color", "rgb(255,255,255)");
 				$("#logo").attr("src", "Images/logo.svg");
 				$("#header-arrow").css("display", "none");
 				var opacity = (windowHeight-100 - $(window).scrollTop())/(windowHeight-100);
@@ -126,7 +126,8 @@ function sectionSize(){
 }
 
 function infoBlock(){
-	var width = windowWidth/4 - 2 +'px';
+	var bodyWidth = $("#faq-page").width();
+	var width = bodyWidth/4 - 2 +'px';
 	$(".info-block").css('height', width);
 	$(".info-block").css('width', width);
 
