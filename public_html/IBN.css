@@ -28,6 +28,7 @@ html, body{
 	background-color: rgba(24,34,44,0);
 	border-bottom: black solid 0px;
 	height: 50px;
+	/*box-shadow: 0px 5px 10px -2px rgb(0, 0, 0);*/
 }
 .linkswrapper{
 	position: absolute;
@@ -133,14 +134,46 @@ p{
 	background-color: rgb(0, 255, 191);
 	color: rgb(225, 225, 225);
 }
+#survey-bar{
+	position: fixed;
+	z-index: 6;
+	height: 70px;
+	width: 100%;
+	top: 100%;
+	background-color: rgb(0,255,191);
+	margin-top: -70px;
+}
+#survey-bar > #text{
+	color: rgb(24,34,44);
+	font-size: 27px;
+	line-height: 70px;
+	height: 70px;
+	position: absolute;
+	left: 35px;
 
+}
+#survey-bar > #button{
+	background-color: rgb(24, 34, 44);
+	color: rgb(225, 225, 225);
+	text-decoration: none;
+	text-align: center;
+	position: relative;
+	float: left;
+	width: 180px;
+	height: 50px;
+	margin: 10px;
+	left: 1000px;
+	line-height: 50px;
+	font-size: 25px;
+	cursor: pointer;
+}
 
 /* -----------Index------------ */
 
 
 #index{
-	background-image: url('Images/trees.jpeg'); 
-	background-size: 100% 100%;
+	background-image: url('Images/city.jpg'); 
+	background-size: 100%;
 	background-position: center;
 	/*background-color: rgba(24,33,40,1);*/
 	position: absolute;
@@ -302,6 +335,7 @@ a.navlink:hover{
 	top: 100%;
 	min-height: 900px;
 	left: 0px;
+	box-shadow: 0px -5px 10px -2px rgb(30, 30, 30);
 }
 #shared-profits-button-wrapper{
 	width: 100%;
@@ -323,10 +357,32 @@ a.navlink:hover{
 	margin: 0px auto 0px -90px;
 	left: 50%;
 	cursor: pointer;
+	box-shadow: 0px 5px 10px -2px rgb(70, 70, 70);
 }
 #shared-profits-button-wrapper > #button:hover{
 	background-color: rgb(24, 34, 44);
 	color: rgb(0, 255, 191);
+}
+#shared-profits-button-wrapper > #button:active{
+	box-shadow: 0px 5px 10px -9px rgb(70, 70, 70);
+}
+#fixedbutton{
+	position: fixed;
+	width: 180px;
+	height: 50px;
+	padding: 10px 20px;
+	margin-right: 40px;
+	right: 0%;
+	bottom: 40px; 
+	z-index: 10;
+	color: rgb(24, 34, 44);
+	background-color: rgb(0, 255, 191);
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	font-size: 25px;
+	cursor: pointer;
+	box-shadow: 0px 4px 10px -2px rgb(70, 70, 70);
 }
 .shared-profits-section{
 	margin: 0px 0px 50px;
@@ -399,7 +455,7 @@ p#quote{
 /* -----------Audits------------ */
 
 #audits-header{
-	background-image: url("Images/lake.jpg");
+	background-image: url("Images/trees.jpeg");
 	background-size: 100% 100%;
 	position: fixed;
 	width: 100%;
@@ -626,6 +682,10 @@ a.info-links:hover{
 	font-size: 20px;
 	padding: 10px 20px;
 	cursor: pointer;
+	box-shadow: 0px 5px 10px -2px rgb(70, 70, 70);
+}
+#submitQuestion:active{
+	box-shadow: 0px 5px 10px -9px rgb(70, 70, 70);
 }
 
 

@@ -94,6 +94,9 @@ function pageScroll(){
 				var background = "rgba(0,0,0," + (($(window).scrollTop())/(windowHeight + 500) + 0) + ")";
 				$(".parallax").css("background", background);
 			}
+
+			surveybutton()
+
 		    
 		});
 	});
@@ -137,7 +140,7 @@ function sectionSize(){
 			$(".currentHeader").css({"width": width , "height" : height});
 			$("header-arrow").css("top", "85%");
 			$(".currentPage").css("top", "100%");
-			$(".full-pages").css("background-size", "100% 100%");
+			$(".full-pages").css("background-size", "100%");
 			$("a.navlink:link, a.navlink:visited").css({"font-size": "18px", "width": "140px"});
 		}
 	});

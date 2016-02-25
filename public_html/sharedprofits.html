@@ -23,6 +23,14 @@
 	</head>
 
 	<body>
+		<!-- <div id="survey-bar">
+			<div id="text">
+				Interested? Take our survey to help us prove there's a need for this program.
+			</div>
+			<div id="button" onclick="survey(); return false;">
+				Survey
+			</div>
+		</div> -->
 		<div id = "topbar" >
 			<a href="index.html" class="toplink" id="logo-topbar"><img src="Images/logo.svg" id="logo"></a>
 			<div class="linkswrapper">
@@ -33,6 +41,7 @@
 				<a href="myibn-login.html" class="toplink">My IBN</a>
 			</div>
 		</div>
+		<!-- <div id="fixedbutton" onclick="survey(); return false;">Interest Survey</div> -->
 		<div>	
 			<div id="shared-profits-header"  class="currentHeader">
 				<div id="shared-profits-header-text" class="parallax">
@@ -246,22 +255,24 @@
 			</div>
 			
 			<div id="shared-profits-page" class="currentPage">
-				<div class="h1">Let's Share The Profits</div>
-				<p> 
-					Joining our Shared Profits Program&trade; allows you to get paid for going solar. How? By joining the shared profits program you can take advantage of tax incentives, energy refund checks, and other financial benefits. Simply give us your consent to allow IBN to use your roof and/or backyard to collect solar power. That's it. All of this with no cost or risk to you. While we are working to make this project a reality, we ask you to take our <span style="color:rgb(0, 255, 191); text-decoration: underline; font-size: 22px;">2-minute survey</span> below to help us prove that there is a need for this program.
-				</p>
+				<section id="first-section" class="shared-profits-section">
+					<div class="h1">Let's Share The Profits</div>
+					<p> 
+						Joining our Shared Profits Program&trade; allows you to get paid for going solar. How? Just let IBN use part of your roof and/or backyard space to collect solar power and we will share part of the revenue  with you. This includes the tax incentives and energy credits usually withheld from the consumer. That's it. All of this with no cost or risk to you. While we are working to make this project a reality, we ask you to take our <span style="color:rgb(0, 255, 191); text-decoration: underline; font-size: 22px;">2-minute survey</span> below to help us prove that there is a need for this program.
+					</p>
 				
-				<div id="shared-profits-button-wrapper">
-					<div id="button" onclick="survey(); return false;">Interest Survey</div>
-				</div>
+					<div id="shared-profits-button-wrapper">
+						<div id="button" onclick="survey(); return false;">Interest Survey</div>
+					</div>
+				</section>
 				<section class="shared-profits-section blue-background">
 					<div class="h2" style="height: auto;">
-						What makes the Shared Profits Program different from other leasing programs?
+						What makes the Shared Profits Program&trade; different from other leasing programs?
 						<hr width="70%">
 					</div>
 					<p style="color: rgb(225, 225, 225);"> 
-						Purchasing solar panels outright can be very expensive, and leasing them from a company can cause more of a headache than it's worth. We wanted to find somewhere in between these two solutions that just worked simpler. We wanted something that gave people the ability to help make the world greener, but would give them a reward in return. We accomplished this by creating the Shared Profits Program.<br><br>
-						<tab>This program requires only one thing from you, your permission to let us use your solar resource. <span style="color:rgb(0, 255, 191);">No money down. No changing energy companies. No Hassle.</span> We sell this energy back to the utility company at a pre-determined rate for a profit. For your gratitude, we cut you a percentage of all of that money we make. <span style="color:rgb(0, 255, 191);">It's that simple</span>. Below are a few of the notable comparisons with traditional lease programs.
+						Purchasing solar panels outright can be very expensive, and leasing them from a company can cause more of a headache than it's worth. We wanted to find somewhere in between these two solutions that just worked simpler. We wanted something that would help anyone go green while putting a little extra cash in their pocket. We accomplished this by creating the Shared Profits Program.<br><br>
+						<tab>This program requires only one thing from you, your permission to let us use your solar resource. <span style="color:rgb(0, 255, 191);">No money down. No changing energy companies. No Hassle.</span> We sell this energy back to the utility company for a profit. In exchange for you letting us use your space, we cut you a percentage of the revenue from the installed panel. <span style="color:rgb(0, 255, 191);">It's that simple</span>. Below are a few of the notable comparisons with traditional lease programs.
 					</p>
 					<div id="table-wrapper">
 						<table id="shared-profits-table">
@@ -271,11 +282,11 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>IBN pays you a <span style="color:rgb(0, 255, 191);">fixed share</span> of all the profits including SREC profit (2-5% increase per year)</td>
-									<td>You pay company a utility rate set by the company, they keep SREC profit (0-2.9% increase per year)</td>
+									<td>IBN pays you a <span style="color:rgb(0, 255, 191);">fixed share</span> of all the revenue including SREC value and tax incentives</td>
+									<td>You pay a utility bill set by the solar provider, they keep all the SREC revenue</td>
 								</tr>
 								<tr>
-									<td>Up to <span style="color:rgb(0, 255, 191);">$1000 signing bonus</span> for becoming a member (Member's share of tax rebates)</td>
+									<td>Up to <span style="color:rgb(0, 255, 191);">$1000 signing bonus</span> for becoming a member (member's share of tax rebates)</td>
 									<td>$0 initial rebate to sign up (Company keeps all tax rebates)</td>
 								</tr>
 								<tr>
@@ -284,7 +295,7 @@
 								</tr>
 								<tr>
 									<td><span style="color:rgb(0, 255, 191);">6 year</span> contract with optional 5 year extension period</td>
-									<td>20-30 year contract to fix the energy rate</td>
+									<td>20-30 year contract</td>
 								</tr>
 								<tr>
 									<td><span style="color:rgb(0, 255, 191);">No credit check</span></td>
@@ -295,7 +306,7 @@
 									<td>10-20% rebound effect lowers net utility savings ("spend more to save more")</td>
 								</tr>
 								<tr>
-									<td>IBN custom technology <span style="color:rgb(0, 255, 191);">increases annual solar output</span> (up to 150%); our profits directly correlate to solar output</td>
+									<td>IBN custom technology <span style="color:rgb(0, 255, 191);">increases annual solar output</span> up to 150%; our profits directly correlate to solar output</td>
 									<td>Uses conventional technology, less incentive to use the best technology since a portion of their profits are fixed</td>
 								</tr>
 							</tbody>
@@ -309,7 +320,7 @@
 								Let us help you give back to your community. 
 							</div>
 							<p>
-								Sharing the profits of solar shouldn't just be for homeowners, we think it can extend everywhere in the city. We want to partner with commercial property owners, non-profits, and the government as well. Anyone who is looking to make a little extra profit off of their properties without putting up any capital can join. Green urban spaces are great for the community but they rely heavily on capital investment. By joining our program landowners can install solar panels in parks and vacant lots to help get money to ignite more development in communities.<br>
+								Sharing the profits of solar shouldn't just be for homeowners, we think it can extend to everywhere in the city. IBN wants to partner with commercial property owners, non-profits, and the government as well. If you are looking to make a little extra profit off of your properties without putting up any capital, you can join this program as well. Green urban spaces are great for the community but they rely heavily on capital investment. You can have solar panels installed in your parks and vacant lots, using the profit to ignite more community development.<br>
 								<br>
 								If you own any commercial property and are interested please contact us at <a href="mailto:ibnhomes@gmail.com" style="color: rgb(0, 255, 191);">ibnhomes@gmail.com</a>.
 							</p>
@@ -323,7 +334,8 @@
 				</section>
 				<section class="shared-profits-section blue-background" style="margin: 0px;">
 					<p id="quote">
-						<span style="font-style: italic;">"It is important that taxpayers like you, homeowners and renters alike, show interest in this program by filling out the survey in order to raise the capital to jumpstart this new program. We thank you for your time and encourage you to share this website with family, friends, and colleagues so we can ensure solar investment opportunities for everyone."</span> - The IBN Team
+						<span style="font-style: italic;">"It is important that taxpayers like you, homeowners and renters alike, show interest in this program by filling out the survey in order to raise the capital to jumpstart this new program. We thank you for your time and encourage you to share this website with family, friends, and colleagues so we can ensure solar investment opportunities for everyone."</span><br>
+						 - The IBN Team
 					</p>
 				</section> 
 				<div class="bottombar">
