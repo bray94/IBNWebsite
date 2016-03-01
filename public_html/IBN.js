@@ -262,6 +262,8 @@ function survey(){
 		var id = (event.target.id + "");
 		if(id == "survey-wrapper") closeSurvey();
 	});
+
+	$("#survey-bar").fadeOut();
 	$("body").css("overflow", "hidden");
 	surveyFlag = true;
 
