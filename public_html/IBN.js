@@ -15,6 +15,8 @@ function init(){
 		arrow();
 		topBar();
 
+		greetings();
+
 
 		var input = "";
 		//document.write(input);
@@ -43,7 +45,26 @@ function init(){
 	//})
 }
 
+
+
 window.onload = init;
+
+function greetings(){
+	var d = new Date()
+	var hours = d.getHours();
+	if(hours < 12){
+		$("#greetings").text("Good morning");
+		return;
+	}
+	else if(hours < 18){
+		$("#greetings").text("Good afternoon");
+		return;
+	}
+	else{
+		$("#greetings").text("Good evening");
+		return;
+	}
+}
 
 function arrow(){
 
@@ -73,19 +94,19 @@ function pageScroll(){
 			var windowHeight = window.innerHeight;
 			if($(window).scrollTop() >= windowHeight - 50){
 				//$("#topbar").css({"background-color": "rgba(24,33,40,.9)", "border-bottom":"black solid 1px"});
-				$("#topbar").css({"background-color": "rgba(30,30,30,.95)", "border-bottom":"black solid 1px"});
+				//$("#topbar").css({"background-color": "rgba(30,30,30,.95)", "border-bottom":"black solid 1px"});
 				//$(".toplink").css("color", "rgb(30,30,30)");
 				//$("#logo").attr("src", "Images/logo-black.svg");
 
 			}
 			else if($(window).scrollTop() <= 0){
-				$("#topbar").css({"background-color":"rgba(0,0,0,0)", "border-bottom":"black solid 0px", "color":"white"});
+				//$("#topbar").css({"background-color":"rgba(0,0,0,0)", "border-bottom":"black solid 0px", "color":"white"});
 				$(".toplink").css("color", "rgb(255,255,255)");
 				$("#logo").attr("src", "Images/logo.svg");
 				$("#header-arrow").css("display", "initial");
 			}
 			else{
-				$("#topbar").css({"background-color":"rgba(0,0,0,0)", "border-bottom":"black solid 0px"});
+				//$("#topbar").css({"background-color":"rgba(0,0,0,0)", "border-bottom":"black solid 0px"});
 				$(".toplink").css("color", "rgb(255,255,255)");
 				$("#logo").attr("src", "Images/logo.svg");
 				$("#header-arrow").css("display", "none");
@@ -298,6 +319,18 @@ function techVideoTopBar(){
 			}
 		});
 	});
+}
+
+function submitJoin(){
+	// document.getElementById("join-form").submit();
+
+	$("#join").fadeOut(500, function(){$("#user-portal").fadeIn(500);});
+}
+
+function submitLogin(){
+	// document.getElementById("join-form").submit();
+
+	$("#login").fadeOut(500, function(){$("#user-portal").fadeIn(500);});
 }
 
 

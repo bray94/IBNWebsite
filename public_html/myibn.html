@@ -21,21 +21,15 @@
 	</head>
 
 	<body onload="init();">
-		<div id = "topbar" >
-			<a href="index.html" class="toplink" id="logo-topbar"><img src="Images/logo.svg" id="logo"></a>
-			<div class="linkswrapper">
-				<a href="sharedprofits.html"class="toplink">Shared Profits</a>
-				<a href="audits.html" class="toplink">Energy Audits</a>
-				<a href="faq.html" class="toplink">FAQ</a>
-				<a href="about.html" class="toplink">About</a>
-				<a href="myibn.html" class="toplink active">My IBN</a>
-			</div>
-		</div>		
+	
 			<div id="myibn-page" class="full-pages">
+
 				<div id="myibn-wrapper">
-					<div id="myibn">
-						
-						
+					<div id = "topbar" class="myibn-bar" style="background-color: black;">
+						<a href="index.html" class="toplink" id="logo-topbar"><img src="Images/logo.svg" id="logo"></a>
+					</div>	
+					<div id="welcome-bar">
+						<div id="text"><span id="greetings">Hello</span>, Brayden.</div>
 					</div>
 				</div>
 			</div>
@@ -44,6 +38,7 @@
 			<div class="bottombar" style="background: rgba(0, 0, 0, 0);">
 				<div class="bottombar-wrapper">
 					<div class="bottomlink">Inspired by Nature &copy; 2016</div>
+					<a href="about.html" class="bottomlink vertical-seperator">About</a>
 					<a href="" class="bottomlink vertical-seperator">Legal</a>
 					<a href="" class="bottomlink vertical-seperator">Careers</a>
 					<a href="mailto:braydenturner94@gmail.com" class="bottomlink vertical-seperator">Contact</a>
@@ -53,6 +48,7 @@
 
 		<script type="text/javascript" src = "IBN.js"></script>
 		<script type="text/javascript" src = "jquery.js"></script>
+		<script type="text/javascript" src = "angular.js"></script>
 		
 	</body>
 

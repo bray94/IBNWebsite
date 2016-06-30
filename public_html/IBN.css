@@ -171,18 +171,16 @@ p{
 /* -----------Index------------ */
 
 
-#index{
+#homepage-header{
 	background-image: url('Images/city.jpg'); 
-	background-size: 100%;
-	background-position: center;
-	/*background-color: rgba(24,33,40,1);*/
-	position: absolute;
+	background-size: 100% 100%;
+	position: fixed;
 	width: 100%;
 	height: 100%;
 	top: 0px;
 	left: 0px;
 }
-#index-text{
+#homepage-text{
 	position: absolute;
 	text-align: center;
 	top: 0px;
@@ -193,8 +191,8 @@ p{
 	color: white;
 
 }
-#index-text > #header{
-	font-size: 100px;
+#homepage-text > #header{
+	font-size: 150px;
 	width: 100%;
 	position: relative;
 	text-align: center;
@@ -203,66 +201,9 @@ p{
 	color: white;
 	font-family: "Helvetica Neue Ultra Light";
 }
-#nav-bar{
-	position: relative;
-	margin-top: 250px;
-	width: 100%;
-	z-index: 3;
-}
-#nav-wrapper{
-	margin:0px auto;
-	width: 700px;
-}
-a.navlink:link, a.navlink:visited{
-	width:140px;
-	float: left;
-	text-align: center;
-	color: white;
-	z-index: 10;
-	height: 100px;
-	text-decoration: none;
-	line-height: 30px;
-	display: inline-block;
-	font-size: 18px;
-}
-a.navlink:hover{
-	color: white;
-}
 
 /* -----------Shared Profits------------ */
 
-#shared-profits-header{
-	background-image: url('Images/snowy.jpg');
-	background-size: 100% 100%;
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0px;
-	left: 0px;
-}
-#shared-profits-header-text{
-	position: absolute;
-	text-align: center;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0);
-	color: white;
-}
-#shared-profits-header-text > #header{
-	position: relative;
-	font-size: 85px;
-	width: 75%;
-	height: 85px;
-	position: absolute;
-	text-align: center;
-	top: 25%;
-	color: white;
-	font-family: "Helvetica Neue Ultra Light";
-	left: 50%;
-	margin-left: -37.5%;
-}
 #survey-wrapper{
 	position: fixed;
 	background: rgba(0, 0, 0, .5);
@@ -317,7 +258,8 @@ a.navlink:hover{
 	width: 100px;
 	font-size: 20px;
 	padding: 10px 20px;
-	cursor: pointer;}
+	cursor: pointer;
+}
 #thank-you{
 	width: 320px;
 	overflow-y: auto; 
@@ -327,7 +269,7 @@ a.navlink:hover{
 	margin: 200px 40px 0px 40px;
 	font-size: 25px;
 	color: white;}
-#shared-profits-page{
+#homepage{
 	width: 100%;
 	overflow: auto;
 	position: absolute;
@@ -341,8 +283,11 @@ a.navlink:hover{
 	width: 100%;
 	height: 50px;
 	margin: 0px auto 70px;
+	position: relative;
+	left: 0px;
 }
-#shared-profits-button-wrapper > #button{
+#shared-profits-button-wrapper > #login-button-homepage, #shared-profits-button-wrapper > #join-button, 
+#shared-profits-button-wrapper > #join-button:visited{
 	color: rgb(24, 34, 44);
 	background-color: rgb(0, 255, 191);
 	text-decoration: none;
@@ -354,16 +299,18 @@ a.navlink:hover{
 	line-height: 50px;
 	font-size: 25px;
 	padding: 10px 20px;
-	margin: 0px auto 0px -90px;
+	margin: 0px auto 0px -230px;
 	left: 50%;
 	cursor: pointer;
 	box-shadow: 0px 5px 10px -2px rgb(70, 70, 70);
 }
-#shared-profits-button-wrapper > #button:hover{
+#shared-profits-button-wrapper > #login-button-homepage, 
+#shared-profits-button-wrapper > #login-button-homepage:visited{
 	background-color: rgb(24, 34, 44);
 	color: rgb(0, 255, 191);
+	margin: 0px auto 0px 10px;
 }
-#shared-profits-button-wrapper > #button:active{
+#shared-profits-button-wrapper > a#login-button-homepage:active, #shared-profits-button-wrapper > a#join-button:active{
 	box-shadow: 0px 5px 10px -9px rgb(70, 70, 70);
 }
 #fixedbutton{
@@ -385,7 +332,7 @@ a.navlink:hover{
 	box-shadow: 0px 4px 10px -2px rgb(70, 70, 70);
 }
 .shared-profits-section{
-	margin: 0px 0px 50px;
+	margin: 0px 0px 0px;
 	width: 100%; 
 	position: relative;
 	overflow: auto;
@@ -450,47 +397,6 @@ p#quote{
 	font-size: 25px;
 	color: rgb(225,225,225);
 
-}
-
-/* -----------Audits------------ */
-
-#audits-header{
-	background-image: url("Images/trees.jpeg");
-	background-size: 100% 100%;
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0px;
-	left: 0px;
-}
-#audits-header-text{
-	position: absolute;
-	text-align: center;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0);
-	color: white;
-}
-#audits-header-text > #header{
-	position: relative;
-	font-size: 85px;
-	width: 75%;
-	position: absolute;
-	text-align: center;
-	top: 25%;
-	color: white;
-	font-family: "Helvetica Neue Ultra Light";
-	left: 50%;
-	margin-left: -37.5%;
-}
-#audits-page{
-	position: absolute;
-	background: rgba(255,255,255,1);
-	top: 100%;
-	left: 0px;
-	overflow: auto;
 }
 /* -----------FAQ------------ */
 
@@ -771,8 +677,8 @@ a.info-links:hover{
 	margin: 100px 20% 200px; 
 }
 
-/*---------- Sign in ----------*/
-#myibn-login-page{
+/*---------- Sign in/up ----------*/
+#login-page{
 	background-image: url('Images/wheat.jpg'); 
 	background-size: 100% 100%;
 	background-position: center;
@@ -782,7 +688,7 @@ a.info-links:hover{
 	top: 0px;
 	left: 0px;
 }
-#sign-in-wrapper{
+#login-wrapper{
 	position: absolute;
 	background: rgba(0, 0, 0, 0);
 	width: 100%;
@@ -790,16 +696,33 @@ a.info-links:hover{
 	z-index: 2;
 	left: 0px;
 }
-#sign-in{
+#login{
 	position: relative;
 	margin: 100px auto;
-	height: 350px;
+	height: auto;
 	width: 400px;
 	background: rgba(225, 225, 225, .9);
 }
-#sign-in > #header{
+
+#join-wrapper{
 	position: absolute;
-	margin: 25px auto 10px;
+	background: rgba(0, 0, 0, 0);
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	left: 0px;
+}
+#join{
+	position: relative;
+	margin: 100px auto;
+	height: auto;
+	width: 400px;
+	background: rgba(225, 225, 225, .9);
+}
+#login > #header, #join > #header{
+	position: relative;
+	top: 25px;
+	margin: 20px auto 0px;
 	font-size: 50px; 
 	text-align: center;
 	font-family: "Helvetica Neue Ultra Light"; 
@@ -807,13 +730,14 @@ a.info-links:hover{
 	width: 100%;
 	color: rgb(30, 30, 30);
 }
-a#forgot:link, a#forgot:visited{
-	position: absolute;
+#forgot:link, #forgot:visited, #already-member:link, #already-member:visited{
+	position: relative;
 	color: rgb(30, 30, 30);
-	margin: 230px auto 0px 50px;
+	text-align: center;
+	margin: 400px auto 0px 50px;
 }
-a#login-button:link, a#login-button:visited{
-	position: absolute;
+#login-button, #join-button{
+	position: relative;
 	text-decoration: none;
 	text-align: center;
 	color: black;
@@ -824,17 +748,24 @@ a#login-button:link, a#login-button:visited{
 	color: rgb(225, 225, 225);
 	opacity: .9;
 	padding: 10px 30px;
-	margin: 280px 0px 0px 135px;
-	
+	margin: 20px 0px 50px 135px;
+	cursor: pointer;
 }
-a#login-button:hover{
-	background-color: rgb(10, 10, 10);;
+#login-button:hover, #join-button:hover{
+	background-color: rgb(10, 10, 10);
+}
+#user-portal{
+	position: relative;
+	margin: 5% 5% 0%;
+	height: 80%;
+	width: 90%;
+	background: rgba(225, 225, 225, .9);
+	display: none;
 
 }
 
 /*------------- My IBN ----------------*/
 #myibn-page{
-	background-image: url('Images/wheat.jpg'); 
 	background-size: 100% 100%;
 	background-position: center;
 	position: absolute;
@@ -842,6 +773,22 @@ a#login-button:hover{
 	height: 100%;
 	top: 0px;
 	left: 0px;
+	background-color: white;
+}
+#topbar{
+	position: relative;
+}
+#welcome-bar{
+	font-size: 60px;
+	width: 100%;
+	position: relative;
+	top: 50px;
+	height: 100px;
+	font-family: "Helvetica Neue Ultra Light";
+}
+#welcome-bar > #text{
+	position: relative;
+	left: 50px;
 }
 #myibn-wrapper{
 	position: absolute;
@@ -856,7 +803,6 @@ a#login-button:hover{
 	margin: 5% 5% 0%;
 	height: 80%;
 	width: 90%;
-	background: rgba(225, 225, 225, .8);
 
 }
 
