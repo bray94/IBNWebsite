@@ -322,9 +322,9 @@ function techVideoTopBar(){
 }
 
 function submitJoin(){
-	// document.getElementById("join-form").submit();
+	document.getElementById("join-form").submit();
 
-	$("#join").fadeOut(500, function(){$("#user-portal").fadeIn(500);});
+	//$("#join").fadeOut(500, function(){$("#user-portal").fadeIn(500);});
 }
 
 function submitLogin(){

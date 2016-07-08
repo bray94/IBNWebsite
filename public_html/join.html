@@ -29,20 +29,20 @@
 			<div id="login-page" class="full-pages">
 				<div id="join-wrapper">
 					<div id="join" >
-						<div id="header">Join</div>
+						<div id="header">Under <br> Construction</div>
 						<hr style="position: relative; width: 300px; margin: 40px auto 0px 50px;">
-						<form class="pure-form pure-form-stacked" id="join-form" style="position: relative; width: 300px; margin: 10px auto 0px 50px;">
+						<form class="pure-form pure-form-stacked" id="join-form" action= "{% url '../ibnhomes/join.views.join' %}" style="position: relative; width: 300px; margin: 10px auto 0px 50px;">
 							<fieldset>
-						        <input id="fullName" type="text" placeholder="Full Name" style="width: 300px;;">
-						        <input id="email" type="email" placeholder="Email" style="width: 300px;;">
-						        <input id="password1" type="password" placeholder="Password" style="width: 300px;">
-						        <input id="password2" type="password" placeholder="Retype Password" style="width: 300px;">
+						        <input disabled id="fullName" type="text" placeholder="Full Name" style="width: 300px;;">
+						        <input disabled id="email" type="email" placeholder="Email" style="width: 300px;;">
+						        <input disabled id="password1" type="password" placeholder="Password" style="width: 300px;">
+						        <input disabled id="password2" type="password" placeholder="Retype Password" style="width: 300px;">
 						    </fieldset>
 						</form>
 
 						<a href="login.html" id="already-member">Already a member? Login</a>
 
-						<div id="join-button" onclick="submitJoin();">Join</div>
+						<div id="join-button">Join</div>
 						
 					</div>
 					<div id="user-portal">
