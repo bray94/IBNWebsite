@@ -1,27 +1,20 @@
-"""
-WSGI config for ibnhomes project.
 
-It exposes the WSGI callable as a module-level variable named ``application``.
+import os,sys
 
-For more information on this file, see
-https://docs.djangoproject.com/en/1.9/howto/deployment/wsgi/
-"""
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ibnhomes.settings")
 
-# import os
-
-# from django.core.wsgi import get_wsgi_application
-
-# os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ibnhomes.settings")
-
-# application = get_wsgi_application()
-
-#from werkzeug.wrappers import Request, Response
-# import re
-# from cgi import escape
+sys.path.append('/Users/braydenturner/Documents/IBN/IBNWebsite')
+sys.path.append('/Users/braydenturner/Documents/IBN/IBNWebsite/ibnhomes')
+sys.path.append('/Users/braydenturner/Documents/IBN/IBNWebsite/ibnhomes/ibnhomes')
 
 
-def application(environ, start_response):
+from django.core.wsgi import get_wsgi_application
 
-    start_response('200 OK', [('Content-Type', 'text/html')])
+application = get_wsgi_application()
 
-    return ["Hi!"]
+
+# def application(environ, start_response):
+
+# 	start_response('200 OK', [('Content-Type', 'text/html')])
+
+# 	return ["<html><body><h1>Hello World</h1></body></html>"]
