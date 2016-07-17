@@ -45,13 +45,10 @@ def join(request):
 				# Rollback in case there is any error
 				db.rollback()
 				failed = True
-				
+
 			db.close()
-
-			else:
-				
-
-				return render(request, 'under_construction.html', {'name': firstName})
+			
+			return render(request, 'under_construction.html', {'name': firstName})
 	else:
 		return render(request, 'join.html')
 
