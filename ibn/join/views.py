@@ -7,7 +7,7 @@ from django.http import HttpResponse
 import MySQLdb
 
 def join(request):
-	return HttpResponse(request.method)
+	#return HttpResponse(request.method)
 	if request.method == 'POST':
 		# db = MySQLdb.connect("localhost","root","Nedyarb94","myibn" )
 		# cursor = db.cursor()
