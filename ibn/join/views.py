@@ -30,23 +30,23 @@ def join(request):
 
 			firstName , lastName = (fullName.split()[0],fullName.split()[1]) 
 
-			sql = """INSERT INTO users(firstName,
-         		lastName, email, password)
-         		VALUES ('%s', '%s', '%s', %s)""" % (firstName, lastName, email, password)
+			# sql = """INSERT INTO users(firstName,
+   #       		lastName, email, password)
+   #       		VALUES ('%s', '%s', '%s', %s)""" % (firstName, lastName, email, password)
 
-         	failed = False
-			try:
-				# Execute the SQL command
-				cursor.execute(sql)
-				# Commit your changes in the database
+   #       	failed = False
+			# try:
+			# 	# Execute the SQL command
+			# 	cursor.execute(sql)
+			# 	# Commit your changes in the database
 
-				db.commit()
-			except:
-				# Rollback in case there is any error
-				db.rollback()
-				failed = True
+			# 	db.commit()
+			# except:
+			# 	# Rollback in case there is any error
+			# 	db.rollback()
+			# 	failed = True
 
-			db.close()
+			# db.close()
 			
 			return render(request, 'under_construction.html', {'name': firstName})
 	else:
