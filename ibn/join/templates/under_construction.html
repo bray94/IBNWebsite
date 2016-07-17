@@ -1,3 +1,5 @@
+#under_construction.html
+
 
 
 <html>
@@ -30,21 +32,13 @@
 			<div id="login-page" class="full-pages">
 				<div id="join-wrapper">
 					<div id="join" >
-						<div id="header">Join</div>
+						<div id="header">Thanks You!</div>
 						<hr style="position: relative; width: 300px; margin: 40px auto 0px 50px;">
-						<form class="pure-form pure-form-stacked" id="join-form" action= "/submit_join/" method="post" style="position: relative; width: 300px; margin: 10px auto 0px 50px;">
-							{% csrf_token %}
-							<fieldset>
-						        <input  id="fullName" type="text" placeholder="Full Name" name="fullName" style="width: 300px;;">
-						        <input  id="email" type="email" placeholder="Email" name="email" style="width: 300px;;">
-						        <input  id="password1" type="password" placeholder="Password" name="password" style="width: 300px;">
-						        <input  id="password2" type="password" placeholder="Retype Password" name="retypePassword" style="width: 300px;">
-						    </fieldset>
-						</form>
+						<p>
+							Thank you so much for signing up, {name}. At this time our site is currently under construction while we try to get this underway. However, your information is stored and we will be sending out an emial in the future when access to your account becomes available. Thanks again!
 
-						<a href="/login" id="already-member">Already a member? Login</a>
-
-						<div id="join-button" onclick="submitJoin();">Join</div>
+							-The IBN Team
+						</p>
 						
 					</div>
 					<div id="user-portal">
