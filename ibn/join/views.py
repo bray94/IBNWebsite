@@ -12,43 +12,43 @@ def join(request):
 		cursor = db.cursor()
 
 		error = False
-		if 'fullName' in request.POST and 'email' in request.POST and 'password' in request.POST and 'retypePassword' in request.POST:
-			fullName = request.POST['fullName']
-			email = request.POST['email']
-			password = request.POST['password']
-			retypePassword = request.POST['retypePassword']
+		fullName = request.POST.get('fullName', '')
+		email = request.POST.get('email', '')
+		password = request.POST.get('password', '')
+		retypePassword = request.POST.get('retypePassword', '')
 
-			noName = False
-			noEmail = False
-			noPassword = False
-			noRetypePassword = False
+		noName = False
+		noEmail = False
+		noPassword = False
+		noRetypePassword = False
 
-			if not fullName: noName = True
-			if not email: noEmail = True
-			if not password: noPassword = True
-			if not retypePassword: noRetypePassword = True
+		if not fullName: noName = True
+		if not email: noEmail = True
+		if not password: noPassword = True
+		if not retypePassword: noRetypePassword = True
 
-			firstName , lastName = (fullName.split()[0],fullName.split()[1]) 
+		firstName , lastName = (fullName.split()[0],fullName.split()[1]) 
 
-			# sql = """INSERT INTO users(firstName,
-   #       		lastName, email, password)
-   #       		VALUES ('%s', '%s', '%s', %s)""" % (firstName, lastName, email, password)
+		sql = """INSERT INTO users(firstName,
+      		lastName, email, password)
+      		VALUES ('%s', '%s', '%s', %s)""" % (firstName, lastName, email, password)
 
-   #       	failed = False
-			# try:
-			# 	# Execute the SQL command
-			# 	cursor.execute(sql)
-			# 	# Commit your changes in the database
+      	failed = False
+		try:
+			# Execute the SQL command
+			cursor.execute(sql)
+			# Commit your changes in the database
 
-			# 	db.commit()
-			# except:
-			# 	# Rollback in case there is any error
-			# 	db.rollback()
-			# 	failed = True
+			db.commit()
+		except:
+			# Rollback in case there is any error
+			db.rollback()
+			failed = True
 
-			# db.close()
-			
-			return render(request, 'under_construction.html', {'name': firstName})
+		db.close()
+
+		return render(request, 'under_construction.html', {'name': firstName})
+
 	else:
 		return render(request, 'join.html')
 
