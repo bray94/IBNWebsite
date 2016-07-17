@@ -15,12 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url, patterns, include
 from django.contrib import admin
-import urldisbatching.views as urlview
-import join.views as join_views
+from . import views
 
 urlpatterns = [
 	url(r'^admin/', admin.site.urls),
-	url(r'^$', urlview.index),
-	url(r'^join/', join_views.join),
-	url(r'^login/', urlview.login),
+	url(r'^$', views.index),
+	url(r'^join/', views.join),
+	url(r'^login/', views.login),
 ]
