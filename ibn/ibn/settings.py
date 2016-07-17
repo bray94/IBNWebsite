@@ -73,7 +73,6 @@ TEMPLATES = [
     },
 ]
 
-TEMPLATE_LOADERS = 'django.template.loaders.filesystem.Loader'
 
 WSGI_APPLICATION = 'ibn.wsgi.application'
 
