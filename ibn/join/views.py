@@ -7,7 +7,9 @@ from django.http import HttpResponse
 import MySQLdb
 
 def join(request):
-	return HttpResponse(request.method)
+	return render(request, 'join.html')
+
+def submit_join(request):
 	if request.method == 'POST':
 		# db = MySQLdb.connect("localhost","root","Nedyarb94","myibn" )
 		# cursor = db.cursor()
@@ -52,7 +54,4 @@ def join(request):
 		#file.close()
 
 		return render(request, 'under_construction.html', {'name': firstName})
-
-	else:
-		return render(request, 'join.html')
 
