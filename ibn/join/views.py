@@ -12,7 +12,7 @@ def join(request):
 		# db = MySQLdb.connect("localhost","root","Nedyarb94","myibn" )
 		# cursor = db.cursor()
 
-		file = open("users.txt", "a")
+		#file = open("users.txt", "a")
 
 		error = False
 		fullName = request.POST.get('fullName', '')
@@ -32,7 +32,7 @@ def join(request):
 
 		firstName , lastName = (fullName.split()[0],fullName.split()[1]) 
 
-		sql = """INSERT INTO users(firstName, lastName, email, password) VALUES ('%s', '%s', '%s', %s)""" % (firstName, lastName, email, password)
+		#sql = """INSERT INTO users(firstName, lastName, email, password) VALUES ('%s', '%s', '%s', %s)""" % (firstName, lastName, email, password)
 
   #     	failed = False
 		# try:
@@ -48,8 +48,8 @@ def join(request):
 
 		# db.close()
 
-		file.write(sql)
-		file.close()
+		#file.write(sql)
+		#file.close()
 
 		return render(request, 'under_construction.html', {'name': firstName})
 
