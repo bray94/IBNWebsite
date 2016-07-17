@@ -5,6 +5,9 @@ from django.shortcuts import render
 #from join.join_form.py import JoinForm
 from django.http import HttpResponse
 
-def hello(request):
-	return HttpResponse("Hi")
+def join(request):
+	return render(request, 'join.html')
+
+
+
 

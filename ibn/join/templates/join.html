@@ -30,9 +30,10 @@
 			<div id="login-page" class="full-pages">
 				<div id="join-wrapper">
 					<div id="join" >
-						<div id="header">Under <br> Construction</div>
+						<div id="header">Join</div>
 						<hr style="position: relative; width: 300px; margin: 40px auto 0px 50px;">
-						<form class="pure-form pure-form-stacked" id="join-form" action= "test.py" method="post" style="position: relative; width: 300px; margin: 10px auto 0px 50px;">
+						<form class="pure-form pure-form-stacked" id="join-form" action= "join.py" method="post" style="position: relative; width: 300px; margin: 10px auto 0px 50px;">
+							{% csrf_token %}
 							<fieldset>
 						        <input  id="fullName" type="text" placeholder="Full Name" name="fullName" style="width: 300px;;">
 						        <input  id="email" type="email" placeholder="Email" name="email" style="width: 300px;;">
@@ -64,8 +65,8 @@
 			</div>
 
 
-		<script type="text/javascript" src = "IBN.js"></script>
-		<script type="text/javascript" src = "jquery.js"></script>
+		<script type="text/javascript" src = "{% static 'urldisbatching/IBN.js' %}"></script>
+		<script type="text/javascript" src = "{% static 'urldisbatching/jquery.js' %}"></script>
 		
 	</body>
 

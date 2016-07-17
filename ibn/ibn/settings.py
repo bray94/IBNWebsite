@@ -57,6 +57,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             '/var/www/IBNWebsite/ibn/urldisbatching',
+            '/var/www/IBNWebsite/ibn/join',
             '/var/www/IBNWebsite/ibn/static',
         ],
         'APP_DIRS': True,
