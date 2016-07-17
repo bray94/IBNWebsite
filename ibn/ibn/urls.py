@@ -21,6 +21,6 @@ from urldisbatching.views import login, index
 urlpatterns = [
 	url(r'^admin/', admin.site.urls),
 	url(r'^$', index),
-	url(r'^join/', join),
+	url(r'^join/', login),
 	url(r'^login/', login),
 ]
