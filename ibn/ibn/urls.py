@@ -21,6 +21,8 @@ from urldisbatching.views import login, index
 urlpatterns = [
 	url(r'^admin/', admin.site.urls),
 	url(r'^$', index),
-	url(r'^join/', login),
+	url(r'^join/', join),
 	url(r'^login/', login),
 ]
+
+#sudo uwsgi --emperor /etc/uwsgi/vassals --uid www-data --gid www-data
