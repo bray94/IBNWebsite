@@ -8,8 +8,10 @@ import MySQLdb
 
 def join(request):
 	if request.method == 'POST':
-		db = MySQLdb.connect("localhost","root","Nedyarb94","myibn" )
-		cursor = db.cursor()
+		# db = MySQLdb.connect("localhost","root","Nedyarb94","myibn" )
+		# cursor = db.cursor()
+
+		file = open("/Documents/users.txt", "a")
 
 		error = False
 		fullName = request.POST.get('fullName', '')
@@ -30,22 +32,25 @@ def join(request):
 		firstName , lastName = (fullName.split()[0],fullName.split()[1]) 
 
 		sql = """INSERT INTO users(firstName,
-      		lastName, email, password)
-      		VALUES ('%s', '%s', '%s', %s)""" % (firstName, lastName, email, password)
+       		lastName, email, password)
+       		VALUES ('%s', '%s', '%s', %s)""" % (firstName, lastName, email, password)
 
-      	failed = False
-		try:
-			# Execute the SQL command
-			cursor.execute(sql)
-			# Commit your changes in the database
+  #     	failed = False
+		# try:
+		# 	# Execute the SQL command
+		# 	cursor.execute(sql)
+		# 	# Commit your changes in the database
 
-			db.commit()
-		except:
-			# Rollback in case there is any error
-			db.rollback()
-			failed = True
+		# 	db.commit()
+		# except:
+		# 	# Rollback in case there is any error
+		# 	db.rollback()
+		# 	failed = True
 
-		db.close()
+		# db.close()
+
+		file.write(sql)
+		file.close()
 
 		return render(request, 'under_construction.html', {'name': firstName})
 
