@@ -11,7 +11,7 @@ def join(request):
 		# db = MySQLdb.connect("localhost","root","Nedyarb94","myibn" )
 		# cursor = db.cursor()
 
-		file = open("/Documents/users.txt", "a")
+		file = open("users.txt", "a")
 
 		error = False
 		fullName = request.POST.get('fullName', '')
