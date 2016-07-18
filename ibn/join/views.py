@@ -50,7 +50,9 @@ def submit_join(request):
 
 		# db.close()
 
-		file.write(sql)
+		entry = sql + "\n"
+
+		file.write(entry)
 		file.close()
 
 		return render(request, 'under_construction.html', {'name': firstName})
