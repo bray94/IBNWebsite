@@ -34,9 +34,9 @@ def submit_join(request):
 
 		firstName , lastName = (fullName.split()[0],fullName.split()[1]) 
 
-		# sql = "INSERT INTO users(firstName, lastName, email, password) VALUES ('%s', '%s', '%s', %s)" % (firstName, lastName, email, password)
+		#sql = """INSERT INTO users(firstName, lastName, email, password) VALUES ('%s', '%s', '%s', %s)""" % (firstName, lastName, email, password)
 
-		# failed = False
+  #     	failed = False
 		# try:
 		# 	# Execute the SQL command
 		# 	cursor.execute(sql)
@@ -50,9 +50,11 @@ def submit_join(request):
 
 		# db.close()
 
-		entry = "firstName:%s;lastName:%s;email:%s\n" % (firstName, lastName, email)
+		entry = sql + "\n"
 
-		file.write(entry)
+		temp =  "firstName:%s;lastName:%s;email:%s\n" % (firstName, lastName, email)
+
+		file.write(temp)
 		file.close()
 
 		return render(request, 'under_construction.html', {'name': firstName})
