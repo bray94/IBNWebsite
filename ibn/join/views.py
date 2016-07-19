@@ -19,22 +19,22 @@ def submit_join(request):
 		error = False
 		fullName = request.POST.get('fullName', '')
 		email = request.POST.get('email', '')
-		password = request.POST.get('password', '')
-		retypePassword = request.POST.get('retypePassword', '')
+		# password = request.POST.get('password', '')
+		# retypePassword = request.POST.get('retypePassword', '')
 
 		noName = False
 		noEmail = False
-		noPassword = False
-		noRetypePassword = False
+		# noPassword = False
+		# noRetypePassword = False
 
 		if not fullName: noName = True
 		if not email: noEmail = True
-		if not password: noPassword = True
-		if not retypePassword: noRetypePassword = True
+		# if not password: noPassword = True
+		# if not retypePassword: noRetypePassword = True
 
 		firstName , lastName = (fullName.split()[0],fullName.split()[1]) 
 
-		sql = """INSERT INTO users(firstName, lastName, email, password) VALUES ('%s', '%s', '%s', %s)""" % (firstName, lastName, email, password)
+		#sql = """INSERT INTO users(firstName, lastName, email, password) VALUES ('%s', '%s', '%s', %s)""" % (firstName, lastName, email, password)
 
   #     	failed = False
 		# try:
@@ -50,7 +50,7 @@ def submit_join(request):
 
 		# db.close()
 
-		entry = sql + "\n"
+		entry = "firstName:%s;lastName:%s;email:%s\n" % (firstName, lastName, email)
 
 		file.write(entry)
 		file.close()
