@@ -34,9 +34,9 @@ def submit_join(request):
 
 		firstName , lastName = (fullName.split()[0],fullName.split()[1]) 
 
-		#sql = """INSERT INTO users(firstName, lastName, email, password) VALUES ('%s', '%s', '%s', %s)""" % (firstName, lastName, email, password)
+		# sql = "INSERT INTO users(firstName, lastName, email, password) VALUES ('%s', '%s', '%s', %s)" % (firstName, lastName, email, password)
 
-  #     	failed = False
+		# failed = False
 		# try:
 		# 	# Execute the SQL command
 		# 	cursor.execute(sql)
